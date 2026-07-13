@@ -16,6 +16,8 @@ it("renders all three platforms and the unique priority pick", () => {
   expect(html).toContain("最后核查");
   expect(html).toContain("A级");
   expect(html).toContain("可访问");
+  expect(html).toContain("墨西哥三平台选品简报");
+  expect(html).not.toContain("新品简报");
 });
 
 it("keeps the legacy hero before the new three-platform section", () => {

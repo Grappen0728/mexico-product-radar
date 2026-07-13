@@ -35,7 +35,7 @@ export function buildFeishuCard(report: RecommendationReport, publicUrl: string)
       config: { wide_screen_mode: true },
       header: {
         template: report.verdict === "recommend" ? "turquoise" : "blue",
-        title: { tag: "plain_text", content: `墨西哥新品雷达｜${report.product.zh}` },
+        title: { tag: "plain_text", content: `墨西哥选品雷达｜${report.product.zh}` },
       },
       elements: [
         {
@@ -129,7 +129,7 @@ export function buildDailyBriefFeishuCard(brief: DailyPlatformBrief, publicUrl: 
     msg_type: "interactive",
     card: {
       config: { wide_screen_mode: true },
-      header: { template: "turquoise", title: { tag: "plain_text", content: `墨西哥三平台新品简报｜${brief.date}` } },
+      header: { template: "turquoise", title: { tag: "plain_text", content: `墨西哥三平台选品简报｜${brief.date}` } },
       elements: [
         ...elements,
         {

@@ -18,6 +18,9 @@ describe("GitHub Pages build", () => {
     expect(siteScript).not.toContain('amazon.value = "AMZ"');
     expect(siteScript).toContain('"#archive-date"');
     expect(siteScript).toContain("card.dataset.date === date.value");
+    const notFound = await readFile(join(output, "404.html"), "utf8");
+    expect(notFound).toContain("墨西哥选品雷达");
+    expect(notFound).not.toContain("墨西哥新品雷达");
     expect(await readFile(join(output, ".nojekyll"), "utf8")).toBe("");
   });
 });

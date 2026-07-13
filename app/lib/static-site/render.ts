@@ -39,12 +39,12 @@ function range(prefix: string, min: number | null, max: number | null): string {
 }
 
 function header(basePath: string): string {
-  return `<header class="site-header"><a class="brand" href="${siteHref(basePath, "/")}"><span class="brand-mark">MX</span><span><strong>墨西哥新品雷达</strong><small>PRODUCT INTELLIGENCE</small></span></a><nav><a href="${siteHref(basePath, "/")}">今日推荐</a><a href="${siteHref(basePath, "/archive/")}">历史记录</a><a href="${siteHref(basePath, "/trends/")}">趋势看板</a></nav></header>`;
+  return `<header class="site-header"><a class="brand" href="${siteHref(basePath, "/")}"><span class="brand-mark">MX</span><span><strong>墨西哥选品雷达</strong><small>PRODUCT INTELLIGENCE</small></span></a><nav><a href="${siteHref(basePath, "/")}">今日推荐</a><a href="${siteHref(basePath, "/archive/")}">历史记录</a><a href="${siteHref(basePath, "/trends/")}">趋势看板</a></nav></header>`;
 }
 
 function shell(title: string, body: string, options: StaticRenderOptions, script = false): string {
   const scriptTag = script ? `<script src="${siteHref(options.basePath, "/assets/site.js")}" defer></script>` : "";
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="每日一款面向墨西哥渠道的带电带芯片产品情报"><title>${escapeHtml(title)}｜墨西哥新品雷达</title><link rel="stylesheet" href="${siteHref(options.basePath, "/assets/styles.css")}">${scriptTag}</head><body>${header(options.basePath)}${body}<footer>每日公开资讯 · 数据不可核验时明确标注 · 不构成投资或采购承诺</footer></body></html>`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="每日一款面向墨西哥渠道的带电带芯片产品情报"><title>${escapeHtml(title)}｜墨西哥选品雷达</title><link rel="stylesheet" href="${siteHref(options.basePath, "/assets/styles.css")}">${scriptTag}</head><body>${header(options.basePath)}${body}<footer>每日公开资讯 · 数据不可核验时明确标注 · 不构成投资或采购承诺</footer></body></html>`;
 }
 
 function historyCard(report: RecommendationReport, basePath: string): string {
@@ -144,7 +144,7 @@ export function renderDailyBriefHome(brief: DailyPlatformBrief, legacyReports: R
 
 export function renderDailyBriefPage(brief: DailyPlatformBrief, options: StaticRenderOptions): string {
   const analyses = brief.recommendations.map((item) => `<section class="panel platform-analysis"><h2>${escapeHtml(item.report.product.zh)}：详细分析</h2>${evidenceSummary(item.report)}<ol>${item.analysis.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol><dl><div><dt>电池/供电</dt><dd>${escapeHtml(item.report.electronics.battery)}</dd></div><div><dt>充电规格</dt><dd>${escapeHtml(item.report.electronics.charging)}</dd></div><div><dt>芯片功能</dt><dd>${escapeHtml(item.report.electronics.chip)}</dd></div></dl><div class="source-list">${item.report.sources.map(sourceCard).join("")}</div></section>`).join("");
-  const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/")}" class="back-link">← 返回首页</a><div class="page-heading"><span class="eyebrow">${escapeHtml(brief.date)} · DAILY BRIEF</span><h1>墨西哥三平台新品简报</h1><p>三款不同的带电带芯片产品，按平台机会分别评估</p></div>${dailyBriefSection(brief, options, false)}${analyses}</main>`;
+  const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/")}" class="back-link">← 返回首页</a><div class="page-heading"><span class="eyebrow">${escapeHtml(brief.date)} · DAILY BRIEF</span><h1>墨西哥三平台选品简报</h1><p>三款不同的带电带芯片产品，按平台机会分别评估</p></div>${dailyBriefSection(brief, options, false)}${analyses}</main>`;
   return shell(`${brief.date} 三平台简报`, body, options);
 }
 

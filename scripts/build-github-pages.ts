@@ -58,7 +58,7 @@ export async function buildGitHubPages(
     files.push(path);
   }
 
-  const notFound = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>页面不存在｜墨西哥新品雷达</title><link rel="stylesheet" href="${siteHref(basePath, "/assets/styles.css")}"></head><body><main class="shell"><div class="empty-state"><h1>页面不存在</h1><a href="${siteHref(basePath, "/")}">返回今日推荐</a></div></main></body></html>`;
+  const notFound = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>页面不存在｜墨西哥选品雷达</title><link rel="stylesheet" href="${siteHref(basePath, "/assets/styles.css")}"></head><body><main class="shell"><div class="empty-state"><h1>页面不存在</h1><a href="${siteHref(basePath, "/")}">返回今日推荐</a></div></main></body></html>`;
   await writePage(outputDir, "404.html", notFound);
   files.push("404.html");
   return files;

@@ -10,7 +10,8 @@ test("defines the product radar dashboard and metadata", async () => {
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
   ]);
-  assert.match(layout, /墨西哥新品雷达/);
+  assert.match(layout, /墨西哥选品雷达/);
+  assert.doesNotMatch(layout, /墨西哥新品雷达/);
   assert.match(sample, /迷你蓝牙热敏打印机/);
   assert.match(brief, /为什么推荐/);
   assert.match(page, /历史推荐/);
@@ -27,6 +28,6 @@ test("removes all starter-only preview assets and metadata", async () => {
   ]);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
-  assert.match(layout, /墨西哥新品雷达/);
+  assert.match(layout, /墨西哥选品雷达/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });

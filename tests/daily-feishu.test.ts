@@ -32,4 +32,6 @@ it("summarizes three products and links the complete daily brief", () => {
   expect(text.match(/单链接月销售额预估/g)).toHaveLength(3);
   expect(text).toContain("US$1,000–US$1,200 / 月");
   expect(text).toContain("暂无可靠估算");
+  expect(text).toContain("墨西哥三平台选品简报");
+  expect(text).not.toContain("新品简报");
 });

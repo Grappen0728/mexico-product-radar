@@ -12,6 +12,8 @@ describe("GitHub Pages static renderer", () => {
   it("renders a product detail with source and media links", () => {
     const html = renderRecommendation(SAMPLE_REPORT, { basePath: "/mexico-product-radar" });
     expect(html).toContain(SAMPLE_REPORT.product.zh);
+    expect(html).toContain("墨西哥选品雷达");
+    expect(html).not.toContain("墨西哥新品雷达");
     expect(html).toContain("趋势证据");
     expect(html).toContain(SAMPLE_REPORT.sources[0].url);
     expect(html).toContain("/mexico-product-radar/archive/");
