@@ -11,6 +11,11 @@ it("renders all three platforms and the unique priority pick", () => {
   expect(html).not.toContain("Amazon Mexico");
   expect(html).toContain("如果只能测试一个产品");
   expect(html).toContain("/mexico-product-radar/recommendations/");
+  expect(html).toContain("数据可信度");
+  expect(html).toContain("证据覆盖");
+  expect(html).toContain("最后核查");
+  expect(html).toContain("A级");
+  expect(html).toContain("可访问");
 });
 
 it("keeps the legacy hero before the new three-platform section", () => {

@@ -1,4 +1,5 @@
-import type { RecommendationReport, Verdict } from "../recommendations/types";
+import type { MediaLink, RecommendationReport, SourceLink, Verdict } from "../recommendations/types";
+import { assessEvidenceQuality } from "../recommendations/evidence-quality";
 import type { DailyPlatformBrief, PlatformRecommendation } from "../daily-briefs/types";
 
 export interface StaticRenderOptions { basePath: string }
@@ -54,6 +55,40 @@ function metric(label: string, value: string, accent = false): string {
   return `<div class="metric-card${accent ? " metric-card--accent" : ""}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
 }
 
+const confidenceLabels = { high: "高", medium: "中", low: "低" } as const;
+const accessLabels = {
+  available: "可访问",
+  "login-restricted": "登录受限",
+  blocked: "验证码/地区受限",
+  invalid: "已失效",
+  replaced: "已替代",
+  unverified: "未验证",
+} as const;
+
+function evidenceSummary(report: RecommendationReport): string {
+  const quality = assessEvidenceQuality(report);
+  return `<div class="evidence-summary evidence-summary--${quality.confidence}"><div><span>数据可信度</span><strong>${confidenceLabels[quality.confidence]}</strong></div><div><span>证据覆盖</span><strong>${quality.coveragePercent}%</strong></div><div><span>有效来源</span><strong>${quality.usableSourceCount}</strong></div><div><span>墨西哥证据</span><strong>${quality.localEvidenceCount}</strong></div><small>最后核查：${escapeHtml(quality.lastCheckedAt ?? "暂无可核查时间")}</small></div>`;
+}
+
+function sourceCard(source: SourceLink): string {
+  const grade = source.grade ? `${source.grade}级` : "历史来源";
+  const status = source.accessState ? accessLabels[source.accessState] : "状态未记录";
+  const supports = source.supports?.length ? source.supports.join(" / ") : "不计入当前结论";
+  return `<a class="source-card source-card--${source.accessState ?? "legacy"}" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><div><span class="source-badges"><b>${grade}</b><b>${status}</b><b>${escapeHtml(source.isEstimated ? "第三方估算" : source.grade === "A" ? "官方" : "参考/推断")}</b></span><strong>${escapeHtml(source.title)}</strong><span>${escapeHtml(source.note ?? "查看原始来源")}</span><small>${escapeHtml(source.publisher ?? "发布方未记录")} · 覆盖：${escapeHtml(supports)} · ${escapeHtml(source.geo ?? "地区未记录")}</small><small>最后核查：${escapeHtml(source.checkedAt ?? source.capturedAt)} ↗</small></div></a>`;
+}
+
+function mediaCard(item: MediaLink): string {
+  const usable = item.accessState === "available" && item.direct === true;
+  if (!usable) {
+    const label = item.type === "video" ? "当前暂无可验证视频" : "当前暂无可验证图片";
+    return `<div class="media-unavailable"><span class="media-icon">!</span><div><strong>${label}</strong><small>${escapeHtml(item.note ?? item.title)}</small></div></div>`;
+  }
+  const thumbnail = item.type === "image" && item.thumbnailUrl
+    ? `<img src="${escapeHtml(item.thumbnailUrl)}" alt="${escapeHtml(item.title)}" loading="lazy">`
+    : `<span class="media-icon">${item.type === "video" ? "▶" : "▧"}</span>`;
+  return `<a class="media-card" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${thumbnail}<div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.note ?? "打开素材来源")}</small><small>${escapeHtml(item.sourceTitle ?? "来源未记录")} · 最后核查：${escapeHtml(item.checkedAt ?? "未记录")}</small></div><b>↗</b></a>`;
+}
+
 export function renderHome(reports: RecommendationReport[], options: StaticRenderOptions): string {
   const [report, ...history] = reports;
   if (!report) return shell("今日推荐", `<main class="shell"><div class="empty-state"><h1>暂无推荐</h1></div></main>`, options);
@@ -78,7 +113,7 @@ function platformCard(item: PlatformRecommendation, options: StaticRenderOptions
     [item.channel === "tiktok-mx" ? "视频传播" : item.channel === "temu-mx" ? "点击转化" : "销售潜力", item.scores.contentOrSalesPotential],
   ] as const;
   const playbookLabel = item.channel === "tiktok-mx" ? "短视频切入点" : item.channel === "temu-mx" ? "Temu商品打法" : "平台销售打法";
-  return `<article class="platform-card"><div class="platform-card__heading"><span>${channelLabels[item.channel]}</span><b>${escapeHtml(item.report.trend.label)}</b></div><h3>${escapeHtml(item.report.product.zh)}</h3><p class="platform-card__subtitle">${escapeHtml(item.report.product.es)}</p><p>${escapeHtml(item.whyRecommended)}</p><div class="score-list">${rows.map(([label, value]) => `<div><span>${label}</span>${stars(value)}</div>`).join("")}</div><div class="platform-playbook"><strong>${playbookLabel}</strong><ol>${item.platformPlaybook.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></div><div class="commercial-grid"><div><span>采购成本</span><strong>${escapeHtml(item.commercialModel.purchaseCost)}</strong></div><div><span>建议售价</span><strong>${escapeHtml(item.commercialModel.suggestedPrice)}</strong></div><div><span>预估利润</span><strong>${escapeHtml(item.commercialModel.estimatedProfit)}</strong></div></div><p class="test-advice"><strong>测试建议：</strong>${escapeHtml(item.testAdvice)}</p><a href="${siteHref(options.basePath, `/recommendations/${item.report.slug}/`)}">查看产品完整数据与来源 →</a></article>`;
+  return `<article class="platform-card"><div class="platform-card__heading"><span>${channelLabels[item.channel]}</span><b>${escapeHtml(item.report.trend.label)}</b></div><h3>${escapeHtml(item.report.product.zh)}</h3><p class="platform-card__subtitle">${escapeHtml(item.report.product.es)}</p><p>${escapeHtml(item.whyRecommended)}</p>${evidenceSummary(item.report)}<div class="score-list">${rows.map(([label, value]) => `<div><span>${label}</span>${stars(value)}</div>`).join("")}</div><div class="platform-playbook"><strong>${playbookLabel}</strong><ol>${item.platformPlaybook.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></div><div class="commercial-grid"><div><span>采购成本</span><strong>${escapeHtml(item.commercialModel.purchaseCost)}</strong></div><div><span>建议售价</span><strong>${escapeHtml(item.commercialModel.suggestedPrice)}</strong></div><div><span>预估利润</span><strong>${escapeHtml(item.commercialModel.estimatedProfit)}</strong></div></div><p class="test-advice"><strong>测试建议：</strong>${escapeHtml(item.testAdvice)}</p><a href="${siteHref(options.basePath, `/recommendations/${item.report.slug}/`)}">查看产品完整数据与来源 →</a></article>`;
 }
 
 function dailyBriefSection(brief: DailyPlatformBrief, options: StaticRenderOptions, compact: boolean): string {
@@ -95,7 +130,7 @@ export function renderDailyBriefHome(brief: DailyPlatformBrief, legacyReports: R
 }
 
 export function renderDailyBriefPage(brief: DailyPlatformBrief, options: StaticRenderOptions): string {
-  const analyses = brief.recommendations.map((item) => `<section class="panel platform-analysis"><h2>${escapeHtml(item.report.product.zh)}：详细分析</h2><ol>${item.analysis.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol><dl><div><dt>电池/供电</dt><dd>${escapeHtml(item.report.electronics.battery)}</dd></div><div><dt>充电规格</dt><dd>${escapeHtml(item.report.electronics.charging)}</dd></div><div><dt>芯片功能</dt><dd>${escapeHtml(item.report.electronics.chip)}</dd></div></dl><div class="source-list">${item.report.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><strong>${escapeHtml(source.title)}</strong><span>${escapeHtml(source.note ?? "查看公开来源")}</span><small>核查日期：${escapeHtml(source.capturedAt)} →</small></a>`).join("")}</div></section>`).join("");
+  const analyses = brief.recommendations.map((item) => `<section class="panel platform-analysis"><h2>${escapeHtml(item.report.product.zh)}：详细分析</h2>${evidenceSummary(item.report)}<ol>${item.analysis.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol><dl><div><dt>电池/供电</dt><dd>${escapeHtml(item.report.electronics.battery)}</dd></div><div><dt>充电规格</dt><dd>${escapeHtml(item.report.electronics.charging)}</dd></div><div><dt>芯片功能</dt><dd>${escapeHtml(item.report.electronics.chip)}</dd></div></dl><div class="source-list">${item.report.sources.map(sourceCard).join("")}</div></section>`).join("");
   const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/")}" class="back-link">← 返回首页</a><div class="page-heading"><span class="eyebrow">${escapeHtml(brief.date)} · DAILY BRIEF</span><h1>墨西哥三平台新品简报</h1><p>三款不同的带电带芯片产品，按平台机会分别评估</p></div>${dailyBriefSection(brief, options, false)}${analyses}</main>`;
   return shell(`${brief.date} 三平台简报`, body, options);
 }
@@ -116,8 +151,8 @@ export function renderTrends(reports: RecommendationReport[], options: StaticRen
 
 export function renderRecommendation(report: RecommendationReport, options: StaticRenderOptions): string {
   const evidence = report.trend.evidence.map((item) => `<a class="evidence" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer"><strong>${escapeHtml(item.signal)}</strong><small>${escapeHtml(item.title)} · ${escapeHtml(item.capturedAt)} ↗</small></a>`).join("");
-  const media = report.media.map((item) => `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer"><span class="media-icon">${item.type === "video" ? "▶" : "▧"}</span><div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.note ?? "打开素材来源")}</small></div><b>↗</b></a>`).join("");
-  const sources = report.sources.map((item) => `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer"><div><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.note ?? "查看原始来源")}</span><small>查询日期：${escapeHtml(item.capturedAt)} ↗</small></div></a>`).join("");
-  const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/archive/")}" class="back-link">← 返回历史记录</a><div class="page-heading"><span class="eyebrow">${escapeHtml(report.date)} · ${escapeHtml(report.platforms.join(" / "))}</span><h1>${escapeHtml(report.product.zh)}</h1><p>${escapeHtml(report.product.es)} · ${escapeHtml(report.product.keywords.join(" · "))}</p></div><div class="detail-grid"><section class="panel"><h2>趋势证据</h2>${evidence}</section><section class="panel"><h2>带电带芯片依据</h2><dl><div><dt>电池</dt><dd>${escapeHtml(report.electronics.battery)}</dd></div><div><dt>充电</dt><dd>${escapeHtml(report.electronics.charging)}</dd></div><div><dt>芯片</dt><dd>${escapeHtml(report.electronics.chip)}</dd></div></dl></section><section class="panel"><h2>推荐理由</h2><ol>${report.reasons.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section><section class="panel"><h2>供应链与售价</h2><dl><div><dt>参考采购</dt><dd>${range("US$", report.supplyChain.purchaseUsdMin, report.supplyChain.purchaseUsdMax)}</dd></div><div><dt>建议零售</dt><dd>${range("MXN", report.supplyChain.retailMxnMin, report.supplyChain.retailMxnMax)}</dd></div></dl><p>${escapeHtml(report.supplyChain.logistics ?? "物流参数需向供应商复核")}</p></section><section class="panel panel--risk"><h2>主要风险</h2><ul>${report.risks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section><section class="panel panel--action"><h2>下一步</h2><p>${escapeHtml(report.nextAction)}</p></section></div><section class="detail-section"><div class="section-heading"><div><span class="eyebrow">MEDIA</span><h2>图片与视频</h2></div></div><div class="media-list">${media}</div></section><section class="detail-section"><div class="section-heading"><div><span class="eyebrow">SOURCES</span><h2>数据来源</h2></div></div><div class="source-list">${sources}</div></section></main>`;
+  const media = report.media.map(mediaCard).join("");
+  const sources = report.sources.map(sourceCard).join("");
+  const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/archive/")}" class="back-link">← 返回历史记录</a><div class="page-heading"><span class="eyebrow">${escapeHtml(report.date)} · ${escapeHtml(report.platforms.join(" / "))}</span><h1>${escapeHtml(report.product.zh)}</h1><p>${escapeHtml(report.product.es)} · ${escapeHtml(report.product.keywords.join(" · "))}</p></div>${evidenceSummary(report)}<div class="detail-grid"><section class="panel"><h2>趋势证据</h2>${evidence}</section><section class="panel"><h2>带电带芯片依据</h2><dl><div><dt>电池</dt><dd>${escapeHtml(report.electronics.battery)}</dd></div><div><dt>充电</dt><dd>${escapeHtml(report.electronics.charging)}</dd></div><div><dt>芯片</dt><dd>${escapeHtml(report.electronics.chip)}</dd></div></dl></section><section class="panel"><h2>推荐理由</h2><ol>${report.reasons.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section><section class="panel"><h2>供应链与售价</h2><dl><div><dt>参考采购</dt><dd>${range("US$", report.supplyChain.purchaseUsdMin, report.supplyChain.purchaseUsdMax)}</dd></div><div><dt>建议零售</dt><dd>${range("MXN", report.supplyChain.retailMxnMin, report.supplyChain.retailMxnMax)}</dd></div></dl><p>${escapeHtml(report.supplyChain.logistics ?? "物流参数需向供应商复核")}</p></section><section class="panel panel--risk"><h2>主要风险</h2><ul>${report.risks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section><section class="panel panel--action"><h2>下一步</h2><p>${escapeHtml(report.nextAction)}</p></section></div><section class="detail-section"><div class="section-heading"><div><span class="eyebrow">MEDIA</span><h2>图片与视频</h2></div></div><div class="media-list">${media}</div></section><section class="detail-section"><div class="section-heading"><div><span class="eyebrow">SOURCES</span><h2>数据来源</h2></div></div><div class="source-list">${sources}</div></section></main>`;
   return shell(report.product.zh, body, options);
 }
