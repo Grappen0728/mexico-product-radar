@@ -11,9 +11,14 @@ export function ArchiveFilters({ items }: { items: RecommendationReport[] }) {
   const [q, setQ] = useState("");
   const [platform, setPlatform] = useState("");
   const [verdict, setVerdict] = useState("");
+  const [date, setDate] = useState("");
   const filtered = useMemo(
-    () => filterRecommendations(items, { q, platform, verdict }),
-    [items, q, platform, verdict],
+    () => filterRecommendations(items, { q, platform, verdict, date }),
+    [items, q, platform, verdict, date],
+  );
+  const dateOptions = useMemo(
+    () => [...new Set(items.map((item) => item.date))].sort((left, right) => right.localeCompare(left)),
+    [items],
   );
   const platformOptions = PLATFORM_OPTIONS.filter(
     (option) => option !== "AMZ" || items.some((item) => item.platforms.includes("AMZ")),
@@ -40,6 +45,13 @@ export function ArchiveFilters({ items }: { items: RecommendationReport[] }) {
             <option value="recommend">推荐</option>
             <option value="watch">观察</option>
             <option value="reject">不建议</option>
+          </select>
+        </label>
+        <label>
+          <span>简报日期</span>
+          <select value={date} onChange={(event) => setDate(event.target.value)}>
+            <option value="">全部日期</option>
+            {dateOptions.map((option) => <option key={option} value={option}>{option}</option>)}
           </select>
         </label>
       </div>

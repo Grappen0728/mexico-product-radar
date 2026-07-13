@@ -15,4 +15,10 @@ describe("archive filters", () => {
     expect(filterRecommendations(items, { platform: "MKD", verdict: "recommend" })).toHaveLength(1);
     expect(filterRecommendations(items, { platform: "TK", verdict: "watch" })).toHaveLength(0);
   });
+
+  it("filters by exact report date and combines with other filters", () => {
+    const older = makeReport({ date: "2026-07-12", slug: "older-report", verdict: "watch" });
+    expect(filterRecommendations([makeReport(), older], { date: "2026-07-13" })).toHaveLength(1);
+    expect(filterRecommendations([makeReport(), older], { date: "2026-07-12", verdict: "recommend" })).toHaveLength(0);
+  });
 });

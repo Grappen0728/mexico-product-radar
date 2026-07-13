@@ -16,6 +16,8 @@ describe("GitHub Pages build", () => {
     const siteScript = await readFile(join(output, "assets/site.js"), "utf8");
     expect(siteScript).toContain('temu.value = "TM"');
     expect(siteScript).not.toContain('amazon.value = "AMZ"');
+    expect(siteScript).toContain('"#archive-date"');
+    expect(siteScript).toContain("card.dataset.date === date.value");
     expect(await readFile(join(output, ".nojekyll"), "utf8")).toBe("");
   });
 });

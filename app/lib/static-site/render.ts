@@ -49,7 +49,7 @@ function shell(title: string, body: string, options: StaticRenderOptions, script
 
 function historyCard(report: RecommendationReport, basePath: string): string {
   const search = [report.product.zh, report.product.es, ...report.product.keywords, report.category].join(" ").toLowerCase();
-  return `<a href="${siteHref(basePath, `/recommendations/${report.slug}/`)}" class="history-card" data-report-card data-search="${escapeHtml(search)}" data-platforms="${escapeHtml(report.platforms.join(" "))}" data-verdict="${report.verdict}"><span class="history-meta">${escapeHtml(report.date)} · ${escapeHtml(report.platforms.join(" / "))}</span><strong>${escapeHtml(report.product.zh)}</strong><span>${escapeHtml(report.product.es)}</span><div><b class="status status--${report.verdict}">${verdictLabels[report.verdict]}</b><span>${price(report)}</span></div></a>`;
+  return `<a href="${siteHref(basePath, `/recommendations/${report.slug}/`)}" class="history-card" data-report-card data-search="${escapeHtml(search)}" data-platforms="${escapeHtml(report.platforms.join(" "))}" data-verdict="${report.verdict}" data-date="${escapeHtml(report.date)}"><span class="history-meta">${escapeHtml(report.date)} · ${escapeHtml(report.platforms.join(" / "))}</span><strong>${escapeHtml(report.product.zh)}</strong><span>${escapeHtml(report.product.es)}</span><div><b class="status status--${report.verdict}">${verdictLabels[report.verdict]}</b><span>${price(report)}</span></div></a>`;
 }
 
 function metric(label: string, value: string, accent = false): string {
@@ -149,7 +149,9 @@ export function renderDailyBriefPage(brief: DailyPlatformBrief, options: StaticR
 }
 
 export function renderArchive(reports: RecommendationReport[], options: StaticRenderOptions): string {
-  const body = `<main class="shell"><div class="page-heading"><span class="eyebrow">ARCHIVE</span><h1>历史推荐</h1><p>按关键词、平台和结论翻查每日公开记录</p></div><div class="filter-bar"><label class="search-field"><span>搜索</span><input id="archive-search" placeholder="中文、西语或英文关键词"></label><label><span>平台</span><select id="archive-platform"><option value="">全部平台</option><option>TK</option><option>MKD</option><option>TM</option></select></label><label><span>结论</span><select id="archive-verdict"><option value="">全部结论</option><option value="recommend">推荐</option><option value="watch">观察</option><option value="reject">不建议</option></select></label></div><div class="archive-summary">找到 <strong id="archive-count">${reports.length}</strong> 条记录</div><div class="history-grid">${reports.map((item) => historyCard(item, options.basePath)).join("")}</div></main>`;
+  const dates = [...new Set(reports.map((report) => report.date))].sort((left, right) => right.localeCompare(left));
+  const dateOptions = dates.map((date) => `<option value="${escapeHtml(date)}">${escapeHtml(date)}</option>`).join("");
+  const body = `<main class="shell"><div class="page-heading"><span class="eyebrow">ARCHIVE</span><h1>历史推荐</h1><p>按关键词、平台、结论和日期翻查每日公开记录</p></div><div class="filter-bar"><label class="search-field"><span>搜索</span><input id="archive-search" placeholder="中文、西语或英文关键词"></label><label><span>平台</span><select id="archive-platform"><option value="">全部平台</option><option>TK</option><option>MKD</option><option>TM</option></select></label><label><span>结论</span><select id="archive-verdict"><option value="">全部结论</option><option value="recommend">推荐</option><option value="watch">观察</option><option value="reject">不建议</option></select></label><label><span>简报日期</span><select id="archive-date"><option value="">全部日期</option>${dateOptions}</select></label></div><div class="archive-summary">找到 <strong id="archive-count">${reports.length}</strong> 条记录</div><div class="history-grid">${reports.map((item) => historyCard(item, options.basePath)).join("")}</div></main>`;
   return shell("历史推荐", body, options, true);
 }
 

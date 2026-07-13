@@ -15,6 +15,7 @@ test("defines the product radar dashboard and metadata", async () => {
   assert.match(brief, /为什么推荐/);
   assert.match(page, /历史推荐/);
   assert.match(css, /--teal:#5eead4/);
+  assert.match(css, /\.filter-bar\{grid-template-columns:minmax\(0,1fr\) repeat\(3,160px\)\}/);
   assert.doesNotMatch(`${page}${layout}`, /codex-preview|react-loading-skeleton/);
 });
 

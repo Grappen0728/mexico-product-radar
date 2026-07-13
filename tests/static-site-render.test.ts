@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { SAMPLE_REPORT } from "../app/lib/recommendations/sample";
 import { makeReport } from "./fixtures/report";
-import { renderRecommendation, siteHref } from "../app/lib/static-site/render";
+import { renderArchive, renderRecommendation, siteHref } from "../app/lib/static-site/render";
 
 describe("GitHub Pages static renderer", () => {
   it("prefixes project-site links with the repository base path", () => {
@@ -43,6 +43,15 @@ describe("GitHub Pages static renderer", () => {
     expect(html).toContain("US$1,000–US$1,200 / 月");
     expect(html).toContain("Banco de México");
     expect(html).toContain("可信度：高");
+  });
+
+  it("renders descending date options and date hooks for archive cards", () => {
+    const older = makeReport({ date: "2026-07-12", slug: "older-report" });
+    const html = renderArchive([older, makeReport()], { basePath: "/mexico-product-radar" });
+    expect(html).toContain('id="archive-date"');
+    expect(html).toContain('<option value="">全部日期</option>');
+    expect(html.indexOf('value="2026-07-13"')).toBeLessThan(html.indexOf('value="2026-07-12"'));
+    expect(html).toContain('data-date="2026-07-13"');
   });
 });
 

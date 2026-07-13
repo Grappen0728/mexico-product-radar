@@ -2,6 +2,7 @@
   const search = document.querySelector("#archive-search");
   const platform = document.querySelector("#archive-platform");
   const verdict = document.querySelector("#archive-verdict");
+  const date = document.querySelector("#archive-date");
   const count = document.querySelector("#archive-count");
   const cards = [...document.querySelectorAll("[data-report-card]")];
 
@@ -21,7 +22,8 @@
   }
 
   if (!(search instanceof HTMLInputElement) || !(platform instanceof HTMLSelectElement) ||
-      !(verdict instanceof HTMLSelectElement) || !(count instanceof HTMLElement)) return;
+      !(verdict instanceof HTMLSelectElement) || !(date instanceof HTMLSelectElement) ||
+      !(count instanceof HTMLElement)) return;
 
   const filter = () => {
     const query = search.value.trim().toLowerCase();
@@ -29,7 +31,8 @@
     for (const card of cards) {
       const matches = (!query || (card.dataset.search ?? "").includes(query)) &&
         (!platform.value || (card.dataset.platforms ?? "").split(" ").includes(platform.value)) &&
-        (!verdict.value || card.dataset.verdict === verdict.value);
+        (!verdict.value || card.dataset.verdict === verdict.value) &&
+        (!date.value || card.dataset.date === date.value);
       card.hidden = !matches;
       if (matches) visible += 1;
     }
@@ -39,4 +42,5 @@
   search.addEventListener("input", filter);
   platform.addEventListener("change", filter);
   verdict.addEventListener("change", filter);
+  date.addEventListener("change", filter);
 })();
