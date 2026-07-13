@@ -1,4 +1,5 @@
 import type { RecommendationReport } from "./recommendations/types";
+import type { DailyPlatformBrief } from "./daily-briefs/types";
 
 export interface FeishuCardPayload {
   msg_type: "interactive";
@@ -96,6 +97,68 @@ export async function pushFeishuCard(options: {
   const result = await response.json().catch(() => ({})) as { code?: number; msg?: string; StatusCode?: number; StatusMessage?: string };
   const accepted = response.ok && (result.code === 0 || result.StatusCode === 0);
   if (!accepted) {
+    throw new Error(result.msg ?? result.StatusMessage ?? `飞书返回 HTTP ${response.status}`);
+  }
+}
+
+const dailyChannelLabels = {
+  "tiktok-mx": "TikTok Shop Mexico",
+  "amazon-mx": "Amazon Mexico",
+  "mercado-libre-mx": "Mercado Libre Mexico",
+} as const;
+
+export function buildDailyBriefFeishuCard(brief: DailyPlatformBrief, publicUrl: string): FeishuCardPayload {
+  const top = brief.ranking.find((item) => item.rank === 1);
+  const topRecommendation = brief.recommendations.find((item) => item.report.slug === top?.productSlug);
+  const elements: Record<string, unknown>[] = brief.recommendations.flatMap((item) => [{
+    tag: "div",
+    text: {
+      tag: "lark_md",
+      content: `**${dailyChannelLabels[item.channel]}｜${item.report.product.zh}**\n${item.commercialModel.suggestedPrice}｜需求 ${"★".repeat(item.scores.demand)}｜竞争机会 ${"★".repeat(item.scores.competitionOpportunity)}\n${item.whyRecommended}`,
+    },
+  }, { tag: "hr" }]);
+  return {
+    msg_type: "interactive",
+    card: {
+      config: { wide_screen_mode: true },
+      header: { template: "turquoise", title: { tag: "plain_text", content: `墨西哥三平台新品简报｜${brief.date}` } },
+      elements: [
+        ...elements,
+        {
+          tag: "div",
+          text: { tag: "lark_md", content: `**TOP 1｜${topRecommendation?.report.product.zh ?? "未选出"}**\n${brief.priorityPick.reason}` },
+        },
+        {
+          tag: "action",
+          actions: [{ tag: "button", type: "primary", text: { tag: "plain_text", content: "查看完整三平台日报" }, url: publicUrl }],
+        },
+        { tag: "note", elements: [{ tag: "plain_text", content: `${brief.date} · 全部为公开资讯，价格、利润和投放参数请在测试前复核` }] },
+      ],
+    },
+  };
+}
+
+export async function pushDailyBriefFeishuCard(options: {
+  webhookUrl: string;
+  signingSecret?: string;
+  brief: DailyPlatformBrief;
+  publicUrl: string;
+  fetchFn?: typeof fetch;
+  now?: () => number;
+}): Promise<void> {
+  const payload = buildDailyBriefFeishuCard(options.brief, options.publicUrl);
+  if (options.signingSecret) {
+    const timestamp = String(Math.floor((options.now?.() ?? Date.now()) / 1000));
+    payload.timestamp = timestamp;
+    payload.sign = await createSignature(timestamp, options.signingSecret);
+  }
+  const response = await (options.fetchFn ?? fetch)(options.webhookUrl, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  const result = await response.json().catch(() => ({})) as { code?: number; msg?: string; StatusCode?: number; StatusMessage?: string };
+  if (!(response.ok && (result.code === 0 || result.StatusCode === 0))) {
     throw new Error(result.msg ?? result.StatusMessage ?? `飞书返回 HTTP ${response.status}`);
   }
 }
