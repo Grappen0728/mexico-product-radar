@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { parseEnvFile, resolveReportArg } from "../scripts/send-feishu";
+import { assertReportIsPublished, parseEnvFile, resolveReportArg } from "../scripts/send-feishu";
+import { SAMPLE_REPORT } from "../app/lib/recommendations/sample";
 
 describe("Feishu sender configuration", () => {
   it("parses private environment files without truncating URLs", () => {
@@ -11,5 +12,10 @@ describe("Feishu sender configuration", () => {
 
   it("ignores pnpm's argument separator", () => {
     expect(resolveReportArg(["--", "data/recommendations/report.json"])).toBe("data/recommendations/report.json");
+  });
+
+  it("rejects a Feishu link whose slug is absent from the published site", () => {
+    expect(() => assertReportIsPublished({ ...SAMPLE_REPORT, slug: "mini-thermal-printer" }, [SAMPLE_REPORT]))
+      .toThrow("尚未发布");
   });
 });
