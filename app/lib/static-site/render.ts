@@ -66,7 +66,7 @@ export function renderArchive(reports: RecommendationReport[], options: StaticRe
 }
 
 export function renderTrends(reports: RecommendationReport[], options: StaticRenderOptions): string {
-  const counts = { TK: 0, MKD: 0, TM: 0 };
+  const counts = { TK: 0, AMZ: 0, MKD: 0, TM: 0 };
   for (const report of reports) for (const platform of report.platforms) counts[platform] += 1;
   const max = Math.max(1, ...Object.values(counts));
   const platforms = Object.entries(counts).map(([name, count]) => `<div><span>${name}</span><div><i style="width:${Math.round(count / max * 100)}%"></i></div><b>${count}</b></div>`).join("");
