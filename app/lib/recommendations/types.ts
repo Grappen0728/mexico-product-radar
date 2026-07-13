@@ -4,6 +4,10 @@ export type Platform = (typeof PLATFORMS)[number];
 export type Verdict = "recommend" | "watch" | "reject";
 export type TrendStatus = "hot" | "rising" | "stable";
 export type MediaType = "image" | "video";
+export type EvidenceGrade = "A" | "B" | "C" | "D";
+export type SourceAccessState = "available" | "login-restricted" | "blocked" | "invalid" | "replaced" | "unverified";
+export type SourceType = "official-platform" | "official-trend" | "licensed-third-party" | "independent-trend" | "manufacturer-spec" | "supplier-spec";
+export type ClaimMetric = "price" | "sold" | "rating" | "reviews" | "discount" | "demand" | "trend" | "specification" | "cost";
 
 export function isPlatform(value: string): value is Platform {
   return PLATFORMS.includes(value as Platform);
@@ -14,6 +18,16 @@ export interface SourceLink {
   url: string;
   capturedAt: string;
   note?: string;
+  publisher?: string;
+  grade?: EvidenceGrade;
+  sourceType?: SourceType;
+  accessState?: SourceAccessState;
+  supports?: ClaimMetric[];
+  geo?: string;
+  timeWindow?: string;
+  checkedAt?: string;
+  isEstimated?: boolean;
+  replacementUrl?: string;
 }
 
 export interface TrendEvidence extends SourceLink {
@@ -26,6 +40,10 @@ export interface MediaLink {
   url: string;
   thumbnailUrl?: string;
   note?: string;
+  accessState?: SourceAccessState;
+  direct?: boolean;
+  checkedAt?: string;
+  sourceTitle?: string;
 }
 
 export interface RecommendationReport {
