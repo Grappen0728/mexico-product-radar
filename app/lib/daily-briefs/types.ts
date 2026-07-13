@@ -1,6 +1,6 @@
 import type { RecommendationReport } from "../recommendations/types";
 
-export const DAILY_CHANNELS = ["tiktok-mx", "amazon-mx", "mercado-libre-mx"] as const;
+export const DAILY_CHANNELS = ["tiktok-mx", "temu-mx", "mercado-libre-mx"] as const;
 export type DailyChannel = (typeof DAILY_CHANNELS)[number];
 
 export interface OpportunityScores {
@@ -50,6 +50,6 @@ export interface DailyPlatformBrief {
 
 export const CHANNEL_PLATFORM = {
   "tiktok-mx": "TK",
-  "amazon-mx": "AMZ",
+  "temu-mx": "TM",
   "mercado-libre-mx": "MKD",
 } as const;

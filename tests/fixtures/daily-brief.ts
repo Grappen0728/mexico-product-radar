@@ -4,7 +4,7 @@ import { makeReport } from "./report";
 
 const PRODUCTS = [
   { channel: "tiktok-mx", platform: "TK", slug: "mini-thermal-printer", zh: "迷你蓝牙热敏打印机" },
-  { channel: "amazon-mx", platform: "AMZ", slug: "smart-air-quality-monitor", zh: "智能空气质量监测仪" },
+  { channel: "temu-mx", platform: "TM", slug: "smart-air-quality-monitor", zh: "智能空气质量监测仪" },
   { channel: "mercado-libre-mx", platform: "MKD", slug: "portable-tire-inflator", zh: "便携式数显充气泵" },
 ] as const;
 

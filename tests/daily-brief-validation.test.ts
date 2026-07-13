@@ -4,7 +4,17 @@ import { makeDailyBrief } from "./fixtures/daily-brief";
 
 describe("daily three-platform brief validation", () => {
   it("accepts exactly three unique platform recommendations", () => {
-    expect(validateDailyBrief(makeDailyBrief()).recommendations).toHaveLength(3);
+    const result = validateDailyBrief(makeDailyBrief());
+    expect(result.recommendations).toHaveLength(3);
+    expect(result.recommendations[1].channel).toBe("temu-mx");
+    expect(result.recommendations[1].report.platforms).toEqual(["TM"]);
+  });
+
+  it("rejects Amazon as the second channel in new daily briefs", () => {
+    const brief = makeDailyBrief() as unknown as { recommendations: Array<{ channel: string; report: { platforms: string[] } }> };
+    brief.recommendations[1].channel = "amazon-mx";
+    brief.recommendations[1].report.platforms = ["AMZ"];
+    expect(() => validateDailyBrief(brief)).toThrow("平台顺序必须为TikTok、Temu、Mercado Libre");
   });
 
   it("rejects duplicate products across platforms", () => {

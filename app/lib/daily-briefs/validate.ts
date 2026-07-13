@@ -48,7 +48,7 @@ export function validateDailyBrief(value: unknown): DailyPlatformBrief {
   const productSlugs = new Set<string>();
   value.recommendations.forEach((item, index) => {
     if (!isObject(item)) throw new Error(`平台推荐${index + 1}格式无效`);
-    if (item.channel !== DAILY_CHANNELS[index]) throw new Error("平台顺序必须为TikTok、Amazon、Mercado Libre");
+    if (item.channel !== DAILY_CHANNELS[index]) throw new Error("平台顺序必须为TikTok、Temu、Mercado Libre");
     const channel = DAILY_CHANNELS[index];
     const report = validateReport(item.report);
     if (!report.platforms.includes(CHANNEL_PLATFORM[channel])) throw new Error("产品平台标识与日报频道不一致");
