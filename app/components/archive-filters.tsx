@@ -5,7 +5,7 @@ import { filterRecommendations } from "../lib/recommendations/filter";
 import type { RecommendationReport } from "../lib/recommendations/types";
 import { HistoryCard } from "./history-card";
 
-const PLATFORM_OPTIONS = ["TK", "AMZ", "MKD", "TM"] as const;
+const PLATFORM_OPTIONS = ["TK", "MKD", "TM", "AMZ"] as const;
 
 export function ArchiveFilters({ items }: { items: RecommendationReport[] }) {
   const [q, setQ] = useState("");
@@ -14,6 +14,9 @@ export function ArchiveFilters({ items }: { items: RecommendationReport[] }) {
   const filtered = useMemo(
     () => filterRecommendations(items, { q, platform, verdict }),
     [items, q, platform, verdict],
+  );
+  const platformOptions = PLATFORM_OPTIONS.filter(
+    (option) => option !== "AMZ" || items.some((item) => item.platforms.includes("AMZ")),
   );
 
   return (
@@ -27,7 +30,7 @@ export function ArchiveFilters({ items }: { items: RecommendationReport[] }) {
           <span>平台</span>
           <select value={platform} onChange={(event) => setPlatform(event.target.value)}>
             <option value="">全部平台</option>
-            {PLATFORM_OPTIONS.map((option) => <option key={option}>{option}</option>)}
+            {platformOptions.map((option) => <option key={option}>{option === "AMZ" ? "AMZ（历史）" : option}</option>)}
           </select>
         </label>
         <label>

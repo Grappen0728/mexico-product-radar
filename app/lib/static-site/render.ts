@@ -63,7 +63,7 @@ export function renderHome(reports: RecommendationReport[], options: StaticRende
 
 const channelLabels = {
   "tiktok-mx": "TikTok Shop Mexico",
-  "amazon-mx": "Amazon Mexico",
+  "temu-mx": "Temu Mexico",
   "mercado-libre-mx": "Mercado Libre Mexico",
 } as const;
 
@@ -75,9 +75,10 @@ function platformCard(item: PlatformRecommendation, options: StaticRenderOptions
     ["竞争机会", item.scores.competitionOpportunity],
     ["利润空间", item.scores.profit],
     ["平台适配", item.scores.platformFit],
-    [item.channel === "tiktok-mx" ? "视频传播" : "销售潜力", item.scores.contentOrSalesPotential],
+    [item.channel === "tiktok-mx" ? "视频传播" : item.channel === "temu-mx" ? "点击转化" : "销售潜力", item.scores.contentOrSalesPotential],
   ] as const;
-  return `<article class="platform-card"><div class="platform-card__heading"><span>${channelLabels[item.channel]}</span><b>${escapeHtml(item.report.trend.label)}</b></div><h3>${escapeHtml(item.report.product.zh)}</h3><p class="platform-card__subtitle">${escapeHtml(item.report.product.es)}</p><p>${escapeHtml(item.whyRecommended)}</p><div class="score-list">${rows.map(([label, value]) => `<div><span>${label}</span>${stars(value)}</div>`).join("")}</div><div class="platform-playbook"><strong>${item.channel === "tiktok-mx" ? "短视频切入点" : "平台销售打法"}</strong><ol>${item.platformPlaybook.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></div><div class="commercial-grid"><div><span>采购成本</span><strong>${escapeHtml(item.commercialModel.purchaseCost)}</strong></div><div><span>建议售价</span><strong>${escapeHtml(item.commercialModel.suggestedPrice)}</strong></div><div><span>预估利润</span><strong>${escapeHtml(item.commercialModel.estimatedProfit)}</strong></div></div><p class="test-advice"><strong>测试建议：</strong>${escapeHtml(item.testAdvice)}</p><a href="${siteHref(options.basePath, `/recommendations/${item.report.slug}/`)}">查看产品完整数据与来源 →</a></article>`;
+  const playbookLabel = item.channel === "tiktok-mx" ? "短视频切入点" : item.channel === "temu-mx" ? "Temu商品打法" : "平台销售打法";
+  return `<article class="platform-card"><div class="platform-card__heading"><span>${channelLabels[item.channel]}</span><b>${escapeHtml(item.report.trend.label)}</b></div><h3>${escapeHtml(item.report.product.zh)}</h3><p class="platform-card__subtitle">${escapeHtml(item.report.product.es)}</p><p>${escapeHtml(item.whyRecommended)}</p><div class="score-list">${rows.map(([label, value]) => `<div><span>${label}</span>${stars(value)}</div>`).join("")}</div><div class="platform-playbook"><strong>${playbookLabel}</strong><ol>${item.platformPlaybook.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></div><div class="commercial-grid"><div><span>采购成本</span><strong>${escapeHtml(item.commercialModel.purchaseCost)}</strong></div><div><span>建议售价</span><strong>${escapeHtml(item.commercialModel.suggestedPrice)}</strong></div><div><span>预估利润</span><strong>${escapeHtml(item.commercialModel.estimatedProfit)}</strong></div></div><p class="test-advice"><strong>测试建议：</strong>${escapeHtml(item.testAdvice)}</p><a href="${siteHref(options.basePath, `/recommendations/${item.report.slug}/`)}">查看产品完整数据与来源 →</a></article>`;
 }
 
 function dailyBriefSection(brief: DailyPlatformBrief, options: StaticRenderOptions, compact: boolean): string {

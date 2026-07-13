@@ -103,7 +103,7 @@ export async function pushFeishuCard(options: {
 
 const dailyChannelLabels = {
   "tiktok-mx": "TikTok Shop Mexico",
-  "amazon-mx": "Amazon Mexico",
+  "temu-mx": "Temu Mexico",
   "mercado-libre-mx": "Mercado Libre Mexico",
 } as const;
 

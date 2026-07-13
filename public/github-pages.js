@@ -5,12 +5,19 @@
   const count = document.querySelector("#archive-count");
   const cards = [...document.querySelectorAll("[data-report-card]")];
 
-  if (platform instanceof HTMLSelectElement && ![...platform.options].some((option) => option.value === "AMZ")) {
-    const amazon = document.createElement("option");
-    amazon.value = "AMZ";
-    amazon.textContent = "AMZ";
-    const mercadoLibre = [...platform.options].find((option) => option.value === "MKD");
-    platform.insertBefore(amazon, mercadoLibre ?? null);
+  if (platform instanceof HTMLSelectElement && ![...platform.options].some((option) => option.value === "TM")) {
+    const temu = document.createElement("option");
+    temu.value = "TM";
+    temu.textContent = "TM";
+    platform.append(temu);
+  }
+
+  const hasLegacyAmazon = cards.some((card) => (card.dataset.platforms ?? "").split(" ").includes("AMZ"));
+  if (platform instanceof HTMLSelectElement && hasLegacyAmazon && ![...platform.options].some((option) => option.value === "AMZ")) {
+    const legacyAmazon = document.createElement("option");
+    legacyAmazon.value = "AMZ";
+    legacyAmazon.textContent = "AMZ（历史）";
+    platform.append(legacyAmazon);
   }
 
   if (!(search instanceof HTMLInputElement) || !(platform instanceof HTMLSelectElement) ||

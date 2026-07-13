@@ -7,6 +7,8 @@ it("renders all three platforms and the unique priority pick", () => {
   const brief = makeDailyBrief();
   const html = renderDailyBriefPage(brief, { basePath: "/mexico-product-radar" });
   for (const item of brief.recommendations) expect(html).toContain(item.report.product.zh);
+  expect(html).toContain("Temu Mexico");
+  expect(html).not.toContain("Amazon Mexico");
   expect(html).toContain("如果只能测试一个产品");
   expect(html).toContain("/mexico-product-radar/recommendations/");
 });
