@@ -29,6 +29,13 @@ function requireHttps(url: unknown, label: string): void {
   }
 }
 
+function isGenericMediaPage(value: string): boolean {
+  const url = new URL(value);
+  return url.pathname === "/results"
+    || url.pathname.startsWith("/tag/")
+    || url.pathname.startsWith("/search");
+}
+
 function validateSource(source: unknown, label: string): asserts source is SourceLink {
   if (!isObject(source)) throw new Error(`${label}格式无效`);
   requireString(source.title, `${label}标题`);
@@ -86,6 +93,12 @@ export function validateReport(value: unknown): RecommendationReport {
     requireString(item.title, `素材${index + 1}标题`);
     requireHttps(item.url, `素材${index + 1}链接`);
     if (item.thumbnailUrl !== undefined) requireHttps(item.thumbnailUrl, `素材${index + 1}缩略图`);
+    if (item.accessState === "available") {
+      if (item.direct !== true) throw new Error(`素材${index + 1}可访问时必须是具体媒体页`);
+      if (isGenericMediaPage(item.url as string)) throw new Error("搜索或标签页不能作为直接媒体");
+      requireString(item.checkedAt, `素材${index + 1}最后核查时间`);
+      requireString(item.sourceTitle, `素材${index + 1}来源`);
+    }
   });
 
   if (!Array.isArray(value.sources) || value.sources.length === 0) throw new Error("至少需要一个公开来源");

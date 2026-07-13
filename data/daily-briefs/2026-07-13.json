@@ -18,22 +18,40 @@
         "platforms": ["TK"],
         "metrics": { "price": null, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
         "trend": {
-          "status": "rising",
-          "label": "墨西哥站在售，全球同类内容已有成交验证",
+          "status": "stable",
+          "label": "候选测试：墨西哥站在售，但暂无授权销量数据",
           "evidence": [
             {
               "signal": "TikTok Shop Mexico 已有便携蓝牙热敏标签机商品页，卖点集中在无墨、手机编辑、条码和家庭/小商家收纳场景；页面未公开销量。",
               "title": "TikTok Shop Mexico：HOMEERA 便携热敏标签机",
               "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225",
               "capturedAt": "2026-07-13",
-              "note": "墨西哥站商品与功能证据；销量未公开"
+              "note": "墨西哥站商品与功能证据；销量未公开",
+              "publisher": "TikTok Shop",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-13商品页快照",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false
             },
             {
-              "signal": "TikTok Shop 全球同类迷你热敏打印机商品页公开显示 3.2K sold、4.5 分和 235 条评价；该数字不是墨西哥站销量，仅用于验证内容形态。",
-              "title": "TikTok Shop：同类迷你热敏打印机",
-              "url": "https://shop.tiktok.com/us/pdp/portable-mini-thermal-printer-by-unbranded-bluetooth-instant-photo-printer/1729420757276267027",
+              "signal": "Google Trends Mexico 可用于复核“impresora de etiquetas”的墨西哥搜索兴趣；页面不提供平台销量，因此只作为需求代理信号。",
+              "title": "Google Trends Mexico：impresora de etiquetas",
+              "url": "https://trends.google.com/trends/explore?geo=MX&q=impresora%20de%20etiquetas",
               "capturedAt": "2026-07-13",
-              "note": "全球同类参考，不代表墨西哥市场销量"
+              "note": "墨西哥搜索兴趣代理，不等于TikTok成交",
+              "publisher": "Google",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "MX",
+              "timeWindow": "用户打开后可切换过去90天/12个月",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false
             }
           ]
         },
@@ -43,11 +61,11 @@
           "热敏无墨和手机模板编辑提供清晰的功能卖点与复购耗材机会。"
         ],
         "supplyChain": {
-          "purchaseUsdMin": 8.5,
-          "purchaseUsdMax": 10.5,
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
           "retailMxnMin": 499,
           "retailMxnMax": 599,
-          "logistics": "Alibaba 同类口袋热敏打印机公开报价 US$8.50–10.50、MOQ 1；实际到岸成本、App授权、耗材兼容、UN38.3和MSDS需在下单前复核。"
+          "logistics": "公开供应报价链接已失效，因此US$8.50–10.50只保留为待重新询价区间，不作为已核验成本；实际到岸成本、App授权、耗材兼容、UN38.3和MSDS需在下单前复核。"
         },
         "electronics": {
           "battery": "内置可充电锂电池；墨西哥商品页未披露容量，采购前必须确认电芯规格与认证。",
@@ -58,12 +76,13 @@
         "nextAction": "采购5–10台样品，分别测试收纳、手账、小商家三组短视频；先验证3秒停留率和商品点击率，再决定是否投流。",
         "verdict": "recommend",
         "media": [
-          { "type": "image", "title": "TikTok Shop Mexico 商品图片与卖点", "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225", "note": "打开商品页查看公开图片" },
-          { "type": "video", "title": "TikTok mini printer 内容参考", "url": "https://www.tiktok.com/tag/miniprinter", "note": "查看公开话题视频，具体热度需登录后复核" }
+          { "type": "image", "title": "Brother 蓝牙标签机官方产品图", "url": "https://www.brother-usa.com/p/label-makers/PTN25BT", "thumbnailUrl": "https://assets.brother.com/transform/a042d017-9bf0-4d04-a5d2-3a27e3a22662/21698_BTAG_N25_01_Spinner_846x846-png?io=transform:fit,width:680", "note": "同类蓝牙标签机的官方产品图，仅作外观与场景参考", "accessState": "available", "direct": true, "checkedAt": "2026-07-13T22:30:00+08:00", "sourceTitle": "Brother" },
+          { "type": "video", "title": "TikTok mini printer 话题页（已排除）", "url": "https://www.tiktok.com/tag/miniprinter", "note": "话题页不是具体视频，不能作为可验证视频素材", "accessState": "invalid", "direct": false, "checkedAt": "2026-07-13T22:30:00+08:00", "sourceTitle": "TikTok" }
         ],
         "sources": [
-          { "title": "TikTok Shop Mexico 商品页", "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225", "capturedAt": "2026-07-13", "note": "墨西哥站在售与功能" },
-          { "title": "Alibaba 便携标签打印机供应页", "url": "https://www.alibaba.com/showroom/portable-label-printers.html", "capturedAt": "2026-07-13", "note": "公开样品价与MOQ参考" }
+          { "title": "TikTok Shop Mexico 商品页", "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225", "capturedAt": "2026-07-13", "note": "墨西哥站在售与功能；不支持销量结论", "publisher": "TikTok Shop", "grade": "A", "sourceType": "official-platform", "accessState": "available", "supports": ["specification"], "geo": "MX", "timeWindow": "2026-07-13商品页快照", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false },
+          { "title": "Google Trends Mexico：impresora de etiquetas", "url": "https://trends.google.com/trends/explore?geo=MX&q=impresora%20de%20etiquetas", "capturedAt": "2026-07-13", "note": "墨西哥搜索兴趣代理，不等于平台成交", "publisher": "Google", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "用户可切换过去90天/12个月", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false },
+          { "title": "Brother PT-N25BT 官方蓝牙连接指南", "url": "https://support.brother.com/g/s/es/htmldoc/ptouch/n10/usen/html/GUID-33B318AA-ACFC-45F7-99DB-F699F84C1B38_1.html", "capturedAt": "2026-07-13", "note": "同类标签机蓝牙与App连接结构参考", "publisher": "Brother", "grade": "D", "sourceType": "manufacturer-spec", "accessState": "available", "supports": ["specification"], "geo": "GLOBAL", "timeWindow": "当前官方指南", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false }
         ]
       },
       "whyRecommended": "它把“混乱→贴标→整齐”的变化压缩成几秒，既能做视觉满足型内容，也能覆盖家庭收纳和小商家两个购买场景。",
@@ -72,7 +91,7 @@
         "用户痛点：手写标签慢、收纳容易混乱、小商家临时改价和打标签麻烦。",
         "视频展示机会：手机编辑、蓝牙连接、连续出标、贴标前后对比可连续制造信息点。",
         "达人带货可能性：收纳、手账、学习、宝妈和小商家达人都能自然植入。",
-        "当前趋势：墨西哥站已经在售；全球同类有成交验证，但墨西哥销量仍需本地测试。"
+        "当前趋势：墨西哥站已经在售；Google Trends仅作搜索兴趣代理，墨西哥平台销量仍需本地测试。"
       ],
       "scores": { "demand": 4, "competitionOpportunity": 3, "profit": 4, "platformFit": 5, "contentOrSalesPotential": 5, "riskControl": 3 },
       "platformPlaybook": ["桌面一团乱，3秒打印并贴完一排标签", "给小摊主现场改价并打印条码，展示从手机到出标的全过程", "挑战一卷标签整理冰箱、药箱或手账，用数量感制造完播"],
@@ -101,36 +120,63 @@
         "platforms": ["TM"],
         "metrics": { "price": null, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
         "trend": {
-          "status": "hot",
-          "label": "Temu在售且墨西哥同类结果密集，前后对比型需求明确",
+          "status": "stable",
+          "label": "候选测试：Temu页面可定位，但销量和价格暂无授权数据",
           "evidence": [
             {
               "signal": "Temu Mexico 公开商品页出现USB充电、LED屏幕、适用于衣物/床品/家具的便携电动毛球修剪器；页面未提供可稳定核验的销量与墨西哥比索价格，因此不填销量和单点售价。",
               "title": "Temu Mexico：USB充电LED数显毛球修剪器",
               "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html",
               "capturedAt": "2026-07-13",
-              "note": "Temu在售与功能形态信号；价格和销量不作推断"
+              "note": "页面为动态壳，未作为有效销量或价格证据",
+              "publisher": "Temu",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "unverified",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-13页面快照",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false
             },
             {
-              "signal": "Mercado Libre Mexico 的相关搜索公开显示约1,357个结果；数显充电款常见公开售价约MXN 170–421，单品页可见+50已售，说明墨西哥已有真实购买，同时也提示同质化竞争较强。",
-              "title": "Mercado Libre Mexico：quitapelusa recargable 搜索",
-              "url": "https://listado.mercadolibre.com.mx/quitapelusa-recargable",
+              "signal": "Google Trends Mexico 可用于复核“quitapelusas”的墨西哥搜索兴趣；它是需求代理，不提供Temu销量或GMV。",
+              "title": "Google Trends Mexico：quitapelusas",
+              "url": "https://trends.google.com/trends/explore?geo=MX&q=quitapelusas",
               "capturedAt": "2026-07-13",
-              "note": "本地需求、竞争密度和零售价格带参考"
+              "note": "墨西哥搜索兴趣代理，不等于Temu成交",
+              "publisher": "Google",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "MX",
+              "timeWindow": "用户可切换过去90天/12个月",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false
             },
             {
               "signal": "可充电毛球修剪器公开说明书显示同类产品采用USB充电和LED电量显示；这些功能需要电机驱动控制与充电保护电路，但具体芯片型号仍需供应商BOM确认。",
               "title": "Smartek Rechargeable Fabric Shaver 使用说明书",
               "url": "https://images.thdstatic.com/catalog/pdfImages/d2/d29151a6-4b0d-452b-aed3-0c1dd9d022bf.pdf",
               "capturedAt": "2026-07-13",
-              "note": "同类供电与LED显示结构参考，不代表Temu商品的精确参数"
+              "note": "同类供电与LED显示结构参考，不代表Temu商品的精确参数",
+              "publisher": "Smartek",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "GLOBAL",
+              "timeWindow": "当前说明书",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false
             }
           ]
         },
         "reasons": [
           "毛球修剪前后效果几秒内就能看懂，适合Temu主图、短动图和低决策成本购买。",
           "产品体积小、无需App，售后复杂度低于联网设备；可用替换刀头、清洁刷和收纳袋做组合装。",
-          "墨西哥同类结果和公开成交信号说明需求真实，但必须避开只换颜色、只拼最低价的同款竞争。"
+          "墨西哥搜索兴趣可作为需求代理，但没有授权平台销量；必须用小批测试验证，而不是把搜索兴趣当成交。"
         ],
         "supplyChain": {
           "purchaseUsdMin": null,
@@ -148,18 +194,18 @@
         "nextAction": "采购3款不同电机/刀网结构样品，用毛衣、沙发和宠物毛床品测试去球效率、勾丝率、堵转温升、噪声和续航；优先选USB-C、可更换刀头并带收纳袋的组合装。",
         "verdict": "recommend",
         "media": [
-          { "type": "image", "title": "Temu Mexico 商品图片与使用场景", "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html", "note": "商品页含产品外观和衣物使用场景" },
-          { "type": "video", "title": "电动毛球修剪器前后对比视频素材检索", "url": "https://www.youtube.com/results?search_query=quitapelusas+electrico+recargable+antes+despues", "note": "仅作镜头和演示结构参考，参数必须以样机实测为准" }
+          { "type": "image", "title": "Conair 可充电毛球修剪器官方产品图", "url": "https://www.conair.com/rechargeable-fabric-shaver/CLS2X.html?lang=en_US", "thumbnailUrl": "https://www.conair.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-conair-master/default/dwf3951364/images/GLS2L_main.png?sw=1200&sh=1200&sm=fit", "note": "同类可充电毛球修剪器官方图，仅作外观和场景参考", "accessState": "available", "direct": true, "checkedAt": "2026-07-13T22:30:00+08:00", "sourceTitle": "Conair" },
+          { "type": "video", "title": "YouTube搜索页（已排除）", "url": "https://www.youtube.com/results?search_query=quitapelusas+electrico+recargable+antes+despues", "note": "搜索结果不是具体视频，当前暂无可验证视频", "accessState": "invalid", "direct": false, "checkedAt": "2026-07-13T22:30:00+08:00", "sourceTitle": "YouTube" }
         ],
         "sources": [
-          { "title": "Temu Mexico USB充电LED毛球修剪器商品页", "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html", "capturedAt": "2026-07-13", "note": "Temu在售、外观和功能场景" },
-          { "title": "Mercado Libre Mexico 可充电毛球修剪器搜索页", "url": "https://listado.mercadolibre.com.mx/quitapelusa-recargable", "capturedAt": "2026-07-13", "note": "本地结果量、价格带和成交信号" },
-          { "title": "Smartek Rechargeable Fabric Shaver 使用说明书", "url": "https://images.thdstatic.com/catalog/pdfImages/d2/d29151a6-4b0d-452b-aed3-0c1dd9d022bf.pdf", "capturedAt": "2026-07-13", "note": "同类USB充电和LED显示结构参考" }
+          { "title": "Temu Mexico USB充电LED毛球修剪器商品页", "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html", "capturedAt": "2026-07-13", "note": "动态页面未作为有效销量或价格证据", "publisher": "Temu", "grade": "A", "sourceType": "official-platform", "accessState": "unverified", "supports": [], "geo": "MX", "timeWindow": "2026-07-13页面快照", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false },
+          { "title": "Google Trends Mexico：quitapelusas", "url": "https://trends.google.com/trends/explore?geo=MX&q=quitapelusas", "capturedAt": "2026-07-13", "note": "墨西哥搜索兴趣代理，不等于Temu成交", "publisher": "Google", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "用户可切换过去90天/12个月", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false },
+          { "title": "Conair Rechargeable Fabric Shaver 官方产品页", "url": "https://www.conair.com/rechargeable-fabric-shaver/CLS2X.html?lang=en_US", "capturedAt": "2026-07-13", "note": "同类可充电结构、刀头与使用场景参考", "publisher": "Conair", "grade": "D", "sourceType": "manufacturer-spec", "accessState": "available", "supports": ["specification"], "geo": "GLOBAL", "timeWindow": "当前官方产品页", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false }
         ]
       },
       "whyRecommended": "它符合Temu低中客单、效果一眼能懂、容易冲动购买的逻辑；真正的机会是用USB-C、替换刀头、收纳袋和衣物安全实测组成升级套装，而不是复制最低价裸机。",
       "analysis": [
-        "价格竞争力：本地公开同类多集中在约MXN 170–421；Temu测试价建议落在MXN 199–299，但不在未取得真实成本前承诺利润。",
+        "价格竞争力：Temu与Mercado Libre页面均无法稳定提供可复核的本地价格带；MXN 199–299仅作为首轮测试假设，必须结合真实成本和当日页面重新定价。",
         "视觉点击性：旧毛衣一半处理、一半保留毛球，配合透明毛屑盒和LED电量屏，主图与短演示都能快速传达效果。",
         "冲动购买：衣物翻新属于低学习成本、可立即理解的家庭痛点，适合低中客单加购和换季场景。",
         "同质化竞争：墨西哥同类结果密集，五颗竞争机会星不是高竞争；本品机会评分中等，必须靠套装、USB-C和实测安全建立差异。",
@@ -188,31 +234,50 @@
         "scenarios": ["汽车轮胎应急补气", "摩托车和自行车充气", "球类与户外用品充气"],
         "audience": ["墨西哥汽车车主", "摩托车和自行车用户", "长途出行家庭"],
         "platforms": ["MKD"],
-        "metrics": { "price": 394.4, "currency": "MXN", "sold": 1000, "rating": 4.9, "reviews": null, "discount": 60 },
+        "metrics": { "price": null, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
         "trend": {
-          "status": "hot",
-          "label": "本地1000+已售，同类结果密集且价格带清晰",
+          "status": "stable",
+          "label": "候选测试：本地页面受验证码限制，精确销量已撤回",
           "evidence": [
             {
-              "signal": "Mercado Libre Mexico 商品页公开显示6000mAh便携电动充气泵 +1000 vendidos，证明本地消费者已形成真实购买。",
+              "signal": "Mercado Libre Mexico 商品页当前会跳转验证码，无法让所有访问者稳定复核，因此原1000+销量、评分和价格数字已从简报撤回。",
               "title": "Mercado Libre Mexico：6000mAh便携充气泵",
               "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950",
               "capturedAt": "2026-07-13",
-              "note": "公开销量信号"
+              "note": "验证码受限；保留审计记录但不计入证据",
+              "publisher": "Mercado Libre",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-13访问检查",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://trends.google.com/trends/explore?geo=MX&q=inflador%20de%20llantas"
             },
             {
-              "signal": "近期Mercado Libre搜索页显示273个相关结果，并出现“Más vendido”同类款；6000mAh/150PSI商品集中在约MXN 200–430的促销价格带。",
-              "title": "Mercado Libre Mexico：6000mAh 150PSI搜索页",
-              "url": "https://listado.mercadolibre.com.mx/bomba-inflador-aire-el%C3%A9ctrica-port%C3%A1til-llanta-150psi-6000mah",
+              "signal": "Google Trends Mexico 可用于复核“inflador de llantas”的墨西哥搜索兴趣；它不等于Mercado Libre销量或成交。",
+              "title": "Google Trends Mexico：inflador de llantas",
+              "url": "https://trends.google.com/trends/explore?geo=MX&q=inflador%20de%20llantas",
               "capturedAt": "2026-07-13",
-              "note": "竞争、价格带和热销标签参考"
+              "note": "墨西哥搜索兴趣代理，不等于平台成交",
+              "publisher": "Google",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "MX",
+              "timeWindow": "用户可切换过去90天/12个月",
+              "checkedAt": "2026-07-13T22:30:00+08:00",
+              "isEstimated": false
             }
           ]
         },
         "reasons": [
-          "本地商品已有1000+公开销量，比仅靠内容趋势更接近真实需求。",
+          "车主补气和应急场景明确，但原商品销量页面受验证码限制，必须用小批实测重新验证需求。",
           "车主应急场景明确，数显压力、自动停机、LED和多气嘴容易形成卖点组合。",
-          "Mercado Libre同类价格带透明，适合快速用套装、质保和本地发货做差异化。"
+          "同类功能结构成熟，适合用实测参数、套装、质保和本地发货做差异化。"
         ],
         "supplyChain": {
           "purchaseUsdMin": null,
@@ -222,7 +287,7 @@
           "logistics": "没有获得可核验的同规格工厂报价；需核实6000mAh是否为真实额定容量、气流量、连续工作温升、压力精度、充电接口、UN38.3和MSDS。"
         },
         "electronics": {
-          "battery": "商品规格宣称6000mAh可充电锂电池；实际容量和电芯品牌必须抽检。",
+          "battery": "原商品页宣称6000mAh但当前无法稳定复核；实际容量和电芯品牌必须抽检，页面不再把6000mAh当已证实参数。",
           "charging": "USB充电，建议优先选择USB-C方案并确认额定输入。",
           "chip": "压力传感器与MCU控制数显、预设压力、自动停机和保护逻辑；电源管理芯片负责充放电。"
         },
@@ -230,17 +295,18 @@
         "nextAction": "采购3个不同供应商样品，实测汽车轮胎补气时间、压力误差、连续工作温升和电池容量；用质保、收纳包和本地发货做差异化。",
         "verdict": "recommend",
         "media": [
-          { "type": "image", "title": "Mercado Libre 商品图片与买家场景", "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950", "note": "商品页含公开图片" },
-          { "type": "video", "title": "150PSI便携充气泵演示素材检索", "url": "https://www.youtube.com/results?search_query=inflador+portatil+150psi+6000mah", "note": "仅作拍摄参考，参数须以实测为准" }
+          { "type": "image", "title": "Xiaomi 便携电动充气宝官方产品图", "url": "https://www.mi.com/global/product/xiaomi-portable-electric-air-compressor-2/", "thumbnailUrl": "https://i02.appmifile.com/885_operatorx_operatorx_opx/28/07/2023/5bc93f8f5b50abdd60eb2c59eebbd469.png", "note": "同类数显充气设备官方图，仅作外观与功能参考", "accessState": "available", "direct": true, "checkedAt": "2026-07-13T22:30:00+08:00", "sourceTitle": "Xiaomi" },
+          { "type": "video", "title": "YouTube搜索页（已排除）", "url": "https://www.youtube.com/results?search_query=inflador+portatil+150psi+6000mah", "note": "搜索结果不是具体视频，当前暂无可验证视频", "accessState": "invalid", "direct": false, "checkedAt": "2026-07-13T22:30:00+08:00", "sourceTitle": "YouTube" }
         ],
         "sources": [
-          { "title": "Mercado Libre Mexico 6000mAh商品页", "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950", "capturedAt": "2026-07-13", "note": "销量与产品场景" },
-          { "title": "Mercado Libre Mexico 同类搜索页", "url": "https://listado.mercadolibre.com.mx/bomba-inflador-aire-el%C3%A9ctrica-port%C3%A1til-llanta-150psi-6000mah", "capturedAt": "2026-07-13", "note": "同类数量、热销标签和价格带" }
+          { "title": "Mercado Libre Mexico 6000mAh商品页", "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950", "capturedAt": "2026-07-13", "note": "验证码受限；不支持销量、价格或评分结论", "publisher": "Mercado Libre", "grade": "A", "sourceType": "official-platform", "accessState": "blocked", "supports": [], "geo": "MX", "timeWindow": "2026-07-13访问检查", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false, "replacementUrl": "https://trends.google.com/trends/explore?geo=MX&q=inflador%20de%20llantas" },
+          { "title": "Google Trends Mexico：inflador de llantas", "url": "https://trends.google.com/trends/explore?geo=MX&q=inflador%20de%20llantas", "capturedAt": "2026-07-13", "note": "墨西哥搜索兴趣代理，不等于Mercado Libre成交", "publisher": "Google", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "用户可切换过去90天/12个月", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false },
+          { "title": "Xiaomi Portable Electric Air Compressor 2 官方页", "url": "https://www.mi.com/global/product/xiaomi-portable-electric-air-compressor-2/", "capturedAt": "2026-07-13", "note": "同类数显、预设压力与便携结构参考，不代表推荐商品精确参数", "publisher": "Xiaomi", "grade": "D", "sourceType": "manufacturer-spec", "accessState": "available", "supports": ["specification"], "geo": "GLOBAL", "timeWindow": "当前官方产品页", "checkedAt": "2026-07-13T22:30:00+08:00", "isEstimated": false }
         ]
       },
-      "whyRecommended": "它有墨西哥本地1000+已售的直接证据，车主应急需求明确；真正的机会不在最低价，而在真实参数、套装、质保和本地履约。",
+      "whyRecommended": "车主应急需求明确，但原1000+销量页面受验证码限制，已撤回精确销量结论；这款产品只能作为待小批验证的候选，机会在真实参数、套装、质保和本地履约。",
       "analysis": [
-        "墨西哥本地需求：汽车与摩托车用户都有补气和应急需求，公开商品页已显示1000+销量。",
+        "墨西哥本地需求：汽车与摩托车用户有补气和应急场景；Google Trends仅作搜索兴趣代理，平台销量暂无可核验证据。",
         "消费者画像：有车家庭、长途出行者、摩托车/自行车用户，以及需要多用途充气的家庭。",
         "热销可能性：压力数显、自动停机、LED、无线和多气嘴能形成完整的功能组合。",
         "竞争情况：结果密集且促销深；高星竞争机会来自参数实测、质保、套装和本地发货，而不是同款跟价。"
@@ -257,7 +323,7 @@
   ],
   "ranking": [
     { "productSlug": "portable-bluetooth-label-printer-tiktok-mx-2026-07-13", "rank": 1, "score": 88, "reason": "内容演示最强、样品成本可控、达人场景最多，最适合先验证。" },
-    { "productSlug": "cordless-digital-tire-inflator-meli-mx-2026-07-13", "rank": 2, "score": 86, "reason": "本地1000+销量证据最硬，但同类促销竞争和质量风险更高。" },
+    { "productSlug": "cordless-digital-tire-inflator-meli-mx-2026-07-13", "rank": 2, "score": 86, "reason": "车主场景明确，但平台精确销量证据已撤回；优先级低于可快速验证内容效果的标签机。" },
     { "productSlug": "rechargeable-led-fabric-shaver-temu-mx-2026-07-13", "rank": 3, "score": 84, "reason": "前后对比和低客单很适合Temu，但同款密集、低价竞争与电芯/刀网质量风险压低优先级。" }
   ],
   "priorityPick": {
