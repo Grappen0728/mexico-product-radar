@@ -1,0 +1,1 @@
+export function MetricCard({ label, value, accent = false }: { label: string; value: string; accent?: boolean }) { return <div className={`metric-card${accent ? " metric-card--accent" : ""}`}><span>{label}</span><strong>{value}</strong></div>; }

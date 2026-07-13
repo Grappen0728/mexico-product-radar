@@ -66,7 +66,7 @@ export function validateReport(value: unknown): RecommendationReport {
   if (!Array.isArray(value.trend.evidence) || value.trend.evidence.length < 2) throw new Error("至少需要两条趋势证据");
   value.trend.evidence.forEach((item, index) => {
     validateSource(item, `趋势证据${index + 1}`);
-    requireString((item as Record<string, unknown>).signal, `趋势证据${index + 1}信号`);
+    requireString((item as unknown as Record<string, unknown>).signal, `趋势证据${index + 1}信号`);
   });
 
   requireStringArray(value.reasons, "推荐理由");

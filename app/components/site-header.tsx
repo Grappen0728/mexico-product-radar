@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function SiteHeader() { return <header className="site-header"><Link href="/" className="brand" aria-label="墨西哥新品雷达首页"><span className="brand-mark">MX</span><span><strong>墨西哥新品雷达</strong><small>PRODUCT INTELLIGENCE</small></span></Link><nav aria-label="主导航"><Link href="/">今日推荐</Link><Link href="/archive">历史记录</Link><Link href="/trends">趋势看板</Link></nav></header>; }

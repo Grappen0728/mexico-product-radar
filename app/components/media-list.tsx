@@ -1,0 +1,2 @@
+import type { MediaLink } from "../lib/recommendations/types";
+export function MediaList({ media }: { media: MediaLink[] }) { return <div className="media-list">{media.map((item)=><a key={item.url} href={item.url} target="_blank" rel="noreferrer"><span className="media-icon">{item.type === "video" ? "▶" : "▧"}</span><div><strong>{item.title}</strong><small>{item.note ?? "打开素材来源"}</small></div><b>↗</b></a>)}</div>; }
