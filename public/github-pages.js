@@ -5,6 +5,14 @@
   const count = document.querySelector("#archive-count");
   const cards = [...document.querySelectorAll("[data-report-card]")];
 
+  if (platform instanceof HTMLSelectElement && ![...platform.options].some((option) => option.value === "AMZ")) {
+    const amazon = document.createElement("option");
+    amazon.value = "AMZ";
+    amazon.textContent = "AMZ";
+    const mercadoLibre = [...platform.options].find((option) => option.value === "MKD");
+    platform.insertBefore(amazon, mercadoLibre ?? null);
+  }
+
   if (!(search instanceof HTMLInputElement) || !(platform instanceof HTMLSelectElement) ||
       !(verdict instanceof HTMLSelectElement) || !(count instanceof HTMLElement)) return;
 

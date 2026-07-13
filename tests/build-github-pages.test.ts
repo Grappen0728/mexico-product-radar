@@ -13,6 +13,7 @@ describe("GitHub Pages build", () => {
     expect(files).toContain("trends/index.html");
     expect(files).toContain("recommendations/mini-thermal-printer-2026-07-13/index.html");
     expect(files).toContain("assets/styles.css");
+    expect(await readFile(join(output, "assets/site.js"), "utf8")).toContain('amazon.value = "AMZ"');
     expect(await readFile(join(output, ".nojekyll"), "utf8")).toBe("");
   });
 });
