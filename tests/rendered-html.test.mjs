@@ -31,3 +31,9 @@ test("removes all starter-only preview assets and metadata", async () => {
   assert.match(layout, /墨西哥选品雷达/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });
+
+test("keeps generated and isolated workspaces out of source linting", async () => {
+  const eslintConfig = await readFile(new URL("../eslint.config.mjs", import.meta.url), "utf8");
+  assert.match(eslintConfig, /\.worktrees\/\*\*/);
+  assert.match(eslintConfig, /dist\/\*\*/);
+});
