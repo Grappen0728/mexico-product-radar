@@ -1,4 +1,5 @@
 import type { RecommendationReport, Verdict } from "../recommendations/types";
+import type { DailyPlatformBrief, PlatformRecommendation } from "../daily-briefs/types";
 
 export interface StaticRenderOptions { basePath: string }
 
@@ -58,6 +59,44 @@ export function renderHome(reports: RecommendationReport[], options: StaticRende
   if (!report) return shell("今日推荐", `<main class="shell"><div class="empty-state"><h1>暂无推荐</h1></div></main>`, options);
   const body = `<main class="shell"><article class="daily-brief"><div class="brief-heading"><div><span class="eyebrow">${escapeHtml(report.date)} · 今日推荐</span><h1>${escapeHtml(report.product.zh)}</h1><p>${escapeHtml(report.product.es)} · ${escapeHtml(report.product.keywords[0])}</p></div><span class="verdict verdict--${report.verdict}">${verdictLabels[report.verdict]}</span></div><div class="brief-grid"><div class="product-visual"><div class="printer"><div class="printer-paper">TODAY<br><span>● ● ●</span></div><div class="printer-face">• ᴗ •</div><div class="printer-slot"></div></div><span class="visual-label">PORTABLE · SMART · ELECTRONIC</span></div><div class="brief-data"><div class="metrics">${metric("墨西哥售价", price(report))}${metric("公开销量", report.metrics.sold === null ? "未公开" : `${report.metrics.sold}+`, true)}${metric("评分 / 评价", `${report.metrics.rating ?? "未公开"} / ${report.metrics.reviews ?? "未公开"}`)}</div><div class="decision-grid"><section><h2>为什么推荐</h2><ul>${report.reasons.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section><section><h2>主要风险</h2><ul>${report.risks.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section></div><div class="next-action"><strong>下一步</strong><span>${escapeHtml(report.nextAction)}</span></div></div></div><div class="signal-row">${report.platforms.map((item) => `<span>${item} 信号</span>`).join("")}<span class="trend-chip">${escapeHtml(report.trend.label)}</span><a href="${siteHref(options.basePath, `/recommendations/${report.slug}/`)}">查看完整数据与来源 →</a></div></article><section class="section-heading"><div><span class="eyebrow">ARCHIVE</span><h2>历史推荐</h2></div><a href="${siteHref(options.basePath, "/archive/")}">查看全部记录 →</a></section><div class="history-grid">${(history.length ? history : reports).slice(0, 3).map((item) => historyCard(item, options.basePath)).join("")}</div></main>`;
   return shell("今日推荐", body, options);
+}
+
+const channelLabels = {
+  "tiktok-mx": "TikTok Shop Mexico",
+  "amazon-mx": "Amazon Mexico",
+  "mercado-libre-mx": "Mercado Libre Mexico",
+} as const;
+
+function stars(value: number): string { return `<span class="star-score">${"★".repeat(value)}${"☆".repeat(5 - value)}</span>`; }
+
+function platformCard(item: PlatformRecommendation, options: StaticRenderOptions): string {
+  const rows = [
+    ["市场需求", item.scores.demand],
+    ["竞争机会", item.scores.competitionOpportunity],
+    ["利润空间", item.scores.profit],
+    ["平台适配", item.scores.platformFit],
+    [item.channel === "tiktok-mx" ? "视频传播" : "销售潜力", item.scores.contentOrSalesPotential],
+  ] as const;
+  return `<article class="platform-card"><div class="platform-card__heading"><span>${channelLabels[item.channel]}</span><b>${escapeHtml(item.report.trend.label)}</b></div><h3>${escapeHtml(item.report.product.zh)}</h3><p class="platform-card__subtitle">${escapeHtml(item.report.product.es)}</p><p>${escapeHtml(item.whyRecommended)}</p><div class="score-list">${rows.map(([label, value]) => `<div><span>${label}</span>${stars(value)}</div>`).join("")}</div><div class="platform-playbook"><strong>${item.channel === "tiktok-mx" ? "短视频切入点" : "平台销售打法"}</strong><ol>${item.platformPlaybook.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></div><div class="commercial-grid"><div><span>采购成本</span><strong>${escapeHtml(item.commercialModel.purchaseCost)}</strong></div><div><span>建议售价</span><strong>${escapeHtml(item.commercialModel.suggestedPrice)}</strong></div><div><span>预估利润</span><strong>${escapeHtml(item.commercialModel.estimatedProfit)}</strong></div></div><p class="test-advice"><strong>测试建议：</strong>${escapeHtml(item.testAdvice)}</p><a href="${siteHref(options.basePath, `/recommendations/${item.report.slug}/`)}">查看产品完整数据与来源 →</a></article>`;
+}
+
+function dailyBriefSection(brief: DailyPlatformBrief, options: StaticRenderOptions, compact: boolean): string {
+  const names = new Map(brief.recommendations.map((item) => [item.report.slug, item.report.product.zh]));
+  const ranking = [...brief.ranking].sort((left, right) => left.rank - right.rank).map((item) => `<li><b>TOP ${item.rank}</b><span><strong>${escapeHtml(names.get(item.productSlug))}</strong>${escapeHtml(item.reason)}</span><em>${item.score}</em></li>`).join("");
+  return `<section class="three-platform-brief"><div class="section-heading"><div><span class="eyebrow">THREE-CHANNEL BRIEF</span><h2>今日三平台推荐</h2></div>${compact ? `<a href="${siteHref(options.basePath, `/briefs/${brief.slug}/`)}">查看完整三平台日报 →</a>` : ""}</div><div class="platform-brief-grid">${brief.recommendations.map((item) => platformCard(item, options)).join("")}</div><section class="ranking-panel"><div><span class="eyebrow">TODAY'S RANKING</span><h2>今日三个产品排名</h2><ol>${ranking}</ol></div><aside><span>如果只能测试一个产品</span><h3>${escapeHtml(names.get(brief.priorityPick.productSlug))}</h3><p>${escapeHtml(brief.priorityPick.reason)}</p></aside></section></section>`;
+}
+
+export function renderDailyBriefHome(brief: DailyPlatformBrief, legacyReports: RecommendationReport[], options: StaticRenderOptions): string {
+  const topSlug = brief.ranking.find((item) => item.rank === 1)?.productSlug;
+  const top = brief.recommendations.find((item) => item.report.slug === topSlug)?.report ?? brief.recommendations[0].report;
+  const html = renderHome([top, ...legacyReports.filter((item) => item.slug !== top.slug)], options);
+  return html.replace('<section class="section-heading">', `${dailyBriefSection(brief, options, true)}<section class="section-heading">`);
+}
+
+export function renderDailyBriefPage(brief: DailyPlatformBrief, options: StaticRenderOptions): string {
+  const analyses = brief.recommendations.map((item) => `<section class="panel platform-analysis"><h2>${escapeHtml(item.report.product.zh)}：详细分析</h2><ol>${item.analysis.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol><dl><div><dt>电池/供电</dt><dd>${escapeHtml(item.report.electronics.battery)}</dd></div><div><dt>充电规格</dt><dd>${escapeHtml(item.report.electronics.charging)}</dd></div><div><dt>芯片功能</dt><dd>${escapeHtml(item.report.electronics.chip)}</dd></div></dl><div class="source-list">${item.report.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><strong>${escapeHtml(source.title)}</strong><span>${escapeHtml(source.note ?? "查看公开来源")}</span><small>核查日期：${escapeHtml(source.capturedAt)} →</small></a>`).join("")}</div></section>`).join("");
+  const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/")}" class="back-link">← 返回首页</a><div class="page-heading"><span class="eyebrow">${escapeHtml(brief.date)} · DAILY BRIEF</span><h1>墨西哥三平台新品简报</h1><p>三款不同的带电带芯片产品，按平台机会分别评估</p></div>${dailyBriefSection(brief, options, false)}${analyses}</main>`;
+  return shell(`${brief.date} 三平台简报`, body, options);
 }
 
 export function renderArchive(reports: RecommendationReport[], options: StaticRenderOptions): string {

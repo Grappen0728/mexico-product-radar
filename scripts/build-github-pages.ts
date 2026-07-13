@@ -2,7 +2,8 @@ import { copyFile, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, isAbsolute, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { STATIC_REPORTS } from "../app/lib/recommendations/static-data";
-import { renderArchive, renderHome, renderRecommendation, renderTrends, siteHref } from "../app/lib/static-site/render";
+import { STATIC_DAILY_BRIEFS } from "../app/lib/daily-briefs/static-data";
+import { renderArchive, renderDailyBriefHome, renderDailyBriefPage, renderHome, renderRecommendation, renderTrends, siteHref } from "../app/lib/static-site/render";
 
 async function writePage(outputDir: string, path: string, content: string): Promise<void> {
   const target = resolve(outputDir, path);
@@ -35,16 +36,25 @@ export async function buildGitHubPages(
 
   const options = { basePath };
   const files = [".nojekyll", "assets/styles.css", "assets/site.js"];
-  await writePage(outputDir, "index.html", renderHome(STATIC_REPORTS, options));
+  const dailyReports = STATIC_DAILY_BRIEFS.flatMap((brief) => brief.recommendations.map((item) => item.report));
+  const reports = [...dailyReports, ...STATIC_REPORTS].filter((report, index, items) => items.findIndex((item) => item.slug === report.slug) === index);
+  const latestBrief = STATIC_DAILY_BRIEFS[0];
+  await writePage(outputDir, "index.html", latestBrief ? renderDailyBriefHome(latestBrief, STATIC_REPORTS, options) : renderHome(STATIC_REPORTS, options));
   files.push("index.html");
-  await writePage(outputDir, "archive/index.html", renderArchive(STATIC_REPORTS, options));
+  await writePage(outputDir, "archive/index.html", renderArchive(reports, options));
   files.push("archive/index.html");
-  await writePage(outputDir, "trends/index.html", renderTrends(STATIC_REPORTS, options));
+  await writePage(outputDir, "trends/index.html", renderTrends(reports, options));
   files.push("trends/index.html");
 
-  for (const report of STATIC_REPORTS) {
+  for (const report of reports) {
     const path = `recommendations/${report.slug}/index.html`;
     await writePage(outputDir, path, renderRecommendation(report, options));
+    files.push(path);
+  }
+
+  for (const brief of STATIC_DAILY_BRIEFS) {
+    const path = `briefs/${brief.slug}/index.html`;
+    await writePage(outputDir, path, renderDailyBriefPage(brief, options));
     files.push(path);
   }
 
