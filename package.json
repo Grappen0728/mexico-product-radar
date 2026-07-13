@@ -14,7 +14,9 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "report:sync": "tsx scripts/sync-recommendations.ts",
+    "brief:sync": "tsx scripts/sync-daily-briefs.ts",
     "send:feishu": "tsx scripts/send-feishu.ts",
+    "send:daily-feishu": "tsx scripts/send-daily-feishu.ts",
     "pages:build": "tsx scripts/build-github-pages.ts --base-path=/mexico-product-radar",
     "pages:test": "vitest run tests/static-site-render.test.ts tests/build-github-pages.test.ts --config vitest.config.ts"
   },
