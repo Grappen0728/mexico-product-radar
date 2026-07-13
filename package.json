@@ -12,7 +12,9 @@
     "test": "vitest run --config vitest.config.ts && vinext build && node --test tests/rendered-html.test.mjs",
     "test:unit": "vitest run --config vitest.config.ts",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "report:sync": "tsx scripts/sync-recommendations.ts",
+    "send:feishu": "tsx scripts/send-feishu.ts"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
@@ -34,6 +36,7 @@
     "eslint-config-next": "16.2.6",
     "react-server-dom-webpack": "19.2.6",
     "tailwindcss": "4.2.1",
+    "tsx": "^4.23.0",
     "typescript": "5.9.3",
     "vinext": "0.0.50",
     "vite": "8.0.13",
