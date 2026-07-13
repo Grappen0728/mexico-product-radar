@@ -1,0 +1,83 @@
+import type { RecommendationReport, Verdict } from "../recommendations/types";
+
+export interface StaticRenderOptions { basePath: string }
+
+const verdictLabels: Record<Verdict, string> = {
+  recommend: "推荐测试",
+  watch: "继续观察",
+  reject: "暂不建议",
+};
+
+export function normalizeBasePath(value: string): string {
+  const trimmed = value.trim().replace(/^\/+|\/+$/g, "");
+  return trimmed ? `/${trimmed}` : "";
+}
+
+export function siteHref(basePath: string, path: string): string {
+  const base = normalizeBasePath(basePath);
+  return `${base}/${path.replace(/^\/+/, "")}`;
+}
+
+function escapeHtml(value: unknown): string {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function price(report: RecommendationReport): string {
+  return report.metrics.price === null ? "价格未公开" : `${escapeHtml(report.metrics.currency)} ${report.metrics.price}`;
+}
+
+function range(prefix: string, min: number | null, max: number | null): string {
+  return min === null || max === null ? "未公开" : `${prefix} ${min}–${max}`;
+}
+
+function header(basePath: string): string {
+  return `<header class="site-header"><a class="brand" href="${siteHref(basePath, "/")}"><span class="brand-mark">MX</span><span><strong>墨西哥新品雷达</strong><small>PRODUCT INTELLIGENCE</small></span></a><nav><a href="${siteHref(basePath, "/")}">今日推荐</a><a href="${siteHref(basePath, "/archive/")}">历史记录</a><a href="${siteHref(basePath, "/trends/")}">趋势看板</a></nav></header>`;
+}
+
+function shell(title: string, body: string, options: StaticRenderOptions, script = false): string {
+  const scriptTag = script ? `<script src="${siteHref(options.basePath, "/assets/site.js")}" defer></script>` : "";
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="每日一款面向墨西哥渠道的带电带芯片产品情报"><title>${escapeHtml(title)}｜墨西哥新品雷达</title><link rel="stylesheet" href="${siteHref(options.basePath, "/assets/styles.css")}">${scriptTag}</head><body>${header(options.basePath)}${body}<footer>每日公开资讯 · 数据不可核验时明确标注 · 不构成投资或采购承诺</footer></body></html>`;
+}
+
+function historyCard(report: RecommendationReport, basePath: string): string {
+  const search = [report.product.zh, report.product.es, ...report.product.keywords, report.category].join(" ").toLowerCase();
+  return `<a href="${siteHref(basePath, `/recommendations/${report.slug}/`)}" class="history-card" data-report-card data-search="${escapeHtml(search)}" data-platforms="${escapeHtml(report.platforms.join(" "))}" data-verdict="${report.verdict}"><span class="history-meta">${escapeHtml(report.date)} · ${escapeHtml(report.platforms.join(" / "))}</span><strong>${escapeHtml(report.product.zh)}</strong><span>${escapeHtml(report.product.es)}</span><div><b class="status status--${report.verdict}">${verdictLabels[report.verdict]}</b><span>${price(report)}</span></div></a>`;
+}
+
+function metric(label: string, value: string, accent = false): string {
+  return `<div class="metric-card${accent ? " metric-card--accent" : ""}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+}
+
+export function renderHome(reports: RecommendationReport[], options: StaticRenderOptions): string {
+  const [report, ...history] = reports;
+  if (!report) return shell("今日推荐", `<main class="shell"><div class="empty-state"><h1>暂无推荐</h1></div></main>`, options);
+  const body = `<main class="shell"><article class="daily-brief"><div class="brief-heading"><div><span class="eyebrow">${escapeHtml(report.date)} · 今日推荐</span><h1>${escapeHtml(report.product.zh)}</h1><p>${escapeHtml(report.product.es)} · ${escapeHtml(report.product.keywords[0])}</p></div><span class="verdict verdict--${report.verdict}">${verdictLabels[report.verdict]}</span></div><div class="brief-grid"><div class="product-visual"><div class="printer"><div class="printer-paper">TODAY<br><span>● ● ●</span></div><div class="printer-face">• ᴗ •</div><div class="printer-slot"></div></div><span class="visual-label">PORTABLE · SMART · ELECTRONIC</span></div><div class="brief-data"><div class="metrics">${metric("墨西哥售价", price(report))}${metric("公开销量", report.metrics.sold === null ? "未公开" : `${report.metrics.sold}+`, true)}${metric("评分 / 评价", `${report.metrics.rating ?? "未公开"} / ${report.metrics.reviews ?? "未公开"}`)}</div><div class="decision-grid"><section><h2>为什么推荐</h2><ul>${report.reasons.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section><section><h2>主要风险</h2><ul>${report.risks.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section></div><div class="next-action"><strong>下一步</strong><span>${escapeHtml(report.nextAction)}</span></div></div></div><div class="signal-row">${report.platforms.map((item) => `<span>${item} 信号</span>`).join("")}<span class="trend-chip">${escapeHtml(report.trend.label)}</span><a href="${siteHref(options.basePath, `/recommendations/${report.slug}/`)}">查看完整数据与来源 →</a></div></article><section class="section-heading"><div><span class="eyebrow">ARCHIVE</span><h2>历史推荐</h2></div><a href="${siteHref(options.basePath, "/archive/")}">查看全部记录 →</a></section><div class="history-grid">${(history.length ? history : reports).slice(0, 3).map((item) => historyCard(item, options.basePath)).join("")}</div></main>`;
+  return shell("今日推荐", body, options);
+}
+
+export function renderArchive(reports: RecommendationReport[], options: StaticRenderOptions): string {
+  const body = `<main class="shell"><div class="page-heading"><span class="eyebrow">ARCHIVE</span><h1>历史推荐</h1><p>按关键词、平台和结论翻查每日公开记录</p></div><div class="filter-bar"><label class="search-field"><span>搜索</span><input id="archive-search" placeholder="中文、西语或英文关键词"></label><label><span>平台</span><select id="archive-platform"><option value="">全部平台</option><option>TK</option><option>MKD</option><option>TM</option></select></label><label><span>结论</span><select id="archive-verdict"><option value="">全部结论</option><option value="recommend">推荐</option><option value="watch">观察</option><option value="reject">不建议</option></select></label></div><div class="archive-summary">找到 <strong id="archive-count">${reports.length}</strong> 条记录</div><div class="history-grid">${reports.map((item) => historyCard(item, options.basePath)).join("")}</div></main>`;
+  return shell("历史推荐", body, options, true);
+}
+
+export function renderTrends(reports: RecommendationReport[], options: StaticRenderOptions): string {
+  const counts = { TK: 0, MKD: 0, TM: 0 };
+  for (const report of reports) for (const platform of report.platforms) counts[platform] += 1;
+  const max = Math.max(1, ...Object.values(counts));
+  const platforms = Object.entries(counts).map(([name, count]) => `<div><span>${name}</span><div><i style="width:${Math.round(count / max * 100)}%"></i></div><b>${count}</b></div>`).join("");
+  const body = `<main class="shell"><div class="page-heading"><span class="eyebrow">TRENDS</span><h1>趋势看板</h1><p>基于已核验推荐记录的渠道信号概览</p></div><div class="metrics trend-metrics">${metric("累计推荐", String(reports.length))}${metric("爬升产品", String(reports.filter((item) => item.trend.status === "rising").length), true)}${metric("推荐测试", String(reports.filter((item) => item.verdict === "recommend").length))}${metric("覆盖平台", String(Object.values(counts).filter(Boolean).length))}</div><section class="panel"><h2>平台出现频次</h2><div class="platform-bars">${platforms}</div></section><section class="panel"><h2>近期关键词</h2><div class="tag-cloud">${reports.flatMap((item) => item.product.keywords).slice(0, 16).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div></section></main>`;
+  return shell("趋势看板", body, options);
+}
+
+export function renderRecommendation(report: RecommendationReport, options: StaticRenderOptions): string {
+  const evidence = report.trend.evidence.map((item) => `<a class="evidence" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer"><strong>${escapeHtml(item.signal)}</strong><small>${escapeHtml(item.title)} · ${escapeHtml(item.capturedAt)} ↗</small></a>`).join("");
+  const media = report.media.map((item) => `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer"><span class="media-icon">${item.type === "video" ? "▶" : "▧"}</span><div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.note ?? "打开素材来源")}</small></div><b>↗</b></a>`).join("");
+  const sources = report.sources.map((item) => `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer"><div><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.note ?? "查看原始来源")}</span><small>查询日期：${escapeHtml(item.capturedAt)} ↗</small></div></a>`).join("");
+  const body = `<main class="shell detail-shell"><a href="${siteHref(options.basePath, "/archive/")}" class="back-link">← 返回历史记录</a><div class="page-heading"><span class="eyebrow">${escapeHtml(report.date)} · ${escapeHtml(report.platforms.join(" / "))}</span><h1>${escapeHtml(report.product.zh)}</h1><p>${escapeHtml(report.product.es)} · ${escapeHtml(report.product.keywords.join(" · "))}</p></div><div class="detail-grid"><section class="panel"><h2>趋势证据</h2>${evidence}</section><section class="panel"><h2>带电带芯片依据</h2><dl><div><dt>电池</dt><dd>${escapeHtml(report.electronics.battery)}</dd></div><div><dt>充电</dt><dd>${escapeHtml(report.electronics.charging)}</dd></div><div><dt>芯片</dt><dd>${escapeHtml(report.electronics.chip)}</dd></div></dl></section><section class="panel"><h2>推荐理由</h2><ol>${report.reasons.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section><section class="panel"><h2>供应链与售价</h2><dl><div><dt>参考采购</dt><dd>${range("US$", report.supplyChain.purchaseUsdMin, report.supplyChain.purchaseUsdMax)}</dd></div><div><dt>建议零售</dt><dd>${range("MXN", report.supplyChain.retailMxnMin, report.supplyChain.retailMxnMax)}</dd></div></dl><p>${escapeHtml(report.supplyChain.logistics ?? "物流参数需向供应商复核")}</p></section><section class="panel panel--risk"><h2>主要风险</h2><ul>${report.risks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section><section class="panel panel--action"><h2>下一步</h2><p>${escapeHtml(report.nextAction)}</p></section></div><section class="detail-section"><div class="section-heading"><div><span class="eyebrow">MEDIA</span><h2>图片与视频</h2></div></div><div class="media-list">${media}</div></section><section class="detail-section"><div class="section-heading"><div><span class="eyebrow">SOURCES</span><h2>数据来源</h2></div></div><div class="source-list">${sources}</div></section></main>`;
+  return shell(report.product.zh, body, options);
+}
