@@ -7,7 +7,25 @@ export type MediaType = "image" | "video";
 export type EvidenceGrade = "A" | "B" | "C" | "D";
 export type SourceAccessState = "available" | "login-restricted" | "blocked" | "invalid" | "replaced" | "unverified";
 export type SourceType = "official-platform" | "official-trend" | "licensed-third-party" | "independent-trend" | "manufacturer-spec" | "supplier-spec";
-export type ClaimMetric = "price" | "sold" | "rating" | "reviews" | "discount" | "demand" | "trend" | "specification" | "cost";
+export type ClaimMetric = "price" | "sold" | "rating" | "reviews" | "discount" | "demand" | "trend" | "specification" | "cost" | "monthly-sales" | "monthly-revenue" | "fx";
+
+export interface MonthlyRevenueEstimate {
+  status: "available" | "unavailable";
+  sourceProductUrl: string | null;
+  period: string | null;
+  estimatedMonthlyUnitsMin: number | null;
+  estimatedMonthlyUnitsMax: number | null;
+  unitPrice: number | null;
+  unitPriceCurrency: string | null;
+  mxnPerUsd: number | null;
+  fxCapturedAt: string | null;
+  fxSourceUrl: string | null;
+  fxPublisher: string | null;
+  method: string | null;
+  confidence: "high" | "medium" | "low" | null;
+  sourceUrls: string[];
+  unavailableReason: string | null;
+}
 
 export function isPlatform(value: string): value is Platform {
   return PLATFORMS.includes(value as Platform);
@@ -66,6 +84,7 @@ export interface RecommendationReport {
     reviews: number | null;
     discount: number | null;
   };
+  monthlyRevenueEstimate?: MonthlyRevenueEstimate;
   trend: {
     status: TrendStatus;
     label: string;

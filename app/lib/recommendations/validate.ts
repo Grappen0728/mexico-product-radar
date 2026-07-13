@@ -29,6 +29,43 @@ function requireHttps(url: unknown, label: string): void {
   }
 }
 
+function requireFiniteNumber(value: unknown, label: string, options: { positive?: boolean } = {}): asserts value is number {
+  if (typeof value !== "number" || !Number.isFinite(value)) throw new Error(`${label}必须是有效数字`);
+  if (options.positive ? value <= 0 : value < 0) throw new Error(`${label}${options.positive ? "必须大于0" : "不能为负数"}`);
+}
+
+function validateMonthlyRevenueEstimate(value: unknown): void {
+  if (!isObject(value)) throw new Error("单链接月销售额预估格式无效");
+  if (value.status === "unavailable") {
+    requireString(value.unavailableReason, "无法估算原因");
+    return;
+  }
+  if (value.status !== "available") throw new Error("月销售额预估状态无效");
+
+  requireHttps(value.sourceProductUrl, "月销售额商品链接");
+  requireString(value.period, "月销售额估算周期");
+  if (!/^\d{4}-\d{2}$/.test(value.period)) throw new Error("月销售额估算周期必须使用 YYYY-MM");
+  requireFiniteNumber(value.estimatedMonthlyUnitsMin, "月销量下限");
+  requireFiniteNumber(value.estimatedMonthlyUnitsMax, "月销量上限");
+  if (value.estimatedMonthlyUnitsMin > value.estimatedMonthlyUnitsMax) throw new Error("月销量上下限顺序无效");
+  requireFiniteNumber(value.unitPrice, "商品单价", { positive: true });
+  requireString(value.unitPriceCurrency, "商品单价币种");
+  if (!(value.unitPriceCurrency === "MXN" || value.unitPriceCurrency === "USD")) throw new Error("商品单价币种仅支持 MXN 或 USD");
+
+  if (value.unitPriceCurrency === "MXN") {
+    requireFiniteNumber(value.mxnPerUsd, "美元汇率", { positive: true });
+    requireHttps(value.fxSourceUrl, "汇率来源链接");
+    requireString(value.fxPublisher, "汇率发布方");
+    requireString(value.fxCapturedAt, "汇率日期");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value.fxCapturedAt)) throw new Error("汇率日期必须使用 YYYY-MM-DD");
+  }
+
+  requireString(value.method, "月销售额估算方法");
+  if (!(value.confidence === "high" || value.confidence === "medium" || value.confidence === "low")) throw new Error("月销售额可信度无效");
+  if (!Array.isArray(value.sourceUrls) || value.sourceUrls.length === 0) throw new Error("月销售额至少需要一个来源链接");
+  value.sourceUrls.forEach((url, index) => requireHttps(url, `月销售额来源${index + 1}`));
+}
+
 function isGenericMediaPage(value: string): boolean {
   const url = new URL(value);
   return url.pathname === "/results"
@@ -66,6 +103,7 @@ export function validateReport(value: unknown): RecommendationReport {
   }
   if (!isObject(value.metrics)) throw new Error("基础数据不能为空");
   requireString(value.metrics.currency, "价格币种");
+  if (value.monthlyRevenueEstimate !== undefined) validateMonthlyRevenueEstimate(value.monthlyRevenueEstimate);
 
   if (!isObject(value.trend)) throw new Error("趋势判断不能为空");
   if (!(["hot", "rising", "stable"] as unknown[]).includes(value.trend.status)) throw new Error("趋势状态无效");
