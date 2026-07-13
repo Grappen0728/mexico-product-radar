@@ -4,6 +4,12 @@ export type MonthlyRevenueResult =
   | { status: "available"; revenueUsdMin: number; revenueUsdMax: number }
   | { status: "unavailable"; reason: string };
 
+const usdNumber = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+
+export function formatUsdRange(min: number, max: number): string {
+  return `US$${usdNumber.format(Math.round(min))}–US$${usdNumber.format(Math.round(max))} / 月`;
+}
+
 export function calculateMonthlyRevenueUsd(estimate?: MonthlyRevenueEstimate): MonthlyRevenueResult {
   if (!estimate || estimate.status === "unavailable") {
     return {

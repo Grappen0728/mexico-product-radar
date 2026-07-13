@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { PlatformRecommendation } from "../lib/daily-briefs/types";
 import { assessEvidenceQuality } from "../lib/recommendations/evidence-quality";
+import { MonthlyRevenueCard } from "./monthly-revenue-card";
 
 const CHANNEL_LABELS = { "tiktok-mx": "TikTok Shop Mexico", "temu-mx": "Temu Mexico", "mercado-libre-mx": "Mercado Libre Mexico" } as const;
 
@@ -19,6 +20,7 @@ export function PlatformRecommendationCard({ recommendation }: { recommendation:
     <div className="score-list">{scoreRows.map(([label, value]) => <div key={label}><span>{label}</span><Stars value={value} /></div>)}</div>
     <div className="platform-playbook"><strong>{recommendation.channel === "tiktok-mx" ? "短视频切入点" : recommendation.channel === "temu-mx" ? "Temu商品打法" : "平台销售打法"}</strong><ol>{recommendation.platformPlaybook.slice(0, 3).map((item) => <li key={item}>{item}</li>)}</ol></div>
     <div className="commercial-grid"><div><span>采购成本</span><strong>{commercialModel.purchaseCost}</strong></div><div><span>建议售价</span><strong>{commercialModel.suggestedPrice}</strong></div><div><span>预估利润</span><strong>{commercialModel.estimatedProfit}</strong></div></div>
+    <MonthlyRevenueCard report={report} />
     <p className="test-advice"><strong>测试建议：</strong>{recommendation.testAdvice}</p><Link href={`/recommendations/${report.slug}`}>查看产品完整数据与来源 →</Link>
   </article>;
 }

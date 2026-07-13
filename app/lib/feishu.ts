@@ -1,5 +1,6 @@
 import type { RecommendationReport } from "./recommendations/types";
 import type { DailyPlatformBrief } from "./daily-briefs/types";
+import { calculateMonthlyRevenueUsd, formatUsdRange } from "./recommendations/monthly-revenue";
 
 export interface FeishuCardPayload {
   msg_type: "interactive";
@@ -18,6 +19,13 @@ function priceLabel(report: RecommendationReport): string {
   return report.metrics.price === null
     ? "价格未公开"
     : `${report.metrics.currency} ${report.metrics.price}`;
+}
+
+function monthlyRevenueLabel(report: RecommendationReport): string {
+  const result = calculateMonthlyRevenueUsd(report.monthlyRevenueEstimate);
+  return result.status === "available"
+    ? formatUsdRange(result.revenueUsdMin, result.revenueUsdMax)
+    : `暂无可靠估算（${result.reason}）`;
 }
 
 export function buildFeishuCard(report: RecommendationReport, publicUrl: string): FeishuCardPayload {
@@ -114,7 +122,7 @@ export function buildDailyBriefFeishuCard(brief: DailyPlatformBrief, publicUrl: 
     tag: "div",
     text: {
       tag: "lark_md",
-      content: `**${dailyChannelLabels[item.channel]}｜${item.report.product.zh}**\n${item.commercialModel.suggestedPrice}｜需求 ${"★".repeat(item.scores.demand)}｜竞争机会 ${"★".repeat(item.scores.competitionOpportunity)}\n${item.whyRecommended}`,
+      content: `**${dailyChannelLabels[item.channel]}｜${item.report.product.zh}**\n${item.commercialModel.suggestedPrice}｜需求 ${"★".repeat(item.scores.demand)}｜竞争机会 ${"★".repeat(item.scores.competitionOpportunity)}\n**单链接月销售额预估：**${monthlyRevenueLabel(item.report)}\n${item.whyRecommended}`,
     },
   }, { tag: "hr" }]);
   return {
