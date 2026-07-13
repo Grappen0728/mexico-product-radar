@@ -1,0 +1,10 @@
+import Link from "next/link";
+import { MetricCard } from "./metric-card";
+import type { RecommendationReport } from "../lib/recommendations/types";
+
+const verdictLabels = { recommend: "推荐测试", watch: "继续观察", reject: "暂不建议" };
+const numberOrUnknown = (value: number | null, suffix = "") => value === null ? "未公开" : `${value.toLocaleString("zh-CN")}${suffix}`;
+
+export function DailyBrief({ report }: { report: RecommendationReport }) {
+  return <article className="daily-brief"><div className="brief-heading"><div><span className="eyebrow">{report.date} · 今日推荐</span><h1>{report.product.zh}</h1><p>{report.product.es} · {report.product.keywords[0]}</p></div><span className={`verdict verdict--${report.verdict}`}>{verdictLabels[report.verdict]}</span></div><div className="brief-grid"><div className="product-visual" role="img" aria-label="迷你蓝牙热敏打印机示意图"><div className="printer"><div className="printer-paper">TODAY<br/><span>● ● ●</span></div><div className="printer-face">• ᴗ •</div><div className="printer-slot"/></div><span className="visual-label">PORTABLE · BLUETOOTH · INKLESS</span></div><div className="brief-data"><div className="metrics"><MetricCard label="墨西哥售价" value={report.metrics.price === null ? "未公开" : `${report.metrics.currency} ${report.metrics.price}`}/><MetricCard label="公开销量" value={numberOrUnknown(report.metrics.sold, "+")} accent/><MetricCard label="评分 / 评价" value={`${numberOrUnknown(report.metrics.rating)} / ${numberOrUnknown(report.metrics.reviews)}`}/></div><div className="decision-grid"><section><h2>为什么推荐</h2><ul>{report.reasons.slice(0,3).map((reason)=><li key={reason}>{reason}</li>)}</ul></section><section><h2>主要风险</h2><ul>{report.risks.slice(0,3).map((risk)=><li key={risk}>{risk}</li>)}</ul></section></div><div className="next-action"><strong>下一步</strong><span>{report.nextAction}</span></div></div></div><div className="signal-row">{report.platforms.map((platform)=><span key={platform}>{platform} 信号</span>)}<span className="trend-chip">{report.trend.label}</span><Link href={`/recommendations/${report.slug}`}>查看完整数据与来源 →</Link></div></article>;
+}
