@@ -1,6 +1,36 @@
 import type { RecommendationReport } from "../../app/lib/recommendations/types";
 
 export function makeReport(overrides: Partial<RecommendationReport> = {}): RecommendationReport {
+  const officialEvidence = {
+    signal: "Mercado Libre 单链接累计销量超过 5,000 件",
+    title: "Mercado Libre 商品页",
+    url: "https://articulo.mercadolibre.com.mx/example",
+    capturedAt: "2026-07-13",
+    publisher: "Mercado Libre",
+    grade: "A" as const,
+    sourceType: "official-platform" as const,
+    accessState: "available" as const,
+    supports: ["price", "sold", "rating", "reviews", "discount", "demand", "trend"] as const,
+    geo: "MX",
+    timeWindow: "商品页累计公开数据",
+    checkedAt: "2026-07-13T10:00:00+08:00",
+    isEstimated: false,
+  };
+  const independentEvidence = {
+    signal: "Google Trends Mexico 仍有近期搜索兴趣",
+    title: "Google Trends Mexico",
+    url: "https://trends.google.com/trends/explore?geo=MX&q=mini%20printer",
+    capturedAt: "2026-07-13",
+    publisher: "Google",
+    grade: "C" as const,
+    sourceType: "independent-trend" as const,
+    accessState: "available" as const,
+    supports: ["demand", "trend"] as const,
+    geo: "MX",
+    timeWindow: "过去90天",
+    checkedAt: "2026-07-13T10:00:00+08:00",
+    isEstimated: false,
+  };
   return {
     date: "2026-07-13",
     slug: "mini-thermal-printer",
@@ -25,18 +55,8 @@ export function makeReport(overrides: Partial<RecommendationReport> = {}): Recom
       status: "hot",
       label: "稳定热卖",
       evidence: [
-        {
-          signal: "Mercado Libre 单链接累计销量超过 5,000 件",
-          title: "Mercado Libre 商品页",
-          url: "https://articulo.mercadolibre.com.mx/example",
-          capturedAt: "2026-07-13",
-        },
-        {
-          signal: "TikTok #miniprinter 仍有近期内容",
-          title: "TikTok Creative Center",
-          url: "https://ads.tiktok.com/business/creativecenter/example",
-          capturedAt: "2026-07-13",
-        },
+        { ...officialEvidence, supports: [...officialEvidence.supports] },
+        { ...independentEvidence, supports: [...independentEvidence.supports] },
       ],
     },
     reasons: ["公开销量验证充分", "短视频演示效果强"],
@@ -63,10 +83,21 @@ export function makeReport(overrides: Partial<RecommendationReport> = {}): Recom
       },
     ],
     sources: [
+      { ...officialEvidence, supports: [...officialEvidence.supports] },
+      { ...independentEvidence, supports: [...independentEvidence.supports] },
       {
-        title: "Mercado Libre 商品页",
-        url: "https://articulo.mercadolibre.com.mx/example",
+        title: "制造商规格",
+        url: "https://www.example.com/manual.pdf",
         capturedAt: "2026-07-13",
+        publisher: "Example Manufacturer",
+        grade: "D",
+        sourceType: "manufacturer-spec",
+        accessState: "available",
+        supports: ["specification"],
+        geo: "GLOBAL",
+        timeWindow: "当前规格",
+        checkedAt: "2026-07-13T10:00:00+08:00",
+        isEstimated: false,
       },
     ],
     ...overrides,
