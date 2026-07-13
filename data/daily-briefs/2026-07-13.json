@@ -1,0 +1,259 @@
+{
+  "date": "2026-07-13",
+  "slug": "2026-07-13",
+  "recommendations": [
+    {
+      "channel": "tiktok-mx",
+      "report": {
+        "date": "2026-07-13",
+        "slug": "portable-bluetooth-label-printer-tiktok-mx-2026-07-13",
+        "product": {
+          "zh": "便携蓝牙热敏标签打印机",
+          "es": "Impresora térmica portátil de etiquetas por Bluetooth",
+          "keywords": ["impresora térmica portátil", "impresora de etiquetas Bluetooth", "mini label printer"]
+        },
+        "category": "便携打印与标签设备",
+        "scenarios": ["家庭收纳标签", "小商家商品标签", "手账与学习整理"],
+        "audience": ["家庭收纳用户", "学生和手账用户", "微型商家与摊主"],
+        "platforms": ["TK"],
+        "metrics": { "price": null, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
+        "trend": {
+          "status": "rising",
+          "label": "墨西哥站在售，全球同类内容已有成交验证",
+          "evidence": [
+            {
+              "signal": "TikTok Shop Mexico 已有便携蓝牙热敏标签机商品页，卖点集中在无墨、手机编辑、条码和家庭/小商家收纳场景；页面未公开销量。",
+              "title": "TikTok Shop Mexico：HOMEERA 便携热敏标签机",
+              "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225",
+              "capturedAt": "2026-07-13",
+              "note": "墨西哥站商品与功能证据；销量未公开"
+            },
+            {
+              "signal": "TikTok Shop 全球同类迷你热敏打印机商品页公开显示 3.2K sold、4.5 分和 235 条评价；该数字不是墨西哥站销量，仅用于验证内容形态。",
+              "title": "TikTok Shop：同类迷你热敏打印机",
+              "url": "https://shop.tiktok.com/us/pdp/portable-mini-thermal-printer-by-unbranded-bluetooth-instant-photo-printer/1729420757276267027",
+              "capturedAt": "2026-07-13",
+              "note": "全球同类参考，不代表墨西哥市场销量"
+            }
+          ]
+        },
+        "reasons": [
+          "打印前后效果能在3秒内被看懂，天然适合短视频演示。",
+          "收纳、手账、小商家标签三个内容场景可以覆盖不同达人垂类。",
+          "热敏无墨和手机模板编辑提供清晰的功能卖点与复购耗材机会。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": 8.5,
+          "purchaseUsdMax": 10.5,
+          "retailMxnMin": 499,
+          "retailMxnMax": 599,
+          "logistics": "Alibaba 同类口袋热敏打印机公开报价 US$8.50–10.50、MOQ 1；实际到岸成本、App授权、耗材兼容、UN38.3和MSDS需在下单前复核。"
+        },
+        "electronics": {
+          "battery": "内置可充电锂电池；墨西哥商品页未披露容量，采购前必须确认电芯规格与认证。",
+          "charging": "USB充电；接口类型和额定输入需向供应商索取规格书。",
+          "chip": "蓝牙通信芯片负责手机连接，打印控制芯片驱动热敏打印头与标签定位。"
+        },
+        "risks": ["墨西哥商品页没有公开销量，必须先小样验证", "低价同质化和App体验会直接影响退货", "含锂电池跨境运输需要完整合规文件"],
+        "nextAction": "采购5–10台样品，分别测试收纳、手账、小商家三组短视频；先验证3秒停留率和商品点击率，再决定是否投流。",
+        "verdict": "recommend",
+        "media": [
+          { "type": "image", "title": "TikTok Shop Mexico 商品图片与卖点", "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225", "note": "打开商品页查看公开图片" },
+          { "type": "video", "title": "TikTok mini printer 内容参考", "url": "https://www.tiktok.com/tag/miniprinter", "note": "查看公开话题视频，具体热度需登录后复核" }
+        ],
+        "sources": [
+          { "title": "TikTok Shop Mexico 商品页", "url": "https://shop.tiktok.com/mx/pdp/1733969391467529225", "capturedAt": "2026-07-13", "note": "墨西哥站在售与功能" },
+          { "title": "Alibaba 便携标签打印机供应页", "url": "https://www.alibaba.com/showroom/portable-label-printers.html", "capturedAt": "2026-07-13", "note": "公开样品价与MOQ参考" }
+        ]
+      },
+      "whyRecommended": "它把“混乱→贴标→整齐”的变化压缩成几秒，既能做视觉满足型内容，也能覆盖家庭收纳和小商家两个购买场景。",
+      "analysis": [
+        "TikTok爆款潜力：演示结果即时、画面变化明显，适合无声也能理解的内容。",
+        "用户痛点：手写标签慢、收纳容易混乱、小商家临时改价和打标签麻烦。",
+        "视频展示机会：手机编辑、蓝牙连接、连续出标、贴标前后对比可连续制造信息点。",
+        "达人带货可能性：收纳、手账、学习、宝妈和小商家达人都能自然植入。",
+        "当前趋势：墨西哥站已经在售；全球同类有成交验证，但墨西哥销量仍需本地测试。"
+      ],
+      "scores": { "demand": 4, "competitionOpportunity": 3, "profit": 4, "platformFit": 5, "contentOrSalesPotential": 5, "riskControl": 3 },
+      "platformPlaybook": ["桌面一团乱，3秒打印并贴完一排标签", "给小摊主现场改价并打印条码，展示从手机到出标的全过程", "挑战一卷标签整理冰箱、药箱或手账，用数量感制造完播"],
+      "commercialModel": {
+        "purchaseCost": "US$8.50–10.50（公开样品报价，未含到岸费用）",
+        "suggestedPrice": "MXN 499–599",
+        "estimatedProfit": "不填未经核验净利；按真实到岸成本倒推，首轮目标毛利率≥35%",
+        "suitableCommission": "12%–18%，必须在真实毛利核算后确定",
+        "targetRoi": "首轮仅设保本线；建议目标ROI≥1.5，需按实际CPA与退货率重算"
+      },
+      "testAdvice": "建议投流前先做5–10台小样和3组自然流内容；若视频点击和加购成立，再开放达人寄样。"
+    },
+    {
+      "channel": "amazon-mx",
+      "report": {
+        "date": "2026-07-13",
+        "slug": "pan-tilt-wifi-security-camera-amazon-mx-2026-07-13",
+        "product": {
+          "zh": "360°室内Wi‑Fi智能摄像头",
+          "es": "Cámara Wi‑Fi de seguridad interior Pan/Tilt 360°",
+          "keywords": ["cámara WiFi interior", "cámara seguridad 360", "pan tilt camera"]
+        },
+        "category": "智能家居安防",
+        "scenarios": ["家庭看护", "宠物监控", "小店与入口安防"],
+        "audience": ["养宠家庭", "有婴幼儿或老人的家庭", "需要远程查看的小店主"],
+        "platforms": ["AMZ"],
+        "metrics": { "price": 499, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
+        "trend": {
+          "status": "stable",
+          "label": "Amazon Electronics 榜单出现，品牌墨西哥页标注热销",
+          "evidence": [
+            {
+              "signal": "Amazon Mexico 电子产品畅销榜页面公开列出 Tapo TC70 1080P 360° 室内摄像头，抓取结果显示参考价 MXN 499；榜位会变化，发布前需复核。",
+              "title": "Amazon Mexico：Electrónicos畅销榜",
+              "url": "https://www.amazon.com.mx/gp/bestsellers/electronics",
+              "capturedAt": "2026-07-13",
+              "note": "榜位和价格均为动态信息"
+            },
+            {
+              "signal": "TP-Link Mexico 的 Tapo C200 官方页标注 Más vendido，并列出1080p、360°水平旋转、夜视、移动侦测、双向语音和本地存储。",
+              "title": "TP-Link México：Tapo C200 官方页",
+              "url": "https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c200/v1/",
+              "capturedAt": "2026-07-13",
+              "note": "产品能力和本地品牌信号"
+            }
+          ]
+        },
+        "reasons": [
+          "家庭安防、宠物和婴幼儿看护属于全年稳定需求，不依赖单一节日。",
+          "Amazon搜索型购买路径清晰，分辨率、旋转范围、夜视、存储和隐私可以形成结构化Listing。",
+          "可通过2K、物理隐私遮挡、本地存储和更简单配网做差异化，而不是只拼最低价。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": 599,
+          "retailMxnMax": 799,
+          "logistics": "未获取到可核验的同规格OEM到岸报价，不用品牌零售价冒充采购成本；需先索取芯片方案、APP/云服务、ONVIF、隐私合规和墨西哥电气认证资料。"
+        },
+        "electronics": {
+          "battery": "本推荐为持续插电式室内摄像头，不含电池；属于带电产品。",
+          "charging": "参考 Tapo C200 为100–240VAC适配器输入、9V/0.6A输出；OEM方案需单独确认。",
+          "chip": "图像信号处理/视频编码SoC、Wi‑Fi通信芯片与电机控制共同完成1080p视频、H.264、远程连接和云台旋转。"
+        },
+        "risks": ["隐私、网络安全和App稳定性直接影响差评", "成熟品牌占据搜索心智，通用白牌竞争机会有限", "订阅云存储会提高用户决策成本和售后复杂度"],
+        "nextAction": "只测试具备本地存储、隐私模式、稳定App和明确认证的升级款；用2K或物理遮挡形成差异化后再投放Amazon广告。",
+        "verdict": "watch",
+        "media": [
+          { "type": "image", "title": "TP-Link Mexico 官方产品图片", "url": "https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c200/v1/", "note": "官方页含多张产品图" },
+          { "type": "video", "title": "Tapo 摄像头安装与配置视频", "url": "https://www.tp-link.com/mx/support/download/tapo-c200/v1/", "note": "官方支持页包含开箱、安装和配置视频" }
+        ],
+        "sources": [
+          { "title": "Amazon Mexico 电子产品畅销榜", "url": "https://www.amazon.com.mx/gp/bestsellers/electronics", "capturedAt": "2026-07-13", "note": "市场需求与价格参考" },
+          { "title": "TP-Link México Tapo C200 官方页", "url": "https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c200/v1/", "capturedAt": "2026-07-13", "note": "功能、供电和视频规格" }
+        ]
+      },
+      "whyRecommended": "它不是短期噱头，而是家庭安防、宠物和看护的稳定搜索品；适合用更高分辨率、隐私设计和本地存储做升级款测试。",
+      "analysis": [
+        "搜索需求：Amazon Mexico电子榜与品牌墨西哥热销标记共同说明该类目有稳定购买需求。",
+        "用户购买原因：远程看家、看宠物/宝宝、移动提醒、夜视和双向通话。",
+        "竞争情况：品牌和评论壁垒较高，通用1080p白牌难以只靠低价突围。",
+        "产品生命周期：安防看护是长期需求，硬件升级和本地存储能延长销售周期。"
+      ],
+      "scores": { "demand": 5, "competitionOpportunity": 2, "profit": 3, "platformFit": 5, "contentOrSalesPotential": 4, "riskControl": 3 },
+      "platformPlaybook": ["Listing首屏突出360°覆盖、夜视和本地存储，不混用未经证实的AI功能", "用宠物、宝宝、门口三个场景图覆盖主要搜索意图", "把App、隐私、网络安全、存储上限和电源规格写进FAQ，降低退货"],
+      "commercialModel": {
+        "purchaseCost": "同规格OEM到岸报价待询；暂不使用品牌零售价代替成本",
+        "suggestedPrice": "MXN 599–799（升级款测试带）",
+        "estimatedProfit": "拿到含税到岸成本、FBA费和退货率后再计算；目标毛利率≥30%"
+      },
+      "testAdvice": "建议先做关键词和竞品评论挖掘，再测试2K+物理隐私遮挡+本地存储组合；不建议直接复制499比索成熟品牌基础款。"
+    },
+    {
+      "channel": "mercado-libre-mx",
+      "report": {
+        "date": "2026-07-13",
+        "slug": "cordless-digital-tire-inflator-meli-mx-2026-07-13",
+        "product": {
+          "zh": "6000mAh数显无线轮胎充气泵",
+          "es": "Inflador de llantas inalámbrico digital 150 PSI 6000mAh",
+          "keywords": ["inflador portátil auto", "compresor 150 PSI", "bomba aire 6000mAh"]
+        },
+        "category": "汽车应急与便携工具",
+        "scenarios": ["汽车轮胎应急补气", "摩托车和自行车充气", "球类与户外用品充气"],
+        "audience": ["墨西哥汽车车主", "摩托车和自行车用户", "长途出行家庭"],
+        "platforms": ["MKD"],
+        "metrics": { "price": 394.4, "currency": "MXN", "sold": 1000, "rating": 4.9, "reviews": null, "discount": 60 },
+        "trend": {
+          "status": "hot",
+          "label": "本地1000+已售，同类结果密集且价格带清晰",
+          "evidence": [
+            {
+              "signal": "Mercado Libre Mexico 商品页公开显示6000mAh便携电动充气泵 +1000 vendidos，证明本地消费者已形成真实购买。",
+              "title": "Mercado Libre Mexico：6000mAh便携充气泵",
+              "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950",
+              "capturedAt": "2026-07-13",
+              "note": "公开销量信号"
+            },
+            {
+              "signal": "近期Mercado Libre搜索页显示273个相关结果，并出现“Más vendido”同类款；6000mAh/150PSI商品集中在约MXN 200–430的促销价格带。",
+              "title": "Mercado Libre Mexico：6000mAh 150PSI搜索页",
+              "url": "https://listado.mercadolibre.com.mx/bomba-inflador-aire-el%C3%A9ctrica-port%C3%A1til-llanta-150psi-6000mah",
+              "capturedAt": "2026-07-13",
+              "note": "竞争、价格带和热销标签参考"
+            }
+          ]
+        },
+        "reasons": [
+          "本地商品已有1000+公开销量，比仅靠内容趋势更接近真实需求。",
+          "车主应急场景明确，数显压力、自动停机、LED和多气嘴容易形成卖点组合。",
+          "Mercado Libre同类价格带透明，适合快速用套装、质保和本地发货做差异化。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": 329,
+          "retailMxnMax": 449,
+          "logistics": "没有获得可核验的同规格工厂报价；需核实6000mAh是否为真实额定容量、气流量、连续工作温升、压力精度、充电接口、UN38.3和MSDS。"
+        },
+        "electronics": {
+          "battery": "商品规格宣称6000mAh可充电锂电池；实际容量和电芯品牌必须抽检。",
+          "charging": "USB充电，建议优先选择USB-C方案并确认额定输入。",
+          "chip": "压力传感器与MCU控制数显、预设压力、自动停机和保护逻辑；电源管理芯片负责充放电。"
+        },
+        "risks": ["同类结果多、促销深，单纯同款竞争机会一般", "虚标电池容量或压力会导致高退货和安全风险", "电机温升、噪声和连续充气能力必须做实测"],
+        "nextAction": "采购3个不同供应商样品，实测汽车轮胎补气时间、压力误差、连续工作温升和电池容量；用质保、收纳包和本地发货做差异化。",
+        "verdict": "recommend",
+        "media": [
+          { "type": "image", "title": "Mercado Libre 商品图片与买家场景", "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950", "note": "商品页含公开图片" },
+          { "type": "video", "title": "150PSI便携充气泵演示素材检索", "url": "https://www.youtube.com/results?search_query=inflador+portatil+150psi+6000mah", "note": "仅作拍摄参考，参数须以实测为准" }
+        ],
+        "sources": [
+          { "title": "Mercado Libre Mexico 6000mAh商品页", "url": "https://www.mercadolibre.com.mx/bomba-aire-inflador-llantas-electrica-auto-portatil-6000mah/p/MLM66178950", "capturedAt": "2026-07-13", "note": "销量与产品场景" },
+          { "title": "Mercado Libre Mexico 同类搜索页", "url": "https://listado.mercadolibre.com.mx/bomba-inflador-aire-el%C3%A9ctrica-port%C3%A1til-llanta-150psi-6000mah", "capturedAt": "2026-07-13", "note": "同类数量、热销标签和价格带" }
+        ]
+      },
+      "whyRecommended": "它有墨西哥本地1000+已售的直接证据，车主应急需求明确；真正的机会不在最低价，而在真实参数、套装、质保和本地履约。",
+      "analysis": [
+        "墨西哥本地需求：汽车与摩托车用户都有补气和应急需求，公开商品页已显示1000+销量。",
+        "消费者画像：有车家庭、长途出行者、摩托车/自行车用户，以及需要多用途充气的家庭。",
+        "热销可能性：压力数显、自动停机、LED、无线和多气嘴能形成完整的功能组合。",
+        "竞争情况：结果密集且促销深；高星竞争机会来自参数实测、质保、套装和本地发货，而不是同款跟价。"
+      ],
+      "scores": { "demand": 5, "competitionOpportunity": 3, "profit": 3, "platformFit": 5, "contentOrSalesPotential": 4, "riskControl": 3 },
+      "platformPlaybook": ["标题覆盖inflador portátil、150 PSI、6000mAh、auto/moto关键词，参数不虚标", "主图展示数显、自动停机、LED、气嘴和收纳包，并给出实测补气时间", "用本地库存、快速配送、明确质保和容量抽检报告建立信任"],
+      "commercialModel": {
+        "purchaseCost": "同规格工厂到岸成本待询，不填未经核验报价",
+        "suggestedPrice": "MXN 329–449",
+        "estimatedProfit": "需扣除Mercado Libre费用、物流、税和退货后计算；目标毛利率≥25%"
+      },
+      "testAdvice": "建议测试，但必须先做容量、压力精度、温升和补气时间实测；若无法优于低价同款，就不要进入价格战。"
+    }
+  ],
+  "ranking": [
+    { "productSlug": "portable-bluetooth-label-printer-tiktok-mx-2026-07-13", "rank": 1, "score": 88, "reason": "内容演示最强、样品成本可控、达人场景最多，最适合先验证。" },
+    { "productSlug": "cordless-digital-tire-inflator-meli-mx-2026-07-13", "rank": 2, "score": 86, "reason": "本地1000+销量证据最硬，但同类促销竞争和质量风险更高。" },
+    { "productSlug": "pan-tilt-wifi-security-camera-amazon-mx-2026-07-13", "rank": 3, "score": 82, "reason": "长期需求稳定，但成熟品牌和隐私/软件门槛让新品测试成本更高。" }
+  ],
+  "priorityPick": {
+    "productSlug": "portable-bluetooth-label-printer-tiktok-mx-2026-07-13",
+    "reason": "如果只能测一个，优先测试便携蓝牙热敏标签打印机：样品投入较低，3秒内能展示结果，收纳/手账/小商家三类达人都能拍，能最快判断内容和成交是否成立。"
+  },
+  "sourcesCheckedAt": "2026-07-13T18:10:00+08:00"
+}

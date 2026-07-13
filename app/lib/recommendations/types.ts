@@ -1,4 +1,4 @@
-export const PLATFORMS = ["TK", "MKD", "TM"] as const;
+export const PLATFORMS = ["TK", "AMZ", "MKD", "TM"] as const;
 
 export type Platform = (typeof PLATFORMS)[number];
 export type Verdict = "recommend" | "watch" | "reject";
