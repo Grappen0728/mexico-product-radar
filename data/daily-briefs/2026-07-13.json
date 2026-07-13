@@ -86,84 +86,93 @@
       "testAdvice": "建议投流前先做5–10台小样和3组自然流内容；若视频点击和加购成立，再开放达人寄样。"
     },
     {
-      "channel": "amazon-mx",
+      "channel": "temu-mx",
       "report": {
         "date": "2026-07-13",
-        "slug": "pan-tilt-wifi-security-camera-amazon-mx-2026-07-13",
+        "slug": "rechargeable-led-fabric-shaver-temu-mx-2026-07-13",
         "product": {
-          "zh": "360°室内Wi‑Fi智能摄像头",
-          "es": "Cámara Wi‑Fi de seguridad interior Pan/Tilt 360°",
-          "keywords": ["cámara WiFi interior", "cámara seguridad 360", "pan tilt camera"]
+          "zh": "LED数显USB充电式电动毛球修剪器",
+          "es": "Quitapelusas eléctrico recargable USB con pantalla LED",
+          "keywords": ["quitapelusas eléctrico", "afeitadora de tela recargable", "removedor de pelusa LED"]
         },
-        "category": "智能家居安防",
-        "scenarios": ["家庭看护", "宠物监控", "小店与入口安防"],
-        "audience": ["养宠家庭", "有婴幼儿或老人的家庭", "需要远程查看的小店主"],
-        "platforms": ["AMZ"],
-        "metrics": { "price": 499, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
+        "category": "衣物护理与家居清洁小电器",
+        "scenarios": ["毛衣和针织衫去毛球", "沙发与床品表面整理", "旧衣翻新与换季收纳"],
+        "audience": ["重视衣物护理的家庭", "养宠家庭", "喜欢低成本旧物焕新的年轻消费者"],
+        "platforms": ["TM"],
+        "metrics": { "price": null, "currency": "MXN", "sold": null, "rating": null, "reviews": null, "discount": null },
         "trend": {
-          "status": "stable",
-          "label": "Amazon Electronics 榜单出现，品牌墨西哥页标注热销",
+          "status": "hot",
+          "label": "Temu在售且墨西哥同类结果密集，前后对比型需求明确",
           "evidence": [
             {
-              "signal": "Amazon Mexico 电子产品畅销榜页面公开列出 Tapo TC70 1080P 360° 室内摄像头，抓取结果显示参考价 MXN 499；榜位会变化，发布前需复核。",
-              "title": "Amazon Mexico：Electrónicos畅销榜",
-              "url": "https://www.amazon.com.mx/gp/bestsellers/electronics",
+              "signal": "Temu Mexico 公开商品页出现USB充电、LED屏幕、适用于衣物/床品/家具的便携电动毛球修剪器；页面未提供可稳定核验的销量与墨西哥比索价格，因此不填销量和单点售价。",
+              "title": "Temu Mexico：USB充电LED数显毛球修剪器",
+              "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html",
               "capturedAt": "2026-07-13",
-              "note": "榜位和价格均为动态信息"
+              "note": "Temu在售与功能形态信号；价格和销量不作推断"
             },
             {
-              "signal": "TP-Link Mexico 的 Tapo C200 官方页标注 Más vendido，并列出1080p、360°水平旋转、夜视、移动侦测、双向语音和本地存储。",
-              "title": "TP-Link México：Tapo C200 官方页",
-              "url": "https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c200/v1/",
+              "signal": "Mercado Libre Mexico 的相关搜索公开显示约1,357个结果；数显充电款常见公开售价约MXN 170–421，单品页可见+50已售，说明墨西哥已有真实购买，同时也提示同质化竞争较强。",
+              "title": "Mercado Libre Mexico：quitapelusa recargable 搜索",
+              "url": "https://listado.mercadolibre.com.mx/quitapelusa-recargable",
               "capturedAt": "2026-07-13",
-              "note": "产品能力和本地品牌信号"
+              "note": "本地需求、竞争密度和零售价格带参考"
+            },
+            {
+              "signal": "可充电毛球修剪器公开说明书显示同类产品采用USB充电和LED电量显示；这些功能需要电机驱动控制与充电保护电路，但具体芯片型号仍需供应商BOM确认。",
+              "title": "Smartek Rechargeable Fabric Shaver 使用说明书",
+              "url": "https://images.thdstatic.com/catalog/pdfImages/d2/d29151a6-4b0d-452b-aed3-0c1dd9d022bf.pdf",
+              "capturedAt": "2026-07-13",
+              "note": "同类供电与LED显示结构参考，不代表Temu商品的精确参数"
             }
           ]
         },
         "reasons": [
-          "家庭安防、宠物和婴幼儿看护属于全年稳定需求，不依赖单一节日。",
-          "Amazon搜索型购买路径清晰，分辨率、旋转范围、夜视、存储和隐私可以形成结构化Listing。",
-          "可通过2K、物理隐私遮挡、本地存储和更简单配网做差异化，而不是只拼最低价。"
+          "毛球修剪前后效果几秒内就能看懂，适合Temu主图、短动图和低决策成本购买。",
+          "产品体积小、无需App，售后复杂度低于联网设备；可用替换刀头、清洁刷和收纳袋做组合装。",
+          "墨西哥同类结果和公开成交信号说明需求真实，但必须避开只换颜色、只拼最低价的同款竞争。"
         ],
         "supplyChain": {
           "purchaseUsdMin": null,
           "purchaseUsdMax": null,
-          "retailMxnMin": 599,
-          "retailMxnMax": 799,
-          "logistics": "未获取到可核验的同规格OEM到岸报价，不用品牌零售价冒充采购成本；需先索取芯片方案、APP/云服务、ONVIF、隐私合规和墨西哥电气认证资料。"
+          "retailMxnMin": 199,
+          "retailMxnMax": 299,
+          "logistics": "未获取可核验的Temu供货或OEM到岸成本，不用平台促销价倒推采购价；询价时需锁定电芯容量、电机转速、刀网材质、堵转保护、USB-C输入、UN38.3/MSDS及备件数量。"
         },
         "electronics": {
-          "battery": "本推荐为持续插电式室内摄像头，不含电池；属于带电产品。",
-          "charging": "参考 Tapo C200 为100–240VAC适配器输入、9V/0.6A输出；OEM方案需单独确认。",
-          "chip": "图像信号处理/视频编码SoC、Wi‑Fi通信芯片与电机控制共同完成1080p视频、H.264、远程连接和云台旋转。"
+          "battery": "Temu商品页明确为USB充电式；具体电芯容量未稳定公开，打样时必须实测并索取UN38.3/MSDS。",
+          "charging": "USB充电，优先测试USB-C 5V方案；输入电流、充电时长和边充边用能力需以样机和说明书确认。",
+          "chip": "LED电量显示、档位/电机控制和锂电充电保护需要控制PCB、MCU或专用驱动及电源管理芯片；此为功能结构推断，具体芯片型号必须向供应商索取BOM确认。"
         },
-        "risks": ["隐私、网络安全和App稳定性直接影响差评", "成熟品牌占据搜索心智，通用白牌竞争机会有限", "订阅云存储会提高用户决策成本和售后复杂度"],
-        "nextAction": "只测试具备本地存储、隐私模式、稳定App和明确认证的升级款；用2K或物理遮挡形成差异化后再投放Amazon广告。",
-        "verdict": "watch",
+        "risks": ["同款密集且促销价低，单机裸卖容易陷入价格战", "刀网间隙和电机扭矩不足可能勾伤衣物或卡毛", "电芯虚标、堵转发热和刀头耐久度会直接拉高退货率"],
+        "nextAction": "采购3款不同电机/刀网结构样品，用毛衣、沙发和宠物毛床品测试去球效率、勾丝率、堵转温升、噪声和续航；优先选USB-C、可更换刀头并带收纳袋的组合装。",
+        "verdict": "recommend",
         "media": [
-          { "type": "image", "title": "TP-Link Mexico 官方产品图片", "url": "https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c200/v1/", "note": "官方页含多张产品图" },
-          { "type": "video", "title": "Tapo 摄像头安装与配置视频", "url": "https://www.tp-link.com/mx/support/download/tapo-c200/v1/", "note": "官方支持页包含开箱、安装和配置视频" }
+          { "type": "image", "title": "Temu Mexico 商品图片与使用场景", "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html", "note": "商品页含产品外观和衣物使用场景" },
+          { "type": "video", "title": "电动毛球修剪器前后对比视频素材检索", "url": "https://www.youtube.com/results?search_query=quitapelusas+electrico+recargable+antes+despues", "note": "仅作镜头和演示结构参考，参数必须以样机实测为准" }
         ],
         "sources": [
-          { "title": "Amazon Mexico 电子产品畅销榜", "url": "https://www.amazon.com.mx/gp/bestsellers/electronics", "capturedAt": "2026-07-13", "note": "市场需求与价格参考" },
-          { "title": "TP-Link México Tapo C200 官方页", "url": "https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c200/v1/", "capturedAt": "2026-07-13", "note": "功能、供电和视频规格" }
+          { "title": "Temu Mexico USB充电LED毛球修剪器商品页", "url": "https://www.temu.com/mx/1-juego-quitapelusas-electrico-quitapelusas-usb-recargable-quitapelusas-para-sueter-quitapelusas-de-energia-quitapelusas-de-pelusa-pantalla-led-quitapelusas-recortadora-de-pelusas-portatil-para-ropa-ropa-de-cama-muebles-alfombras-sofa-suministros-de-limpieza-gadgets-de-limpieza-g-601099538398670.html", "capturedAt": "2026-07-13", "note": "Temu在售、外观和功能场景" },
+          { "title": "Mercado Libre Mexico 可充电毛球修剪器搜索页", "url": "https://listado.mercadolibre.com.mx/quitapelusa-recargable", "capturedAt": "2026-07-13", "note": "本地结果量、价格带和成交信号" },
+          { "title": "Smartek Rechargeable Fabric Shaver 使用说明书", "url": "https://images.thdstatic.com/catalog/pdfImages/d2/d29151a6-4b0d-452b-aed3-0c1dd9d022bf.pdf", "capturedAt": "2026-07-13", "note": "同类USB充电和LED显示结构参考" }
         ]
       },
-      "whyRecommended": "它不是短期噱头，而是家庭安防、宠物和看护的稳定搜索品；适合用更高分辨率、隐私设计和本地存储做升级款测试。",
+      "whyRecommended": "它符合Temu低中客单、效果一眼能懂、容易冲动购买的逻辑；真正的机会是用USB-C、替换刀头、收纳袋和衣物安全实测组成升级套装，而不是复制最低价裸机。",
       "analysis": [
-        "搜索需求：Amazon Mexico电子榜与品牌墨西哥热销标记共同说明该类目有稳定购买需求。",
-        "用户购买原因：远程看家、看宠物/宝宝、移动提醒、夜视和双向通话。",
-        "竞争情况：品牌和评论壁垒较高，通用1080p白牌难以只靠低价突围。",
-        "产品生命周期：安防看护是长期需求，硬件升级和本地存储能延长销售周期。"
+        "价格竞争力：本地公开同类多集中在约MXN 170–421；Temu测试价建议落在MXN 199–299，但不在未取得真实成本前承诺利润。",
+        "视觉点击性：旧毛衣一半处理、一半保留毛球，配合透明毛屑盒和LED电量屏，主图与短演示都能快速传达效果。",
+        "冲动购买：衣物翻新属于低学习成本、可立即理解的家庭痛点，适合低中客单加购和换季场景。",
+        "同质化竞争：墨西哥同类结果密集，五颗竞争机会星不是高竞争；本品机会评分中等，必须靠套装、USB-C和实测安全建立差异。",
+        "物流与质量风险：小体积利于履约，但内置锂电、刀片、堵转温升和勾丝风险必须在上架前验证。"
       ],
-      "scores": { "demand": 5, "competitionOpportunity": 2, "profit": 3, "platformFit": 5, "contentOrSalesPotential": 4, "riskControl": 3 },
-      "platformPlaybook": ["Listing首屏突出360°覆盖、夜视和本地存储，不混用未经证实的AI功能", "用宠物、宝宝、门口三个场景图覆盖主要搜索意图", "把App、隐私、网络安全、存储上限和电源规格写进FAQ，降低退货"],
+      "scores": { "demand": 4, "competitionOpportunity": 3, "profit": 3, "platformFit": 5, "contentOrSalesPotential": 5, "riskControl": 3 },
+      "platformPlaybook": ["主图用同一件毛衣左右对比，第二张明确展示LED电量、USB-C和可更换刀头", "做机器+2个替换刀头+清洁刷+收纳袋组合装，用套装价值避开裸机最低价", "用限时券而非永久虚高折扣，标题覆盖quitapelusas eléctrico、recargable、pantalla LED和ropa"],
       "commercialModel": {
-        "purchaseCost": "同规格OEM到岸报价待询；暂不使用品牌零售价代替成本",
-        "suggestedPrice": "MXN 599–799（升级款测试带）",
-        "estimatedProfit": "拿到含税到岸成本、FBA费和退货率后再计算；目标毛利率≥30%"
+        "purchaseCost": "同规格OEM含电池到岸成本待询，不使用Temu促销价反推成本",
+        "suggestedPrice": "MXN 199–299（套装测试带）",
+        "estimatedProfit": "取得真实到岸成本、Temu费用、促销补贴和退货率后计算；首轮目标毛利率≥25%"
       },
-      "testAdvice": "建议先做关键词和竞品评论挖掘，再测试2K+物理隐私遮挡+本地存储组合；不建议直接复制499比索成熟品牌基础款。"
+      "testAdvice": "建议小批测试，但只上组合升级款；先做3款样机的去球效率、勾丝、温升、续航和跌落测试，再用两套主图测试点击率，不建议参与最低价裸机竞争。"
     },
     {
       "channel": "mercado-libre-mx",
@@ -249,11 +258,11 @@
   "ranking": [
     { "productSlug": "portable-bluetooth-label-printer-tiktok-mx-2026-07-13", "rank": 1, "score": 88, "reason": "内容演示最强、样品成本可控、达人场景最多，最适合先验证。" },
     { "productSlug": "cordless-digital-tire-inflator-meli-mx-2026-07-13", "rank": 2, "score": 86, "reason": "本地1000+销量证据最硬，但同类促销竞争和质量风险更高。" },
-    { "productSlug": "pan-tilt-wifi-security-camera-amazon-mx-2026-07-13", "rank": 3, "score": 82, "reason": "长期需求稳定，但成熟品牌和隐私/软件门槛让新品测试成本更高。" }
+    { "productSlug": "rechargeable-led-fabric-shaver-temu-mx-2026-07-13", "rank": 3, "score": 84, "reason": "前后对比和低客单很适合Temu，但同款密集、低价竞争与电芯/刀网质量风险压低优先级。" }
   ],
   "priorityPick": {
     "productSlug": "portable-bluetooth-label-printer-tiktok-mx-2026-07-13",
     "reason": "如果只能测一个，优先测试便携蓝牙热敏标签打印机：样品投入较低，3秒内能展示结果，收纳/手账/小商家三类达人都能拍，能最快判断内容和成交是否成立。"
   },
-  "sourcesCheckedAt": "2026-07-13T18:10:00+08:00"
+  "sourcesCheckedAt": "2026-07-13T22:30:00+08:00"
 }
