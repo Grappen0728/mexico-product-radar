@@ -1,0 +1,231 @@
+{
+  "date": "2026-07-14",
+  "slug": "2026-07-14",
+  "recommendations": [
+    {
+      "channel": "tiktok-mx",
+      "report": {
+        "date": "2026-07-14",
+        "slug": "portable-rechargeable-blender-tiktok-mx-2026-07-14",
+        "product": {
+          "zh": "LED数显便携充电榨汁杯",
+          "es": "Licuadora portátil recargable con pantalla LED",
+          "keywords": ["licuadora portátil", "licuadora recargable", "vaso para batidos"]
+        },
+        "category": "便携厨房小电器",
+        "scenarios": ["办公室现做奶昔", "健身后蛋白饮", "旅行和宿舍鲜榨饮品"],
+        "audience": ["健身人群", "办公室白领", "学生与旅行用户"],
+        "platforms": ["TK"],
+        "metrics": { "price": null, "currency": "USD", "sold": null, "rating": null, "reviews": null, "discount": null },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [],
+          "unavailableReason": "TikTok Shop商品页当前触发安全校验，缺少可复核的近30天单链接销量与实时成交价，不能严谨估算月销售额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "内容展示力强，列为小样测试候选；实时销量尚未核验",
+          "evidence": [
+            {
+              "signal": "TikTok Shop Mexico可定位到45秒搅拌、LED显示的便携榨汁杯商品，但本次访问触发安全校验；搜索快照中的价格与销量不计入实时数据。",
+              "title": "TikTok Shop Mexico便携充电榨汁杯商品页",
+              "url": "https://shop.tiktok.com/mx/pdp/1732747270549178231",
+              "capturedAt": "2026-07-14",
+              "note": "页面受限，仅保留商品存在性线索，不支持实时价格、销量结论",
+              "publisher": "TikTok Shop",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-14访问检查",
+              "checkedAt": "2026-07-14T10:40:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://trends.google.com/trends/explore?geo=MX&q=licuadora%20portatil"
+            },
+            {
+              "signal": "Google Trends Mexico可用于复核“licuadora portatil”的本地搜索兴趣；该信号只代表需求关注，不等于TikTok成交。",
+              "title": "Google Trends Mexico：licuadora portatil",
+              "url": "https://trends.google.com/trends/explore?geo=MX&q=licuadora%20portatil",
+              "capturedAt": "2026-07-14",
+              "note": "墨西哥搜索兴趣代理，不等于平台销量",
+              "publisher": "Google",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "MX",
+              "timeWindow": "页面可切换过去90天或12个月",
+              "checkedAt": "2026-07-14T10:40:00+08:00",
+              "isEstimated": false
+            }
+          ]
+        },
+        "reasons": [
+          "水果、冰块到成品饮料的变化在数秒内可见，适合短视频前三秒建立注意力。",
+          "办公室、健身和旅行三个场景都能自然植入，达人类型覆盖面较广。",
+          "45秒程序和LED状态显示构成清楚卖点，但真实碎冰能力与续航必须用样品复核。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "当前没有可核验的同规格到岸报价；询价需锁定杯体材质、刀组、电池额定容量、空载保护、杯盖联锁、UN38.3与MSDS。"
+        },
+        "electronics": {
+          "battery": "内置可充电锂电池；容量未从当前受限商品页稳定核验，必须以样机铭牌、容量测试和UN38.3报告为准。",
+          "charging": "USB充电，优先选择USB-C 5V方案；充电时长、边充边用限制需实测。",
+          "chip": "控制板负责电机启停、45秒程序、LED显示、电量检测及杯盖安全联锁；具体MCU和保护芯片型号需供应商BOM确认。"
+        },
+        "risks": ["碎冰能力或电池容量虚标会快速导致差评", "刀组与杯盖联锁失效存在安全风险", "带锂电跨境运输需完整合规文件"],
+        "nextAction": "采购3个不同刀组与电池方案样品，实测冰块、香蕉和蛋白粉三类负载的完成时间、颗粒度、续航、渗漏和联锁保护，再拍摄3条自然流量视频。",
+        "verdict": "recommend",
+        "media": [
+          { "type": "image", "title": "TikTok Shop商品图（当前受限）", "url": "https://shop.tiktok.com/mx/pdp/1732747270549178231", "note": "平台页触发安全校验，暂不作为可打开图片展示", "accessState": "blocked", "direct": false, "checkedAt": "2026-07-14T10:40:00+08:00", "sourceTitle": "TikTok Shop" },
+          { "type": "video", "title": "便携榨汁杯具体演示视频待核验", "url": "https://www.tiktok.com/search?q=licuadora%20portatil", "note": "搜索页不是具体视频，页面仅显示素材暂不可用", "accessState": "invalid", "direct": false, "checkedAt": "2026-07-14T10:40:00+08:00", "sourceTitle": "TikTok" }
+        ],
+        "sources": [
+          { "title": "TikTok Shop Mexico便携榨汁杯商品页", "url": "https://shop.tiktok.com/mx/pdp/1732747270549178231", "capturedAt": "2026-07-14", "note": "安全校验受限；不支持实时价格或销量", "publisher": "TikTok Shop", "grade": "A", "sourceType": "official-platform", "accessState": "blocked", "supports": [], "geo": "MX", "timeWindow": "2026-07-14访问检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false, "replacementUrl": "https://trends.google.com/trends/explore?geo=MX&q=licuadora%20portatil" },
+          { "title": "Google Trends Mexico：licuadora portatil", "url": "https://trends.google.com/trends/explore?geo=MX&q=licuadora%20portatil", "capturedAt": "2026-07-14", "note": "墨西哥搜索兴趣代理，不等于平台成交", "publisher": "Google", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "页面可切换过去90天或12个月", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false },
+          { "title": "El País便携榨汁机对比（2026）", "url": "https://elpais.com/escaparate/comparativas/2026-01-16/mejor-licuadora-portatil-para-batidos.html", "capturedAt": "2026-07-14", "note": "用于核对同类产品的便携、续航、安全与清洁卖点，不代表推荐商品精确参数", "publisher": "El País", "grade": "D", "sourceType": "independent-trend", "accessState": "available", "supports": ["specification"], "geo": "GLOBAL", "timeWindow": "2026-01-16发布的同类产品比较", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false }
+        ]
+      },
+      "whyRecommended": "它最适合TikTok的原因不是已有销量数字，而是强可视化：材料投入、45秒搅拌、倒出成品形成完整短视频闭环。当前按候选小样推进，不把受限页面的搜索快照当作实时成交。",
+      "analysis": [
+        "TikTok爆款潜力：前后变化明显、无需语言也能理解。",
+        "用户痛点：外出难获得新鲜饮品，大型搅拌机清洗和携带麻烦。",
+        "视频展示机会：碎冰、倒置防漏、45秒计时、清洗过程都可拍。",
+        "达人带货可能性：健身、美食、办公室和宿舍达人均可植入。",
+        "市场趋势：墨西哥搜索兴趣可查，但TikTok实时成交仍需首轮测试验证。"
+      ],
+      "scores": { "demand": 4, "competitionOpportunity": 3, "profit": 3, "platformFit": 5, "contentOrSalesPotential": 5, "riskControl": 3 },
+      "platformPlaybook": ["3秒内依次展示冰块、启动和成品倒出", "做普通杯与便携榨汁杯的办公室早餐耗时对比", "用防漏倒置与一杯水自清洗降低使用顾虑"],
+      "commercialModel": {
+        "purchaseCost": "同规格到岸成本待询价，不用平台促销价反推采购成本",
+        "suggestedPrice": "US$18–25测试带；发布前按当日页面和真实到岸成本复核",
+        "estimatedProfit": "待取得到岸成本、平台费、达人佣金与退货率后核算；首轮目标毛利率不低于35%",
+        "suitableCommission": "12%–18%，必须在真实毛利核算后确定",
+        "targetRoi": "首轮以保本线为准，建议目标ROI不低于1.5"
+      },
+      "testAdvice": "建议测试，但先自然流量后投流；样品通过碎冰、渗漏、联锁和续航测试后，再以3个内容角度各发布2条视频。"
+    },
+    {
+      "channel": "temu-mx",
+      "report": {
+        "date": "2026-07-14",
+        "slug": "portable-usb-ultrasonic-cleaner-temu-mx-2026-07-14",
+        "product": {
+          "zh": "USB便携超声波首饰眼镜清洗机",
+          "es": "Limpiador ultrasónico portátil USB para joyas y gafas",
+          "keywords": ["limpiador ultrasonico", "limpiador de joyas", "limpiador de gafas USB"]
+        },
+        "category": "个人护理与家居清洁小电器",
+        "scenarios": ["首饰缝隙清洁", "眼镜与表带清洁", "牙套与小物件日常护理"],
+        "audience": ["佩戴眼镜人群", "首饰爱好者", "牙套和保持器用户"],
+        "platforms": ["TM"],
+        "metrics": { "price": null, "currency": "USD", "sold": null, "rating": null, "reviews": null, "discount": null },
+        "monthlyRevenueEstimate": { "status": "unavailable", "sourceProductUrl": null, "period": null, "estimatedMonthlyUnitsMin": null, "estimatedMonthlyUnitsMax": null, "unitPrice": null, "unitPriceCurrency": null, "mxnPerUsd": null, "fxCapturedAt": null, "fxSourceUrl": null, "fxPublisher": null, "method": null, "confidence": null, "sourceUrls": [], "unavailableReason": "Temu动态商品页未提供可稳定复核的近30天单链接销量和实时成交价，无法严谨估算月销售额。" },
+        "trend": {
+          "status": "stable",
+          "label": "本地需求有交叉平台证据，Temu实时成交待验证",
+          "evidence": [
+            { "signal": "Temu Mexico可定位到便携USB声波清洗设备，但页面动态内容未能稳定读取，因此不采用其价格和销量。", "title": "Temu Mexico便携USB声波清洗设备", "url": "https://www.temu.com/mx/limpiador-de-tecnologia-de-ondas-sonoras-con-usb-dispositivo-portatil-de-limpieza-por----para-joyas-gafas-brochas-de-maquillaje-relojes-y-limpieza-de-oculares-ultrasonicador-compacto-para-viajes-y-uso-g-601105600908007.html", "capturedAt": "2026-07-14", "note": "动态页未稳定读取，不支持价格和销量结论", "publisher": "Temu", "grade": "A", "sourceType": "official-platform", "accessState": "unverified", "supports": [], "geo": "MX", "timeWindow": "2026-07-14访问检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false, "replacementUrl": "https://listado.mercadolibre.com.mx/limpiador-ultrasonico-joyas" },
+            { "signal": "Mercado Libre Mexico同类搜索结果页当前可见多种便携、600ml和42kHz清洗机，并出现“Más vendido”标识，说明墨西哥本地存在同类购买需求；该证据不代表Temu成交。", "title": "Mercado Libre Mexico：limpiador ultrasonico joyas", "url": "https://listado.mercadolibre.com.mx/limpiador-ultrasonico-joyas", "capturedAt": "2026-07-14", "note": "跨平台本地需求与竞争代理，不等于Temu销量", "publisher": "Mercado Libre", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "2026-07-14结果页检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false }
+          ]
+        },
+        "reasons": ["浑水和缝隙污渍的前后对比适合主图短动图与商品视频", "眼镜、首饰、表带和牙套提供多场景覆盖，可通过收纳盒或清洗篮做套装差异化", "墨西哥同类市场存在需求，但Temu单链接实时数据不可核验，只建议小批量测试"],
+        "supplyChain": { "purchaseUsdMin": null, "purchaseUsdMax": null, "retailMxnMin": null, "retailMxnMax": null, "logistics": "询价需明确真实超声频率与功率、容量、定时模式、USB-C输入、防水结构、空载保护和可清洗材质限制；避免把普通振动清洗误标为专业超声波。" },
+        "electronics": { "battery": "优先选择无内置电池、USB供电版本以降低运输和售后复杂度；若含电池必须补充容量和UN38.3/MSDS。", "charging": "建议USB-C 5V供电，核对额定功率、线材和适配器是否包含。", "chip": "定时、模式切换和状态灯由控制板/MCU管理，换能器驱动电路决定工作频率与功率；具体芯片和频率需BOM及实测确认。" },
+        "risks": ["低价款可能只是机械振动而非有效超声清洗", "珍珠、软宝石、镀层首饰等材质使用不当会引发售后", "水槽密封、噪音和功率虚标会提高退货率"],
+        "nextAction": "采购3种价位样品，用眼镜鼻托、金属表带和戒指缝隙做同条件前后称重/显微照片测试，并验证频率、功率、噪音、漏水和连续工作温升。",
+        "verdict": "recommend",
+        "media": [
+          { "type": "image", "title": "Temu商品图（动态页未核验）", "url": "https://www.temu.com/mx/limpiador-de-tecnologia-de-ondas-sonoras-con-usb-dispositivo-portatil-de-limpieza-por----para-joyas-gafas-brochas-de-maquillaje-relojes-y-limpieza-de-oculares-ultrasonicador-compacto-para-viajes-y-uso-g-601105600908007.html", "note": "页面动态内容未稳定读取，暂不展示为可用图片", "accessState": "unverified", "direct": false, "checkedAt": "2026-07-14T10:40:00+08:00", "sourceTitle": "Temu" },
+          { "type": "video", "title": "超声波清洗具体演示视频待核验", "url": "https://www.youtube.com/results?search_query=limpiador+ultrasonico+joyas", "note": "搜索结果页不是具体视频，页面仅显示素材暂不可用", "accessState": "invalid", "direct": false, "checkedAt": "2026-07-14T10:40:00+08:00", "sourceTitle": "YouTube" }
+        ],
+        "sources": [
+          { "title": "Temu Mexico便携USB声波清洗设备", "url": "https://www.temu.com/mx/limpiador-de-tecnologia-de-ondas-sonoras-con-usb-dispositivo-portatil-de-limpieza-por----para-joyas-gafas-brochas-de-maquillaje-relojes-y-limpieza-de-oculares-ultrasonicador-compacto-para-viajes-y-uso-g-601105600908007.html", "capturedAt": "2026-07-14", "note": "动态页未稳定读取，不支持实时价格或销量", "publisher": "Temu", "grade": "A", "sourceType": "official-platform", "accessState": "unverified", "supports": [], "geo": "MX", "timeWindow": "2026-07-14访问检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false, "replacementUrl": "https://listado.mercadolibre.com.mx/limpiador-ultrasonico-joyas" },
+          { "title": "Mercado Libre Mexico：limpiador ultrasonico joyas", "url": "https://listado.mercadolibre.com.mx/limpiador-ultrasonico-joyas", "capturedAt": "2026-07-14", "note": "跨平台墨西哥需求和竞争代理，不等于Temu成交", "publisher": "Mercado Libre", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "2026-07-14结果页检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false },
+          { "title": "Skymen 600ml便携超声波清洗机规格页", "url": "https://www.skymenultrasonic.com/doc/11942640/portable-household-ultrasonic-cleaner-600ml-5-digital-timing-setting-1-year-warranty.pdf", "capturedAt": "2026-07-14", "note": "同类设备容量与定时结构参考，不代表Temu推荐商品精确参数", "publisher": "Skymen", "grade": "D", "sourceType": "manufacturer-spec", "accessState": "available", "supports": ["specification"], "geo": "GLOBAL", "timeWindow": "当前公开规格页", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false }
+        ]
+      },
+      "whyRecommended": "它符合Temu低中客单、用途一眼能懂和多场景冲动购买逻辑；机会在真实清洗效果、USB-C与安全说明，而不是追逐最低价的“振动盒”。",
+      "analysis": ["价格竞争力：实时Temu价格不可核验，先按真实成本建立测试带", "视觉点击性：污水和缝隙清洁前后对比强", "冲动购买：眼镜、首饰和牙套都是高频个人物品", "同质化竞争：结果密集，必须靠真实性能和套装做差异", "物流质量：优先无电池USB供电款，降低合规与售后风险"],
+      "scores": { "demand": 4, "competitionOpportunity": 3, "profit": 3, "platformFit": 4, "contentOrSalesPotential": 4, "riskControl": 3 },
+      "platformPlaybook": ["主图做同一副眼镜清洗前后微距对比", "第二屏明确可清洗与禁洗材质，降低误用退货", "用清洗机、收纳篮、擦拭布组成差异化套装"],
+      "commercialModel": { "purchaseCost": "同规格USB供电款到岸成本待询价", "suggestedPrice": "US$12–19测试带；发布前按当日Temu页面和真实到岸成本复核", "estimatedProfit": "取得到岸成本、平台补贴、履约与退货率后计算；首轮目标毛利率不低于30%" },
+      "testAdvice": "建议小批量测试；只有通过频率/功率、漏水、噪音和真实清洁效果测试的样品才进入主图与广告测试。"
+    },
+    {
+      "channel": "mercado-libre-mx",
+      "report": {
+        "date": "2026-07-14",
+        "slug": "digital-luggage-scale-meli-mx-2026-07-14",
+        "product": {
+          "zh": "50kg数显便携行李秤",
+          "es": "Báscula digital portátil para equipaje de 50 kg",
+          "keywords": ["bascula equipaje", "bascula maleta 50kg", "peso maleta digital"]
+        },
+        "category": "旅行电子配件",
+        "scenarios": ["机场出发前称重", "返程采购后复称", "包裹与户外装备称重"],
+        "audience": ["国际旅行者", "留学生和商务出差者", "经常托运行李的家庭"],
+        "platforms": ["MKD"],
+        "metrics": { "price": null, "currency": "USD", "sold": null, "rating": null, "reviews": null, "discount": null },
+        "monthlyRevenueEstimate": { "status": "unavailable", "sourceProductUrl": null, "period": null, "estimatedMonthlyUnitsMin": null, "estimatedMonthlyUnitsMax": null, "unitPrice": null, "unitPriceCurrency": null, "mxnPerUsd": null, "fxCapturedAt": null, "fxSourceUrl": null, "fxPublisher": null, "method": null, "confidence": null, "sourceUrls": [], "unavailableReason": "可访问的是类目结果页，具体商品页受限且没有可复核的近30天单链接销量，不能严谨估算月销售额。" },
+        "trend": {
+          "status": "stable",
+          "label": "本地类目需求清楚，适合用精度和套装做稳定测试",
+          "evidence": [
+            { "signal": "Mercado Libre Mexico类目结果页当前显示大量行李秤结果，并可见“Mejores vendedores”、评分与评论量，证明本地类目有成熟供需；具体单链接月销量未公开。", "title": "Mercado Libre Mexico：báscula digital de equipaje", "url": "https://listado.mercadolibre.com.mx/b%C3%A1scula-digital-de-equipaje", "capturedAt": "2026-07-14", "note": "本地类目需求、竞争、价格与评价结构证据；不作为单链接月销量", "publisher": "Mercado Libre", "grade": "A", "sourceType": "official-platform", "accessState": "available", "supports": ["demand", "trend", "specification"], "geo": "MX", "timeWindow": "2026-07-14结果页检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false },
+            { "signal": "Google Trends Mexico可用于复核“bascula equipaje”的本地搜索兴趣；该指标是搜索需求代理，不等于Mercado Libre成交。", "title": "Google Trends Mexico：bascula equipaje", "url": "https://trends.google.com/trends/explore?geo=MX&q=bascula%20equipaje", "capturedAt": "2026-07-14", "note": "墨西哥搜索兴趣代理，不等于平台销量", "publisher": "Google", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "页面可切换过去90天或12个月", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false }
+          ]
+        },
+        "reasons": ["Mercado Libre本地结果页可见成熟供需、畅销标识和评价积累，需求证据强于另外两款", "产品轻小、无内置锂电和应用依赖，履约与售后复杂度较低", "竞争虽多，但可用校准精度、背光屏、卷尺/收纳袋套装和本地质保形成差异"],
+        "supplyChain": { "purchaseUsdMin": null, "purchaseUsdMax": null, "retailMxnMin": null, "retailMxnMax": null, "logistics": "询价需锁定50kg量程、10g或50g分度值、误差范围、去皮与锁定功能、背光、电池型号、织带与挂钩拉力；到货抽检应使用标准砝码。" },
+        "electronics": { "battery": "通常采用可更换纽扣电池或AAA电池，优先可更换电池方案；具体型号需以样品和供应商规格为准。", "charging": "不建议内置充电电池；可更换电池降低运输与闲置亏电售后。", "chip": "称重传感器经ADC/称重芯片采集，MCU负责单位切换、峰值锁定、去皮、低电提示和背光显示；具体方案需BOM确认。" },
+        "risks": ["低价同款密集，纯跟价容易压缩利润", "精度漂移和织带/挂钩强度不足会导致差评", "标题中的50kg量程不能替代全量程误差测试"],
+        "nextAction": "采购3个传感器方案样品，用5kg、10kg、20kg标准载荷做重复性和偏载测试，并进行挂钩拉力、跌落与低温电池测试；用含卷尺/收纳袋套装对比裸机转化。",
+        "verdict": "recommend",
+        "media": [
+          { "type": "image", "title": "Mercado Libre类目商品图入口", "url": "https://listado.mercadolibre.com.mx/b%C3%A1scula-digital-de-equipaje", "note": "类目页而非具体媒体文件，为避免失效不直接展示图片", "accessState": "unverified", "direct": false, "checkedAt": "2026-07-14T10:40:00+08:00", "sourceTitle": "Mercado Libre" },
+          { "type": "video", "title": "行李秤具体演示视频待核验", "url": "https://www.youtube.com/results?search_query=bascula+equipaje+digital+50kg", "note": "搜索结果页不是具体视频，页面仅显示素材暂不可用", "accessState": "invalid", "direct": false, "checkedAt": "2026-07-14T10:40:00+08:00", "sourceTitle": "YouTube" }
+        ],
+        "sources": [
+          { "title": "Mercado Libre Mexico：báscula digital de equipaje", "url": "https://listado.mercadolibre.com.mx/b%C3%A1scula-digital-de-equipaje", "capturedAt": "2026-07-14", "note": "本地类目需求、竞争和评价结构证据；不作为单链接月销量", "publisher": "Mercado Libre", "grade": "A", "sourceType": "official-platform", "accessState": "available", "supports": ["demand", "trend", "specification"], "geo": "MX", "timeWindow": "2026-07-14结果页检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false },
+          { "title": "Google Trends Mexico：bascula equipaje", "url": "https://trends.google.com/trends/explore?geo=MX&q=bascula%20equipaje", "capturedAt": "2026-07-14", "note": "墨西哥搜索兴趣代理，不等于平台成交", "publisher": "Google", "grade": "C", "sourceType": "independent-trend", "accessState": "available", "supports": ["demand", "trend"], "geo": "MX", "timeWindow": "页面可切换过去90天或12个月", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false },
+          { "title": "AS Showroom行李秤使用场景说明", "url": "https://as.com/showroom/hogar_y_bricolaje/bascula-para-maletas-n/", "capturedAt": "2026-07-14", "note": "同类设备旅行称重、便携与显示功能参考，不代表推荐商品精确参数", "publisher": "AS", "grade": "D", "sourceType": "independent-trend", "accessState": "available", "supports": ["specification"], "geo": "GLOBAL", "timeWindow": "当前公开文章", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false },
+          { "title": "Mercado Libre具体行李秤商品页（受限）", "url": "https://www.mercadolibre.com.mx/bascula-de-equipaje-digital-portatil-para-maleta-viaje/p/MLM67943307", "capturedAt": "2026-07-14", "note": "具体商品页返回403，不支持单链接销量、价格或评价结论", "publisher": "Mercado Libre", "grade": "A", "sourceType": "official-platform", "accessState": "blocked", "supports": [], "geo": "MX", "timeWindow": "2026-07-14访问检查", "checkedAt": "2026-07-14T10:40:00+08:00", "isEstimated": false, "replacementUrl": "https://listado.mercadolibre.com.mx/b%C3%A1scula-digital-de-equipaje" }
+        ]
+      },
+      "whyRecommended": "三款中它的墨西哥本地平台证据最完整：可访问类目页显示成熟结果、畅销标识和评价积累；同时体积小、无内置锂电、售后逻辑简单，适合先做精度与套装差异化测试。",
+      "analysis": ["墨西哥本地需求：类目页有大量在售结果和成熟评价", "消费者画像：国际旅行、商务出差、留学生和家庭游客", "热销可能性：超重费痛点明确，购买理由直接", "竞争情况：同款多，机会在精度证明、套装和本地履约"],
+      "scores": { "demand": 5, "competitionOpportunity": 3, "profit": 4, "platformFit": 5, "contentOrSalesPotential": 4, "riskControl": 4 },
+      "platformPlaybook": ["标题覆盖bascula equipaje、50kg、digital、portatil关键词", "主图展示背光读数、挂钩、卷尺与收纳袋套装", "详情页放5/10/20kg重复称重实测表和误差说明"],
+      "commercialModel": { "purchaseCost": "同规格到岸成本待询价，不用零售价倒推成本", "suggestedPrice": "US$7–12测试带；发布前按当日类目和真实到岸成本复核", "estimatedProfit": "取得平台费、物流、税和退货率后核算；套装款首轮目标毛利率不低于35%" },
+      "testAdvice": "优先建议测试；先以30–50件验证精度、差评率和套装转化，不参加单纯最低价竞争。"
+    }
+  ],
+  "ranking": [
+    { "productSlug": "digital-luggage-scale-meli-mx-2026-07-14", "rank": 1, "score": 91, "reason": "墨西哥本地平台证据最完整，产品轻小且无内置锂电，精度和套装差异化可直接验证。" },
+    { "productSlug": "portable-rechargeable-blender-tiktok-mx-2026-07-14", "rank": 2, "score": 86, "reason": "短视频内容潜力最强，但TikTok实时销量页面受限，且碎冰、电池和安全联锁需要先做样品测试。" },
+    { "productSlug": "portable-usb-ultrasonic-cleaner-temu-mx-2026-07-14", "rank": 3, "score": 82, "reason": "多场景和前后对比适合Temu，但同质化高，且必须排除只有机械振动、清洁效果不足的低质方案。" }
+  ],
+  "priorityPick": {
+    "productSlug": "digital-luggage-scale-meli-mx-2026-07-14",
+    "reason": "如果今天只能测试一个，优先50kg数显便携行李秤：它有当前可访问的Mercado Libre Mexico类目需求证据，样品成本和运输风险较低，且能用标准载荷在一天内完成核心精度验证。"
+  },
+  "sourcesCheckedAt": "2026-07-14T10:40:00+08:00"
+}
