@@ -1,0 +1,727 @@
+{
+  "date": "2026-07-15",
+  "slug": "2026-07-15",
+  "recommendations": [
+    {
+      "channel": "tiktok-mx",
+      "report": {
+        "date": "2026-07-15",
+        "slug": "rechargeable-makeup-brush-cleaner-tiktok-mx-2026-07-15",
+        "product": {
+          "zh": "USB-C充电式化妆刷清洗烘干机",
+          "es": "Limpiador eléctrico recargable de brochas de maquillaje",
+          "keywords": [
+            "充电式化妆刷清洗机",
+            "limpiador de brochas eléctrico",
+            "electric makeup brush cleaner"
+          ]
+        },
+        "category": "美妆工具与个人护理小电器",
+        "scenarios": [
+          "一杯脏水到清水的短视频前后对比",
+          "化妆师工作台批量洗刷与竖放晾干",
+          "宿舍和旅行中快速清洁常用化妆刷"
+        ],
+        "audience": [
+          "高频化妆用户",
+          "美妆达人与化妆师",
+          "需要礼赠型美妆工具的消费者"
+        ],
+        "platforms": ["TK"],
+        "metrics": {
+          "price": null,
+          "currency": "MXN",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [],
+          "unavailableReason": "TikTok Shop具体商品页本次无法直连，且没有授权FAST MOSS数据；缺少同一商品链接近30天销量、可核验单价和对应观察窗口，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "视觉演示成立但墨西哥需求与TikTok成交待验证",
+          "evidence": [
+            {
+              "signal": "TikTok Shop美国站存在同类Type-C充电、自动/半自动两模式商品，但本次直连超时，不能外推到TikTok Shop Mexico销量或热度。",
+              "title": "TikTok Shop充电式化妆刷清洗机商品页",
+              "url": "https://shop.tiktok.com/us/pdp/electric-makeup-brush-cleaner-rechargeable-automatic/1732313235398759037",
+              "capturedAt": "2026-07-15",
+              "note": "终端连接超时且网页访问落入安全检查；仅保留审计记录，不支持实时指标。",
+              "publisher": "TikTok Shop",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "US",
+              "timeWindow": "2026-07-15访问检查",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry"
+            },
+            {
+              "signal": "Wanelo具体商品页可访问并公开500mAh锂电、USB-C、约2小时充电和旋转清洗结构，只支持功能与内容脚本设计，不是墨西哥平台需求或销量证据。",
+              "title": "Wanelo充电式化妆刷清洗机商品页",
+              "url": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry",
+              "capturedAt": "2026-07-15",
+              "note": "可访问供应商商品页；页面营销话术和评论不用于推导销量。",
+              "publisher": "Wanelo",
+              "grade": "D",
+              "sourceType": "supplier-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "GLOBAL",
+              "timeWindow": "2026-07-15当前商品页",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Walmart Mexico存在同类充电式化妆刷清洗机索引，但最终跳转到blocked页，因此不计入墨西哥需求或价格证据。",
+              "title": "Walmart Mexico充电式化妆刷清洗机商品页",
+              "url": "https://www.walmart.com.mx/ip/limpiador-automatico-de-brochas-de-maquillaje-electrico-recargable-herramienta-de-secado-rapido-limpiador-rotatorio-de-brochas-de-maquillaje-con-usb/00690270583818",
+              "capturedAt": "2026-07-15",
+              "note": "HTTP最终地址为Walmart blocked页面；搜索快照不替代可访问商品页。",
+              "publisher": "Walmart Mexico",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-15访问检查",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry"
+            }
+          ]
+        },
+        "reasons": [
+          "透明杯内水流和粉底残留变化能在3秒内建立视觉钩子，适合短视频演示。",
+          "清洗、竖放晾干和收纳三合一比单纯旋转洗刷器更容易形成套装价值。",
+          "当前没有可访问的墨西哥需求或成交证据，因此仅列为小样观察，不宣称热卖。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "同规格OEM含电池到岸成本待询；询价必须包含电芯容量、USB-C输入、充电保护、堵转保护、杯体防漏、UN38.3/MSDS和备件比例。"
+        },
+        "electronics": {
+          "battery": "可访问供应商页标注500mAh锂离子电池、单次充电15次以上清洗；该参数只代表参考商品，量产样必须抽检真实容量和循环寿命。",
+          "charging": "USB-C充电，参考页面标注约2小时充满；需实测5V输入兼容性、充电温升，并禁止湿手或杯体有水时充电。",
+          "chip": "一键模式、旋转电机调速、定时和欠压/过流保护需要控制PCB、MCU或电机驱动及锂电电源管理芯片；具体芯片型号未公开，必须向供应商索取BOM。"
+        },
+        "risks": [
+          "刷毛缠绕、掉毛或高速甩水会快速拉高差评与退货率",
+          "底座防水、充电口密封和水电隔离必须在量产前验证",
+          "本地需求证据不足，不能按供应商营销评论备货"
+        ],
+        "nextAction": "先采购3款不同杯体与电机结构样机，测试粉底液、眼影和防水睫毛膏残留清洁率、甩水、噪声、堵转温升和20次循环；只用50件以内或达人寄样验证内容点击与加购。",
+        "verdict": "watch",
+        "media": [
+          {
+            "type": "image",
+            "title": "Wanelo充电式化妆刷清洗机产品图",
+            "url": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry",
+            "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0695/6092/6386/files/funnel_top_1_e63e3fc5-b993-41e3-93d9-1649ae4ba3be.jpg?v=1780583733",
+            "note": "具体商品页和缩略图均已返回HTTP 200，仅用于外观与拍摄构图参考。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "sourceTitle": "Wanelo"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=limpiador+brochas+maquillaje+electrico+recargable",
+            "note": "搜索页不是具体视频且本次连接超时；暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "TikTok Shop充电式化妆刷清洗机商品页",
+            "url": "https://shop.tiktok.com/us/pdp/electric-makeup-brush-cleaner-rechargeable-automatic/1732313235398759037",
+            "capturedAt": "2026-07-15",
+            "note": "安全检查/连接超时，不支持价格、销量或评分。",
+            "publisher": "TikTok Shop",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "US",
+            "timeWindow": "2026-07-15访问检查",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry"
+          },
+          {
+            "title": "Wanelo充电式化妆刷清洗机商品页",
+            "url": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry",
+            "capturedAt": "2026-07-15",
+            "note": "用于500mAh锂电、USB-C、充电时长和旋转清洗结构参考；营销销量与评论不采用。",
+            "publisher": "Wanelo",
+            "grade": "D",
+            "sourceType": "supplier-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-15当前商品页",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Walmart Mexico充电式化妆刷清洗机商品页",
+            "url": "https://www.walmart.com.mx/ip/limpiador-automatico-de-brochas-de-maquillaje-electrico-recargable-herramienta-de-secado-rapido-limpiador-rotatorio-de-brochas-de-maquillaje-con-usb/00690270583818",
+            "capturedAt": "2026-07-15",
+            "note": "最终跳转blocked页，不计入墨西哥需求、价格或库存。",
+            "publisher": "Walmart Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-15访问检查",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://wanelo.com/products/automatic-makeup-brush-cleaner-spin-wash-dry"
+          }
+        ]
+      },
+      "whyRecommended": "脏刷入水、旋涡带走彩妆残留、清水复检和竖放晾干构成天然短视频脚本；但墨西哥需求与TikTok成交证据不足，因此只建议低成本内容测款。",
+      "analysis": [
+        "短视频适配：透明杯、水色变化和多刷同时清洗能在前3秒呈现问题与结果。",
+        "达人匹配：美妆教程、化妆师工作台、宿舍收纳和礼物开箱四类达人都能自然植入。",
+        "转化限制：TikTok Shop具体页面受限，没有墨西哥成交、价格或评价可复核，必须用真实落地页数据重新判断。",
+        "差异化：优先做可拆洗杯体、低噪电机、USB-C、刷架/清洁液/收纳袋套装，而不是单卖白牌主机。",
+        "合规与售后：禁止宣称杀菌或治疗皮肤问题；重点控制漏水、缠毛、甩水和电池运输文件。"
+      ],
+      "scores": {
+        "demand": 2,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 5,
+        "riskControl": 2
+      },
+      "platformPlaybook": [
+        "切入点1：左右各放同款粉底刷，手洗计时对比机器旋涡清洗，3秒先给出脏水变化。",
+        "切入点2：化妆师下班后一次处理4支刷，展示拆杯、换水、竖放晾干的完整闭环。",
+        "切入点3：用白纸按压清洗前后刷毛，做残留可视化，并明确不做杀菌和护肤功效承诺。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "同规格OEM含电池到岸成本待询，不沿用受限页面或零售页反推采购价。",
+        "suggestedPrice": "MXN 499–699（首轮测款假设，需按真实到岸成本和TikTok Shop Mexico页面复核）",
+        "estimatedProfit": "假设平台费、达人佣金、履约、税费、退款和样品摊销后毛利率至少30%；当前未计仓租与坏件补发。",
+        "suitableCommission": "达人佣金假设15%–20%，仅在单件贡献毛利覆盖佣金、退款和投流后启用。",
+        "targetRoi": "冷启动付费流量ROI假设不低于1.8；自然流与达人寄样单独归因，不用播放量冒充成交。"
+      },
+      "testAdvice": "先找5位中小美妆达人各拍一个脚本，统一落地页只测主图与套装；72小时看完整播放率、商品点击率、加购率和退款咨询，没有本地转化就停止扩量。"
+    },
+    {
+      "channel": "temu-mx",
+      "report": {
+        "date": "2026-07-15",
+        "slug": "usb-c-mini-bag-sealer-temu-mx-2026-07-15",
+        "product": {
+          "zh": "USB-C充电式迷你封口器（封口+切袋套装）",
+          "es": "Mini sellador de bolsas recargable USB-C con cortador",
+          "keywords": [
+            "充电式迷你封口器",
+            "sellador de bolsas recargable",
+            "USB-C mini bag sealer"
+          ]
+        },
+        "category": "厨房收纳与食品保鲜小电器",
+        "scenarios": [
+          "薯片和饼干开袋后重新热封",
+          "咖啡豆、宠物粮和冷冻食品防潮收纳",
+          "露营、野餐和宿舍小包装封口"
+        ],
+        "audience": [
+          "小户型与宿舍用户",
+          "有儿童或宠物的家庭",
+          "露营和旅行人群"
+        ],
+        "platforms": ["TM"],
+        "metrics": {
+          "price": null,
+          "currency": "MXN",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [],
+          "unavailableReason": "Temu商品页当前显示商品不可购买/详情不可用，且没有授权第三方销量；缺少可访问的单链接月销量、成交单价与观察窗口，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "功能容易理解，但Temu在售状态与墨西哥需求待验证",
+          "evidence": [
+            {
+              "signal": "Temu Mexico具体商品页HTTP可访问，但正文显示商品不可购买且详情不可用，不能作为在售、价格或销量证据。",
+              "title": "Temu Mexico 200mAh USB迷你封口器商品页",
+              "url": "https://www.temu.com/mx/sellador-de-bolsas-de-aperitivos-usb-mini-sellador-de--y---con-cortador-bateria-de-litio-recargable-de-200mah-sellador-de-almacenamiento-de-alimentos-para-uso-en-la-cocina-g-601099698891614.html",
+              "capturedAt": "2026-07-15",
+              "note": "页面返回HTTP 200但商品状态失效，标记replaced并撤回所有精确指标。",
+              "publisher": "Temu",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "replaced",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-15访问检查",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://sealifyco.com/product"
+            },
+            {
+              "signal": "Sealify具体商品页可访问，确认内置锂电、USB-C、数字电量显示和热封结构；只用于结构与套装设计，不代表Temu Mexico销量。",
+              "title": "Sealify Portable Bag Sealer品牌商品页",
+              "url": "https://sealifyco.com/product",
+              "capturedAt": "2026-07-15",
+              "note": "品牌页可访问；页面评论、折扣和营销保鲜倍数不用于销量或功效结论。",
+              "publisher": "Sealify Co.",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "GLOBAL",
+              "timeWindow": "2026-07-15当前品牌页",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Walmart Mexico同类USB充电封口器页面最终跳转blocked页，搜索快照不计入本地需求、价格或库存证据。",
+              "title": "Walmart Mexico USB充电迷你封口器商品页",
+              "url": "https://www.walmart.com.mx/ip/sellador-de-bolsas-pequeno-recargable-por-usb-portatil-para-bolsas-de-plastico-para-almacenamiento-y-envasado-de-alimentos/00357263775752",
+              "capturedAt": "2026-07-15",
+              "note": "最终地址为Walmart blocked页面，不计入有效证据。",
+              "publisher": "Walmart Mexico",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-15访问检查",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://sealifyco.com/product"
+            }
+          ]
+        },
+        "reasons": [
+          "主图用开袋、滑动、封口和倒置不洒四格即可一眼讲清用途。",
+          "封口器、隐藏切刀、磁吸收纳、USB-C线和测试袋能组成升级套装，避开纯裸机最低价。",
+          "Temu原商品已不可购买且本地需求页受限，因此只建议重新寻源后做小批量测试。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "同规格含锂电到岸成本待询；询价需明确发热片材质、温控方案、适用袋材、连续封口次数、USB-C输入、刀片防护、UN38.3/MSDS和跌落测试。"
+        },
+        "electronics": {
+          "battery": "Temu失效页标题曾标200mAh锂电，但该容量不再作为已验证参数；参考品牌页只确认内置锂电，量产容量与电芯品牌待样机和BOM核验。",
+          "charging": "优先USB-C 5V充电，需确认不是仅支持A-to-C，并实测充电温升、满充续航、静置掉电和低电保护。",
+          "chip": "数字电量显示、发热片恒温/定时、按键逻辑和锂电保护需要控制器或MCU、显示驱动与电源管理芯片；具体型号未公开，供应商必须提供BOM和保护阈值。"
+        },
+        "risks": [
+          "发热片温控不稳可能烫穿袋材或造成低温烫伤",
+          "刀片裸露、磁吸脱落、短续航和连续使用过热会抬高退货",
+          "不同PP、PE、复合膜和纯铝袋兼容性差异大，主图不能承诺全袋材通用"
+        ],
+        "nextAction": "重找3家支持USB-C、温控和刀片保护的供应商，各测100次封口、10次连续工作温升、五类袋材通过率、跌落和磁吸强度；只有套装与质控显著优于裸机才进入Temu测试。",
+        "verdict": "watch",
+        "media": [
+          {
+            "type": "image",
+            "title": "Sealify充电式迷你封口器产品图",
+            "url": "https://sealifyco.com/product",
+            "thumbnailUrl": "https://sealifyco.com/images/IMG-0265.PNG",
+            "note": "具体品牌商品页及缩略图均返回HTTP 200，仅用于产品结构与主图构图参考。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "sourceTitle": "Sealify Co."
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=sellador+bolsas+recargable+USB-C",
+            "note": "搜索页不是具体视频且本次连接超时；暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Temu Mexico 200mAh USB迷你封口器商品页",
+            "url": "https://www.temu.com/mx/sellador-de-bolsas-de-aperitivos-usb-mini-sellador-de--y---con-cortador-bateria-de-litio-recargable-de-200mah-sellador-de-almacenamiento-de-alimentos-para-uso-en-la-cocina-g-601099698891614.html",
+            "capturedAt": "2026-07-15",
+            "note": "HTTP 200但商品不可购买/详情不可用，不支持实时价格、库存或销量。",
+            "publisher": "Temu",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "replaced",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-15访问检查",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://sealifyco.com/product"
+          },
+          {
+            "title": "Sealify Portable Bag Sealer品牌商品页",
+            "url": "https://sealifyco.com/product",
+            "capturedAt": "2026-07-15",
+            "note": "用于内置锂电、USB-C、数字电量显示、热封宽度和外观结构参考。",
+            "publisher": "Sealify Co.",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-15当前品牌页",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Walmart Mexico USB充电迷你封口器商品页",
+            "url": "https://www.walmart.com.mx/ip/sellador-de-bolsas-pequeno-recargable-por-usb-portatil-para-bolsas-de-plastico-para-almacenamiento-y-envasado-de-alimentos/00357263775752",
+            "capturedAt": "2026-07-15",
+            "note": "最终跳转blocked页，不支持墨西哥需求、价格或库存。",
+            "publisher": "Walmart Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-15访问检查",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://sealifyco.com/product"
+          }
+        ]
+      },
+      "whyRecommended": "封口效果和切袋动作非常适合Temu主图与短演示，且能通过USB-C、温控、隐藏刀、磁吸和测试袋套装拉开裸机差异；但失效商品页和本地证据不足决定了只能先寻源小测。",
+      "analysis": [
+        "点击：主图使用‘薯片开袋→滑动热封→倒置不洒’三步，避免复杂文字。",
+        "冲动购买：家庭防潮、宠物粮和露营场景低学习成本，但价格必须建立在真实到岸成本和套装价值上。",
+        "同质化：裸机高度同质，必须做USB-C、数字电量、隐藏刀、磁吸、清洁刷和多材质测试袋组合。",
+        "物流与电池：小体积有利履约，但内置锂电仍需UN38.3/MSDS、包装短路防护和Temu运输规则复核。",
+        "质量与退货：温控、封口均匀度、袋材兼容、刀片保护、连续过热和续航是主要退货驱动。"
+      ],
+      "scores": {
+        "demand": 2,
+        "competitionOpportunity": 2,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 4,
+        "riskControl": 2
+      },
+      "platformPlaybook": [
+        "首图只放封口前后和倒置结果，第二张再解释USB-C、电量显示、隐藏刀和磁吸。",
+        "上架只测升级套装：主机+Type-C线+清洁刷+6种测试袋+收纳盒，避免与最低价裸机正面对比。",
+        "标题覆盖sellador de bolsas、recargable、USB-C、cortador和cocina，并明确不适用的袋材。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "同规格OEM含电池到岸成本待询；Temu失效页和零售品牌页均不用于反推成本。",
+        "suggestedPrice": "MXN 199–299（升级套装测款假设，不是Temu实时报价）",
+        "estimatedProfit": "取得到岸成本、平台费、促销补贴、履约、税费和退货率后计算；首轮目标毛利率至少25%，未计坏件补发与认证摊销。"
+      },
+      "testAdvice": "先做两套主图A/B：效果三步图对比‘配件全家福’，各跑最小流量；若点击成立但退款咨询集中在封不牢或发热，立即停品而不是降价扩量。"
+    },
+    {
+      "channel": "mercado-libre-mx",
+      "report": {
+        "date": "2026-07-15",
+        "slug": "xiaomi-smart-laser-measure-meli-mx-2026-07-15",
+        "product": {
+          "zh": "小米智能激光测距仪40m",
+          "es": "Medidor láser inteligente Xiaomi de 40 m",
+          "keywords": [
+            "智能激光测距仪",
+            "medidor láser inteligente",
+            "smart laser distance meter"
+          ]
+        },
+        "category": "测量工具与家装智能设备",
+        "scenarios": [
+          "装修前测量房间、门窗和家具尺寸",
+          "房产经纪和室内设计快速记录平面数据",
+          "木工、安装和仓储场景单手测距"
+        ],
+        "audience": [
+          "装修与DIY用户",
+          "室内设计师和房产经纪",
+          "安装工、木工与小型工程团队"
+        ],
+        "platforms": ["MKD"],
+        "metrics": {
+          "price": null,
+          "currency": "MXN",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [],
+          "unavailableReason": "Mercado Libre Mexico商品详情页返回403，且没有可访问的同一链接近30天销量与成交单价；官方小米页只支持规格和本地产品存在性，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥官方产品页确认本地使用场景，平台成交仍待验证",
+          "evidence": [
+            {
+              "signal": "小米墨西哥官方页可访问，明确40m、±3mm、蓝牙连接、家装/家具/室内测量场景和本地西语产品信息；只支持本地需求场景与规格，不代表销量。",
+              "title": "Xiaomi Mexico Smart Laser Measure官方产品页",
+              "url": "https://www.mi.com/mx/product/xiaomi-smart-laser-measure/",
+              "capturedAt": "2026-07-15",
+              "note": "墨西哥官方产品页HTTP 200；不采用buy页的$0占位，也不外推销量。",
+              "publisher": "Xiaomi Mexico",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["demand", "specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-15当前官方产品页",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "小米墨西哥官方FAQ可访问，复核370mAh锂电、USB Type-C、5V充电和Mi Home连接；不提供平台销量或搜索增长。",
+              "title": "Xiaomi Mexico Smart Laser Measure官方FAQ",
+              "url": "https://www.mi.com/mx/support/faq/details/KA-11007/",
+              "capturedAt": "2026-07-15",
+              "note": "官方售后资料用于电池、充电与连接规格复核。",
+              "publisher": "Xiaomi Mexico Support",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-15当前官方FAQ",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Mercado Libre Mexico同类小米测距仪商品详情本次返回403，搜索快照中的价格、评分和销售标签全部撤回。",
+              "title": "Mercado Libre Mexico智能激光测距仪商品页",
+              "url": "https://www.mercadolibre.com.mx/dispositivo-de-medicion-laser-cinta-metrica-laser-digital/p/MLM2076751476",
+              "capturedAt": "2026-07-15",
+              "note": "详情页HTTP 403，不支持平台销量、价格、评分或评论数。",
+              "publisher": "Mercado Libre",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-15访问检查",
+              "checkedAt": "2026-07-15T10:25:00+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://www.mi.com/mx/product/xiaomi-smart-laser-measure/"
+            }
+          ]
+        },
+        "reasons": [
+          "房间、门窗、家具和安装测量属于明确本地家装需求，官方墨西哥页提供完整西语场景。",
+          "小米品牌、40m量程、蓝牙同步和Type-C充电能避开无牌只比低价的测距仪。",
+          "Mercado Libre详情受限，平台销量和竞争强度不能精确判断，仍需小批量广告和转化验证。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "墨西哥本地授权或合规进口成本待询；需核实品牌授权、序列号与保修、激光Class II标识、370mAh锂电运输文件、西语说明书和Mi Home墨西哥区配对。"
+        },
+        "electronics": {
+          "battery": "小米墨西哥官方页和FAQ明确内置370mAh锂电，官方测试口径为满充约3000次测量；实销批次仍需核对序列号、电芯一致性和待机掉电。",
+          "charging": "USB Type-C、5V充电，官方FAQ确认包装含Type-C数据线；上架前实测充电时长、接口牢固度和低电量错误提示。",
+          "chip": "激光发射/接收测距、±3mm算法、LCD、历史数据显示、蓝牙与Mi Home同步由测距处理器/MCU、蓝牙SoC和电源管理电路共同实现；官方未公开具体芯片型号。"
+        },
+        "risks": [
+          "Mercado Libre详情页不可访问，平台销量、售价和竞争强度没有当日可复核数据",
+          "强日光、黑色或高反射表面会影响测量，主图必须写清室内标准条件",
+          "假货、区域配对、品牌授权和售后保修会直接影响评价与账号风险"
+        ],
+        "nextAction": "先确认墨西哥授权货源和Mi Home墨西哥区配对，再用5台样机测试5cm到40m、不同表面、重复精度、蓝牙同步、充电和跌落；仅用20–30台本地库存验证广告转化与售后。",
+        "verdict": "recommend",
+        "media": [
+          {
+            "type": "image",
+            "title": "Xiaomi Smart Laser Measure墨西哥官方产品图",
+            "url": "https://www.mi.com/mx/product/xiaomi-smart-laser-measure/",
+            "thumbnailUrl": "https://i02.appmifile.com/150_item_mx/14/07/2025/05a6a5c9a09efeeff8b2cbbe7d21e488.png",
+            "note": "墨西哥官方产品页与图片均返回HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "sourceTitle": "Xiaomi Mexico"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=Xiaomi+Smart+Laser+Measure",
+            "note": "搜索页不是具体视频且本次连接超时；暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Xiaomi Mexico Smart Laser Measure官方产品页",
+            "url": "https://www.mi.com/mx/product/xiaomi-smart-laser-measure/",
+            "capturedAt": "2026-07-15",
+            "note": "支持墨西哥本地家装/家具测量场景、40m、±3mm、蓝牙、370mAh和Type-C规格；不支持平台销量。",
+            "publisher": "Xiaomi Mexico",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["demand", "specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-15当前官方产品页",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Xiaomi Mexico Smart Laser Measure官方FAQ",
+            "url": "https://www.mi.com/mx/support/faq/details/KA-11007/",
+            "capturedAt": "2026-07-15",
+            "note": "复核370mAh锂电、USB Type-C、5V充电和Mi Home连接。",
+            "publisher": "Xiaomi Mexico Support",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-15当前官方FAQ",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Mercado Libre Mexico智能激光测距仪商品页",
+            "url": "https://www.mercadolibre.com.mx/dispositivo-de-medicion-laser-cinta-metrica-laser-digital/p/MLM2076751476",
+            "capturedAt": "2026-07-15",
+            "note": "详情页HTTP 403，不支持价格、销量、评分、评论或折扣。",
+            "publisher": "Mercado Libre",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-15访问检查",
+            "checkedAt": "2026-07-15T10:25:00+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.mi.com/mx/product/xiaomi-smart-laser-measure/"
+          }
+        ]
+      },
+      "whyRecommended": "小米墨西哥官方页提供明确本地家装场景和完整电池、充电、蓝牙及测距规格；品牌与App能力能避开部分无牌低价竞争，是三款中证据最完整、最值得先测的一款。",
+      "analysis": [
+        "本地需求：小米墨西哥官方页明确房间、门窗、家具和装修测量场景，证明本地西语产品与使用需求存在，但不等于平台销量。",
+        "消费者画像：DIY家庭、室内设计师、房产经纪、安装工和小型工程团队重视单手测量、数据留存与品牌售后。",
+        "竞争：低价无牌测距仪多，小米的蓝牙、Mi Home、370mAh、Type-C和官方墨西哥资料形成可解释差异。",
+        "卖点：40m、±3mm、LCD、蓝牙同步、面积/体积计算与平面图标注组合比单一测距更完整。",
+        "推广：用‘量房→同步手机→自动算面积’三步演示，标题覆盖medidor láser、40 m、Bluetooth、Type-C和Xiaomi；不使用受限页面销量数字。"
+      ],
+      "scores": {
+        "demand": 4,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 4,
+        "riskControl": 4
+      },
+      "platformPlaybook": [
+        "主图展示40m、±3mm、Type-C和Bluetooth四个官方规格，第二张给房间与家具测量场景。",
+        "详情页加入强光、黑色和高反射表面限制，提供西语快速指南和Mi Home墨西哥区配对步骤。",
+        "广告先投medidor láser Xiaomi、distanciómetro Bluetooth和medir habitaciones，按点击到购买与售后咨询词调价。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "墨西哥授权或合规进口含税成本待询；不得用Mercado Libre受限页或小米buy页$0占位反推。",
+        "suggestedPrice": "MXN 899–1,299（品牌正品与本地保修测款假设，需上线当日复核竞品）",
+        "estimatedProfit": "扣除Mercado Libre费用、履约、税费、广告、保修和退货后目标毛利率至少25%；当前未计假货鉴定与App支持成本。"
+      },
+      "testAdvice": "如果只测一个，先测小米智能激光测距仪：20–30台本地库存、两组关键词广告和一套西语配对教程；以购买转化、广告成本、配对咨询率和30天退货率决定是否扩量。"
+    }
+  ],
+  "ranking": [
+    {
+      "productSlug": "xiaomi-smart-laser-measure-meli-mx-2026-07-15",
+      "rank": 1,
+      "score": 86,
+      "reason": "小米墨西哥官方产品页与FAQ均可访问，规格和本地家装场景最完整；证据为中等可信，分数未超过89上限。"
+    },
+    {
+      "productSlug": "rechargeable-makeup-brush-cleaner-tiktok-mx-2026-07-15",
+      "rank": 2,
+      "score": 77,
+      "reason": "短视频视觉潜力最高，但TikTok与墨西哥需求证据受限，只能按低可信小样观察，分数不超过79上限。"
+    },
+    {
+      "productSlug": "usb-c-mini-bag-sealer-temu-mx-2026-07-15",
+      "rank": 3,
+      "score": 75,
+      "reason": "主图易懂且可做套装，但Temu原页已失效、本地页面受限、同质化和温控退货风险更高，按低可信处理。"
+    }
+  ],
+  "priorityPick": {
+    "productSlug": "xiaomi-smart-laser-measure-meli-mx-2026-07-15",
+    "reason": "如果今天只测一个，优先小米智能激光测距仪：墨西哥官方页可访问、规格明确、品牌与蓝牙App形成差异，而且售前可通过样机与西语教程控制风险。"
+  },
+  "sourcesCheckedAt": "2026-07-15T10:25:00+08:00"
+}
