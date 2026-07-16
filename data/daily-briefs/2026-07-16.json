@@ -1,0 +1,674 @@
+{
+  "date": "2026-07-16",
+  "slug": "mexico-platform-electronics-brief-2026-07-16",
+  "recommendations": [
+    {
+      "channel": "tiktok-mx",
+      "report": {
+        "date": "2026-07-16",
+        "slug": "xiaomi-mini-handheld-vacuum-tiktok-mx-2026-07-16",
+        "product": {
+          "zh": "小米便携手持吸尘器 Mini",
+          "es": "Aspiradora de mano portátil Xiaomi Mi Vacuum Cleaner Mini",
+          "keywords": [
+            "便携手持吸尘器",
+            "aspiradora de mano portátil",
+            "mini handheld vacuum"
+          ]
+        },
+        "category": "便携清洁电器与车载清洁",
+        "scenarios": [
+          "键盘缝隙、桌面碎屑和沙发边角的前后对比清洁",
+          "汽车中控、杯架和座椅缝隙的快速吸尘",
+          "小户型与办公室抽屉收纳后的随手清洁"
+        ],
+        "audience": [
+          "有车家庭与通勤车主",
+          "桌面设备多的学生和办公室用户",
+          "重视收纳体积与品牌售后的年轻家庭"
+        ],
+        "platforms": ["TK"],
+        "metrics": {
+          "price": null,
+          "currency": "MXN",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [],
+          "unavailableReason": "未取得可访问的TikTok Shop Mexico单一商品页近30天销量与成交单价；品牌规格页、搜索结果和内容演示均不能换算平台月销量，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥官方产品与售后资料可核实，TikTok平台需求仍待小样验证",
+          "evidence": [
+            {
+              "signal": "Xiaomi Mexico官方产品页可访问，明确车内、键盘、家居边角清洁场景，以及13,000Pa、双档、最长30分钟和Type-C接口；只支持本地场景与规格，不代表TikTok销量。",
+              "title": "Mi Vacuum Cleaner Mini墨西哥官方产品页",
+              "url": "https://www.mi.com/mx/product/mi-vacuum-cleaner-mini/",
+              "capturedAt": "2026-07-16",
+              "note": "HTTP 200，页面内容完整；用于本地场景与产品规格核查。",
+              "publisher": "Xiaomi Mexico",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["demand", "specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-16当前官方产品页",
+              "checkedAt": "2026-07-16T10:20:11+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Xiaomi Mexico官方FAQ可访问，确认2000mAh 18650锂电池、5V/2A Type-C充电、NTC过热与堵转保护；不提供平台销量或趋势增长。",
+              "title": "Mi Vacuum Cleaner Mini墨西哥官方FAQ",
+              "url": "https://www.mi.com/mx/support/faq/details/KA-07945/",
+              "capturedAt": "2026-07-16",
+              "note": "HTTP 200，用于电池、充电与保护逻辑复核。",
+              "publisher": "Xiaomi Mexico Support",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-16当前官方FAQ",
+              "checkedAt": "2026-07-16T10:20:11+08:00",
+              "isEstimated": false
+            }
+          ]
+        },
+        "reasons": [
+          "灰尘、咖啡粉和饼干屑的吸入前后对比在3秒内可看懂，适合短视频首屏与达人演示。",
+          "小米品牌、细长机身、13,000Pa双档与一键倒尘形成可解释差异，避免与无牌低价迷你吸尘器只比价格。",
+          "墨西哥官方页面覆盖汽车、键盘和家居场景，但TikTok本地成交数据不可访问，因此按稳定、待验证处理。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": 899,
+          "retailMxnMax": 1199,
+          "logistics": "采购成本待询；只接受墨西哥授权或可证明正品来源。发货前核对2000mAh锂电池UN38.3/MSDS、Type-C线材、滤芯备件、西语说明和本地保修；建议零售价为测试假设，不是平台实时报价。"
+        },
+        "electronics": {
+          "battery": "Xiaomi Mexico FAQ明确内置2000mAh 18650锂电池；官方产品页标称标准档最长30分钟、强档最长9分钟。实销批次需核对电芯一致性、待机掉电、过放与循环寿命。",
+          "charging": "5V/2A USB Type-C充电，官方说明不可边充边用；样机必须实测充满时间、接口温升、线材兼容和低电量提示。",
+          "chip": "无刷电机换相、双档调速、快速启停、NTC过热与堵转保护需要电机驱动控制器/MCU和电源管理电路共同实现；官方未公开具体芯片型号。"
+        },
+        "risks": [
+          "TikTok Shop与Creative Center具体商品/视频页本次无法公开验证，内容转化与竞争强度未知。",
+          "滤芯耗材、吸力衰减、噪声和吸入液体会带来退货与差评，必须提供清洁禁忌和备件。",
+          "品牌授权、序列号和售后来源不清会带来侵权、假货与账号风险。"
+        ],
+        "nextAction": "先取5台授权样机，实测碎屑、键盘、车缝三场景吸力、噪声、续航、温升和倒尘；上线3条15秒素材，各投最小预算，记录3秒留存、商品点击、加购、成交、达人佣金后ROI和7日退货原因。",
+        "verdict": "recommend",
+        "media": [
+          {
+            "type": "image",
+            "title": "Mi Vacuum Cleaner Mini墨西哥官方产品图",
+            "url": "https://www.mi.com/mx/product/mi-vacuum-cleaner-mini/",
+            "thumbnailUrl": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1678141787.84882856.png",
+            "note": "产品页与缩略图均返回HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "sourceTitle": "Xiaomi Mexico"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=Mi+Vacuum+Cleaner+Mini",
+            "note": "搜索页不是具体视频页，当前暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Mi Vacuum Cleaner Mini墨西哥官方产品页",
+            "url": "https://www.mi.com/mx/product/mi-vacuum-cleaner-mini/",
+            "capturedAt": "2026-07-16",
+            "note": "支持墨西哥本地车内、键盘与家居清洁场景，以及13,000Pa、双档、Type-C等规格；不支持TikTok销量。",
+            "publisher": "Xiaomi Mexico",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["demand", "specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-16当前官方产品页",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Mi Vacuum Cleaner Mini墨西哥官方FAQ",
+            "url": "https://www.mi.com/mx/support/faq/details/KA-07945/",
+            "capturedAt": "2026-07-16",
+            "note": "确认2000mAh 18650锂电、5V/2A Type-C、不可边充边用和NTC/堵转保护。",
+            "publisher": "Xiaomi Mexico Support",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-16当前官方FAQ",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "TikTok Shop商品页访问检查",
+            "url": "https://www.tiktok.com/shop",
+            "capturedAt": "2026-07-16",
+            "note": "公开抓取被robots规则阻止，未取得具体商品页、价格、销量或视频证据。",
+            "publisher": "TikTok Shop",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-16访问检查",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.mi.com/mx/product/mi-vacuum-cleaner-mini/"
+          }
+        ]
+      },
+      "whyRecommended": "清洁前后反差、车缝与键盘细节都适合15秒内演示；官方墨西哥规格完整、品牌和耗材能构成差异。平台成交证据不足，所以只做小预算达人测试，不宣称热卖。",
+      "analysis": [
+        "内容结构：首秒展示键盘/车缝脏污，3秒吸净，随后展示一键倒尘与Type-C充电。",
+        "达人画像：汽车用品、桌搭、家居清洁和生活技巧类中小达人更匹配，不用泛娱乐大达人。",
+        "成交障碍：用户会追问吸力、续航、噪声和滤芯；详情页必须给实测和备件方案。",
+        "证据边界：墨西哥官方页面证明场景与规格，不证明TikTok销量、GMV或趋势增长。"
+      ],
+      "scores": {
+        "demand": 4,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 5,
+        "riskControl": 3
+      },
+      "platformPlaybook": [
+        "切入点1：键盘咖啡粉和饼干屑，前后对比加近景收音。",
+        "切入点2：汽车杯架、座椅缝和中控三处连续挑战，强调细长机身。",
+        "切入点3：一键倒尘、可洗滤网和Type-C收纳，回答续航与维护疑问。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "授权正品到岸成本待询；不得用无授权或失效供应链接反推。",
+        "suggestedPrice": "MXN 899–1,199（品牌正品、双吸头与备用滤芯测试假设，非平台实时报价）。",
+        "estimatedProfit": "扣除平台费、达人佣金、广告、履约、税费、滤芯补发和退货后再核算；首轮目标贡献毛利率至少25%，未计品牌授权和保修摊销。",
+        "suitableCommission": "达人佣金假设12%–18%；只在含税贡献毛利可覆盖时提高。",
+        "targetRoi": "付费投流ROI假设≥1.8；达人自然内容含佣金后的净ROI目标≥1.5。"
+      },
+      "testAdvice": "3条素材各跑同等最小预算，48小时不因单条播放量扩量；同时看商品点击率、加购率、成交率、含佣金ROI和7日售后。若点击高但成交低，优先补吸力/续航证据而非降价。"
+    },
+    {
+      "channel": "temu-mx",
+      "report": {
+        "date": "2026-07-16",
+        "slug": "xiaomi-electric-precision-screwdriver-temu-mx-2026-07-16",
+        "product": {
+          "zh": "小米电动精密螺丝刀24批头套装",
+          "es": "Destornillador eléctrico de precisión Xiaomi con 24 puntas",
+          "keywords": [
+            "电动精密螺丝刀套装",
+            "destornillador eléctrico de precisión",
+            "electric precision screwdriver kit"
+          ]
+        },
+        "category": "精密维修工具与充电式电动工具",
+        "scenarios": [
+          "眼镜、手表、玩具和小家电的日常紧固",
+          "笔记本、游戏机和手机外壳的拆装维护",
+          "桌面工具收纳与送礼套装"
+        ],
+        "audience": [
+          "电子产品DIY与维修爱好者",
+          "需要维护眼镜、玩具和小家电的家庭",
+          "重视完整批头、磁吸收纳和品牌品质的工具用户"
+        ],
+        "platforms": ["TM"],
+        "metrics": {
+          "price": null,
+          "currency": "MXN",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [],
+          "unavailableReason": "Temu Mexico具体商品页公开访问仅返回登录/动态空壳，另一个同款页面显示售罄；未取得同一链接近30天销量、成交单价和可核查观察窗口，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥官方规格与维修场景明确，Temu当前可售与需求强度待验证",
+          "evidence": [
+            {
+              "signal": "Xiaomi Mexico官方产品页可访问，明确24枚S2批头、170rpm、双扭矩档、Type-C、磁吸收纳，以及眼镜、手机、笔记本、游戏机等本地维修场景；不代表Temu销量。",
+              "title": "Xiaomi Electric Precision Screwdriver墨西哥官方产品页",
+              "url": "https://www.mi.com/mx/product/xiaomi-electric-precision-screwdriver/",
+              "capturedAt": "2026-07-16",
+              "note": "HTTP 200，用于本地场景、套装配置与功能规格。",
+              "publisher": "Xiaomi Mexico",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["demand", "specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-16当前官方产品页",
+              "checkedAt": "2026-07-16T10:20:11+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Xiaomi Mexico规格页可访问，确认350mAh锂电池、3.7V、5V/0.14A充电、160–200分钟充电时间和170rpm；不提供Temu价格或销量。",
+              "title": "Xiaomi Electric Precision Screwdriver墨西哥规格页",
+              "url": "https://www.mi.com/mx/product/xiaomi-electric-precision-screwdriver/specs/",
+              "capturedAt": "2026-07-16",
+              "note": "HTTP 200，用于电池、充电和机械参数复核。",
+              "publisher": "Xiaomi Mexico Specs",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-16当前官方规格页",
+              "checkedAt": "2026-07-16T10:20:11+08:00",
+              "isEstimated": false
+            }
+          ]
+        },
+        "reasons": [
+          "24批头、铝合金磁吸盒和电动手柄在主图中一眼能懂，适合Temu低中客单工具套装。",
+          "用品牌正品、双扭矩档、长短批头和磁吸收纳避开只有少量碳钢批头的纯低价战。",
+          "Temu同款页当前受限或售罄，不能证明实时需求；推荐前提是取得授权现货与当日可售页面。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": 699,
+          "retailMxnMax": 899,
+          "logistics": "采购成本待询；仅接受授权正品或可核验的原厂供货。核对350mAh锂电UN38.3/MSDS、24枚S2批头清单、充电线、西语说明、序列号与保修；建议零售价为套装测试假设。"
+        },
+        "electronics": {
+          "battery": "Xiaomi Mexico规格页明确内置350mAh、3.7V锂电池，官方称满电可处理400多枚精密螺丝；实销批次需复测电芯容量、待机和循环。",
+          "charging": "USB Type-C，规格页标注5V/0.14A、充电约160–200分钟；需实测充电保护、接口牢固度、温升与满电提示。",
+          "chip": "正反转按键、双扭矩档、170rpm电机控制、低电量/充电指示和过流过温保护需要MCU或电机驱动控制器与锂电电源管理电路；官方未公开芯片型号。"
+        },
+        "risks": [
+          "Temu具体同款页一个登录受限、一个显示售罄，当前可售性与价格竞争不可验证。",
+          "品牌授权与真伪是首要风险，未经授权不得用Xiaomi商标、包装或图片上架。",
+          "批头缺失、偏摆、扭矩不足、Type-C充电慢和误伤螺丝会驱动退货。"
+        ],
+        "nextAction": "先拿3套授权样品，逐一盘点24枚批头并测试0.05/0.2Nm两档、偏摆、正反转、充电时长和连续拆装；只有在Temu Mexico当日页面可售、授权文件齐全后，才用‘主机+24批头+磁吸盒+防静电撬片’升级套装测试。",
+        "verdict": "watch",
+        "media": [
+          {
+            "type": "image",
+            "title": "Xiaomi Electric Precision Screwdriver墨西哥官方产品图",
+            "url": "https://www.mi.com/mx/product/xiaomi-electric-precision-screwdriver/",
+            "thumbnailUrl": "https://i02.appmifile.com/740_item_mx/16/01/2025/5db703683e8611ff5ae9d8dd482ad6d0.png",
+            "note": "产品页与缩略图均返回HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "sourceTitle": "Xiaomi Mexico"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=Xiaomi+Electric+Precision+Screwdriver",
+            "note": "搜索页不是具体视频页，当前暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Xiaomi Electric Precision Screwdriver墨西哥官方产品页",
+            "url": "https://www.mi.com/mx/product/xiaomi-electric-precision-screwdriver/",
+            "capturedAt": "2026-07-16",
+            "note": "支持墨西哥维修场景、24批头、双扭矩、170rpm、Type-C和磁吸收纳规格；不支持Temu销量。",
+            "publisher": "Xiaomi Mexico",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["demand", "specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-16当前官方产品页",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Xiaomi Electric Precision Screwdriver墨西哥规格页",
+            "url": "https://www.mi.com/mx/product/xiaomi-electric-precision-screwdriver/specs/",
+            "capturedAt": "2026-07-16",
+            "note": "确认350mAh、3.7V、5V/0.14A、160–200分钟、170rpm和24枚S2批头清单。",
+            "publisher": "Xiaomi Mexico Specs",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-16当前官方规格页",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Temu Mexico Xiaomi电动精密螺丝刀商品页",
+            "url": "https://www.temu.com/mx/destornillador-electrico-de-precision-xiaomi-24-piezas-de-acero-s2--de-par-en--velocidades--magnetica-con--push-up-puerto-de-carga-tipo-c-motor-fuerte-iman-g-601101153102451.html",
+            "capturedAt": "2026-07-16",
+            "note": "HTTP 200但仅返回动态空壳，独立搜索快照显示商品售罄；不支持价格、销量、评分或可售性。",
+            "publisher": "Temu",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "invalid",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-16访问检查",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.mi.com/mx/product/xiaomi-electric-precision-screwdriver/"
+          }
+        ]
+      },
+      "whyRecommended": "主图可用‘手柄+24批头+磁吸盒’一次讲清，套装升级能避开纯低价；但Temu当前页面受限或售罄，先按观察款处理，授权与可售性通过后再测试。",
+      "analysis": [
+        "点击：展开的24批头矩阵、两档扭矩和Type-C标识比裸机更容易一眼理解。",
+        "冲动购买：眼镜、手表、玩具、笔记本多场景扩大礼品与家庭工具需求，但需避免宣传可维修所有设备。",
+        "同质化：无牌10批头套装价格更低；用S2材质、长短批头、铝合金磁吸盒和品牌授权拉开差异。",
+        "物流/电池：350mAh小锂电体积友好，但仍需UN38.3/MSDS与正确申报；不允许删除电池信息。",
+        "质量/退货：重点是偏摆、扭矩、批头硬度、漏件、充电慢与品牌真伪。",
+        "差异化套装：授权主机+24批头+磁吸盒+2枚防静电撬片+西语批头对照卡，不以虚假赠品抬价。"
+      ],
+      "scores": {
+        "demand": 3,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 4,
+        "contentOrSalesPotential": 4,
+        "riskControl": 2
+      },
+      "platformPlaybook": [
+        "首图把主机、24批头、磁吸盒和Type-C四项完整展开，第二图再讲0.05/0.2Nm。",
+        "只上升级套装，不做来路不明的Xiaomi裸机；详情页列出24枚批头型号和适用设备。",
+        "用眼镜、手表和笔记本三组场景图，但明确保修、授权和不适用的高扭矩螺丝。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "授权正品含税到岸成本待询；Temu售罄页和搜索快照不得反推成本。",
+        "suggestedPrice": "MXN 699–899（授权正品升级套装测试假设，非Temu实时报价）。",
+        "estimatedProfit": "扣除Temu费率、补贴、履约、税费、漏件补发、保修和退货后目标贡献毛利率至少22%；未计品牌授权与防伪成本。"
+      },
+      "testAdvice": "先解决授权与可售页面这两个门槛；通过后做两套主图A/B，各跑最小流量。若点击高但退款咨询集中在‘不是正品/缺批头/扭矩不足’，立即停品，不用降价掩盖质量问题。"
+    },
+    {
+      "channel": "mercado-libre-mx",
+      "report": {
+        "date": "2026-07-16",
+        "slug": "tp-link-tapo-t310-sensor-meli-mx-2026-07-16",
+        "product": {
+          "zh": "TP-Link Tapo T310智能温湿度传感器",
+          "es": "Sensor inteligente de temperatura y humedad TP-Link Tapo T310",
+          "keywords": [
+            "智能温湿度传感器",
+            "sensor inteligente de temperatura y humedad",
+            "smart temperature humidity sensor"
+          ]
+        },
+        "category": "智能家居传感器与环境监测",
+        "scenarios": [
+          "卧室、婴儿房和宠物空间的温湿度提醒",
+          "雪茄盒、储藏间和设备柜的环境监测",
+          "与Tapo H100和智能插座联动风扇、加湿器或除湿设备"
+        ],
+        "audience": [
+          "已有Tapo H100生态的智能家居用户",
+          "需要远程看护居家环境的家庭",
+          "管理储藏、设备或收藏品环境的小商户"
+        ],
+        "platforms": ["MKD"],
+        "metrics": {
+          "price": null,
+          "currency": "MXN",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": "https://www.mercadolibre.com.mx/sensor-smart-home-temperatura-humedad-tp-link-tapo-t310-v10/p/MLM27036725",
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://www.mercadolibre.com.mx/sensor-smart-home-temperatura-humedad-tp-link-tapo-t310-v10/p/MLM27036725"
+          ],
+          "unavailableReason": "Mercado Libre详情直连最终跳转至验证码墙，官方API无授权返回401/403；即使搜索快照出现累计售出标签，也没有可核查上架时间或近30天窗口，不能推导月销量，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥官方产品与支持页面确认本地场景，平台成交强度仍待授权数据验证",
+          "evidence": [
+            {
+              "signal": "TP-Link Mexico官方页可访问，明确±0.3°C、±3%RH、2秒刷新、通知、两年数据、家居自动化和墨西哥地区产品存在；只支持本地需求场景与规格，不等于平台销量。",
+              "title": "Tapo T310墨西哥官方产品页",
+              "url": "https://www.tp-link.com/mx/home-networking/smart-plug/tapo-t310/",
+              "capturedAt": "2026-07-16",
+              "note": "HTTP 200，页面内容完整；用于本地场景、生态依赖与规格核查。",
+              "publisher": "TP-Link Mexico",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["demand", "specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-16当前官方产品页",
+              "checkedAt": "2026-07-16T10:20:11+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "TP-Link Mexico支持页可访问并提供T310设置视频、下载与FAQ入口，确认墨西哥本地售后资料；不提供平台销量或趋势增长。",
+              "title": "Tapo T310墨西哥官方支持页",
+              "url": "https://www.tp-link.com/mx/support/download/tapo-t310/",
+              "capturedAt": "2026-07-16",
+              "note": "HTTP 200，用于本地支持可用性与Hub设置风险复核。",
+              "publisher": "TP-Link Mexico Support",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-16当前官方支持页",
+              "checkedAt": "2026-07-16T10:20:11+08:00",
+              "isEstimated": false
+            }
+          ]
+        },
+        "reasons": [
+          "温湿度提醒、历史记录与智能插座联动对应明确的卧室、储藏和设备环境管理需求。",
+          "TP-Link品牌、瑞士传感器、2秒刷新和Tapo生态比无牌LCD温湿度计更容易解释价值。",
+          "竞争并非空白且必须配H100；通过‘传感器+Hub’组合、兼容说明和本地售后控制退货。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": 349,
+          "retailMxnMax": 449,
+          "logistics": "采购成本待询；只接受墨西哥授权渠道。核对CR2450电池、硬件版本、922MHz区域频段、Tapo H100兼容、序列号、西语说明和保修；建议零售价为测试假设，非抓取价格。"
+        },
+        "electronics": {
+          "battery": "TP-Link Mexico明确使用可更换CR2450纽扣电池，实验室标称最长约2年；实际寿命受刷新、告警与环境影响。纽扣电池需防儿童误吞包装和清晰警示。",
+          "charging": "产品不充电，电量耗尽后更换CR2450；页面和客服话术必须写清‘不可充电’，禁止将纽扣电池接入充电器。",
+          "chip": "高精度温湿度传感器、2秒采样、低功耗MCU、Sub-1G无线SoC、历史数据与告警逻辑共同实现监测与Tapo Hub联动；官方未公开主控芯片型号。"
+        },
+        "risks": [
+          "必须配Tapo H100才能联网，未在首图和标题写清会导致高退货。",
+          "不同硬件版本、区域频段和App账号区可能影响配对，授权货源与序列号必须可追溯。",
+          "纽扣电池有儿童误吞风险，包装、仓储和详情页需要安全警示。"
+        ],
+        "nextAction": "先向授权渠道询价并确认墨西哥频段与H100兼容；取5台样机测试配对、2秒刷新、通知延迟、历史导出、低电量提示和30天掉电。上架时做T310单品与T310+H100两条链接，广告词只投sensor temperatura humedad、Tapo T310和monitor humedad casa。",
+        "verdict": "recommend",
+        "media": [
+          {
+            "type": "image",
+            "title": "Tapo T310墨西哥官方产品图",
+            "url": "https://www.tp-link.com/mx/home-networking/smart-plug/tapo-t310/",
+            "thumbnailUrl": "https://static.tp-link.com/upload/image-line/Tapo_T310_1.0_large_20250115023418r_large_20251027213742r.png",
+            "note": "产品页与缩略图均返回HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "sourceTitle": "TP-Link Mexico"
+          },
+          {
+            "type": "video",
+            "title": "TP-Link支持页嵌入视频（无法提取具体视频URL）",
+            "url": "https://www.tp-link.com/mx/support/download/tapo-t310/",
+            "note": "支持页显示设置视频标题，但本次未取得可独立验证的具体视频页URL，当前暂无可验证视频。",
+            "accessState": "unverified",
+            "direct": false,
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "sourceTitle": "TP-Link Mexico Support"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Tapo T310墨西哥官方产品页",
+            "url": "https://www.tp-link.com/mx/home-networking/smart-plug/tapo-t310/",
+            "capturedAt": "2026-07-16",
+            "note": "支持墨西哥本地温湿度监测、通知、历史数据、自动化场景，以及CR2450、精度、刷新和Hub依赖规格。",
+            "publisher": "TP-Link Mexico",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["demand", "specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-16当前官方产品页",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Tapo T310墨西哥官方支持页",
+            "url": "https://www.tp-link.com/mx/support/download/tapo-t310/",
+            "capturedAt": "2026-07-16",
+            "note": "确认墨西哥本地下载、设置与FAQ支持存在；不支持销量。",
+            "publisher": "TP-Link Mexico Support",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-16当前官方支持页",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Mercado Libre Mexico Tapo T310商品页",
+            "url": "https://www.mercadolibre.com.mx/sensor-smart-home-temperatura-humedad-tp-link-tapo-t310-v10/p/MLM27036725",
+            "capturedAt": "2026-07-16",
+            "note": "浏览器索引可见商品内容，但当日直连最终跳转验证码墙，官方API在无Token时返回401/403；撤回价格、销量、评分和评论数字。",
+            "publisher": "Mercado Libre",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-16访问检查",
+            "checkedAt": "2026-07-16T10:20:11+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.tp-link.com/mx/home-networking/smart-plug/tapo-t310/"
+          }
+        ]
+      },
+      "whyRecommended": "Tapo T310有墨西哥官方产品与支持资料，需求场景清晰、生态差异明确，且可通过单品与Hub组合控制误购，是今天证据最完整、最值得先测的一款。",
+      "analysis": [
+        "本地需求：卧室、储藏、设备柜与家庭自动化需要远程温湿度提醒，官方墨西哥页面给出完整西语场景。",
+        "消费者画像：已有Tapo生态、重视远程通知与历史数据的家庭和小商户，接受品牌溢价但要求配对简单。",
+        "竞争：无牌LCD温湿度计和Tuya/Zigbee传感器价格更低；Tapo用本地品牌支持、精度、2秒刷新和生态联动差异化。",
+        "卖点：±0.3°C、±3%RH、2秒刷新、最多两年数据、通知与自动化；同时必须醒目标出需H100。",
+        "推广：投精确西语词，单品页教育已有Hub用户，组合页面向新用户，按购买转化、配对咨询和30日退货调价。"
+      ],
+      "scores": {
+        "demand": 4,
+        "competitionOpportunity": 4,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 4,
+        "riskControl": 4
+      },
+      "platformPlaybook": [
+        "主图同时展示T310、手机通知和‘Requiere Hub Tapo H100’，避免误购。",
+        "详情页用卧室/储藏/设备柜三场景解释告警阈值和自动化，不做医疗或婴儿安全保证。",
+        "分别建T310单品和T310+H100组合，广告按已有Hub与新用户两类词包拆分。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "墨西哥授权含税成本待询；不得用验证码墙或搜索快照反推。",
+        "suggestedPrice": "MXN 349–449（T310单品测试假设；H100组合另行询价，非平台实时报价）。",
+        "estimatedProfit": "扣除Mercado Libre费率、履约、税费、广告、纽扣电池包装、配对售后和退货后目标贡献毛利率至少25%；未计授权与保修摊销。"
+      },
+      "testAdvice": "如果只测一个，先测Tapo T310：单品20台以内、组合10套以内，投两组精确词；以购买转化、广告成本、Hub误购咨询、配对成功率和30日退货率决定是否扩量。"
+    }
+  ],
+  "ranking": [
+    {
+      "productSlug": "tp-link-tapo-t310-sensor-meli-mx-2026-07-16",
+      "rank": 1,
+      "score": 86,
+      "reason": "墨西哥官方产品与支持页均可访问，本地场景、规格、生态依赖和售后路径最完整；证据为中等可信，分数未超过89上限。"
+    },
+    {
+      "productSlug": "xiaomi-mini-handheld-vacuum-tiktok-mx-2026-07-16",
+      "rank": 2,
+      "score": 83,
+      "reason": "短视频演示力最强且墨西哥官方规格完整，但TikTok具体商品、视频与成交证据不可访问，需小预算验证。"
+    },
+    {
+      "productSlug": "xiaomi-electric-precision-screwdriver-temu-mx-2026-07-16",
+      "rank": 3,
+      "score": 80,
+      "reason": "主图与套装差异化清晰，但Temu同款页受限或售罄，品牌授权、当前可售性和竞争价格均是前置门槛。"
+    }
+  ],
+  "priorityPick": {
+    "productSlug": "tp-link-tapo-t310-sensor-meli-mx-2026-07-16",
+    "reason": "如果今天只测一个，优先Tapo T310：墨西哥官方产品与支持资料完整，需求场景和生态差异可解释，单品/Hub组合能直接降低误购与退货风险。"
+  },
+  "sourcesCheckedAt": "2026-07-16T10:20:11+08:00"
+}
