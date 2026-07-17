@@ -1,0 +1,731 @@
+{
+  "date": "2026-07-17",
+  "slug": "mexico-platform-electronics-brief-2026-07-17",
+  "recommendations": [
+    {
+      "channel": "tiktok-mx",
+      "report": {
+        "date": "2026-07-17",
+        "slug": "jisulife-pro1s-handheld-fan-tiktok-mx-2026-07-17",
+        "product": {
+          "zh": "JISULIFE Pro1S 5000mAh手持涡轮风扇",
+          "es": "Ventilador turbo portátil JISULIFE Pro1S de 5000 mAh",
+          "keywords": [
+            "手持涡轮风扇",
+            "ventilador turbo portátil",
+            "portable turbo handheld fan"
+          ]
+        },
+        "category": "便携降温电器与夏季随身设备",
+        "scenarios": [
+          "户外排队、通勤和看球时快速降温",
+          "化妆定妆、发际线和桌面近距离送风",
+          "用纸条、气球和温感卡演示1至100档风力变化"
+        ],
+        "audience": [
+          "高温地区通勤者与户外活动人群",
+          "美妆、旅行、球赛和生活方式内容受众",
+          "愿意为金属机身、快充与品牌售后付费的年轻消费者"
+        ],
+        "platforms": ["TK"],
+        "metrics": {
+          "price": null,
+          "currency": "USD",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": "https://shop.tiktok.com/view/product/1729454395837747619",
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://shop.tiktok.com/view/product/1729454395837747619",
+            "https://www.mercadolibre.com.mx/tienda/jisulife"
+          ],
+          "unavailableReason": "TikTok Shop具体商品页当日直连显示Security Check，公开索引中的累计售出与评论也没有墨西哥近30天窗口；未取得同一链接的月销量、成交单价和可核查汇率输入，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥品牌店与官方规格可核实，TikTok Mexico成交仍待验证",
+          "evidence": [
+            {
+              "signal": "Mercado Libre Mexico的JISULIFE官方品牌店当日可访问，页面展示Pro1S及多款便携风扇，说明该品类在墨西哥已有本地陈列与履约入口；不代表TikTok销量或增长。",
+              "title": "JISULIFE Mercado Libre Mexico官方品牌店",
+              "url": "https://www.mercadolibre.com.mx/tienda/jisulife",
+              "capturedAt": "2026-07-17",
+              "note": "HTTP 200，页面标题与产品陈列完整；仅支持墨西哥品类存在和品牌渠道信号，不使用页面价格、折扣或销量数字。",
+              "publisher": "Mercado Libre Mexico",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "MX",
+              "timeWindow": "2026-07-17当前官方品牌店",
+              "checkedAt": "2026-07-17T11:19:52+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "JISULIFE官方产品页当日可访问，明确5000mAh金属版、18W快充、3至15小时续航和1至100档控制；只支持产品规格与内容卖点，不等于平台需求。",
+              "title": "JISULIFE Pro1S官方产品页",
+              "url": "https://jisulife.com/collections/handheld-fan/products/jisulife-handheld-fan-pro1s?variant=44183528767710",
+              "capturedAt": "2026-07-17",
+              "note": "HTTP 200，规格段与产品图可访问；官方页面美元标价未作为平台实时价格。",
+              "publisher": "JISULIFE",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["specification"],
+              "geo": "GLOBAL",
+              "timeWindow": "2026-07-17当前制造商页面",
+              "checkedAt": "2026-07-17T11:19:52+08:00",
+              "isEstimated": false
+            }
+          ]
+        },
+        "reasons": [
+          "纸条、气球、风速档位和电量屏能在首个3秒内形成直观变化，适合短视频与达人实测。",
+          "5000mAh金属版、1至100档、数字屏、18W快充和品牌售后可与无牌两三档风扇拉开差异。",
+          "墨西哥官方品牌店证明本地品类入口，但TikTok具体页面被安全校验拦截，因此不宣称热卖，只做受控测试。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "授权正品采购成本待询；只测5000mAh金属版并核对UN38.3、MSDS、额定Wh、18W充电协议、风扇防护网、西语说明和墨西哥保修。页面金额不用于换算，建议售价仅在商业模型中以美元测试区间表达。"
+        },
+        "electronics": {
+          "battery": "官方规格明确金属版内置5000mAh锂离子电池；不同材质版本容量不同，入库必须按SKU核对电芯、额定Wh、循环寿命、待机掉电和过放保护。",
+          "charging": "USB Type-C；官方标注18W输入约1.5至2小时充满，普通5V/2A约2.5至3.5小时。样机需验证PD兼容、接口温升、充满切断和不可边充边用的限制。",
+          "chip": "1至100档滚轮调速、数字电量/档位显示、三相无刷电机换相、软启动和过流过温保护需要MCU、无刷电机驱动器与锂电电源管理芯片协同；官方未公开芯片型号。"
+        },
+        "risks": [
+          "TikTok Shop具体商品页直连为Security Check，墨西哥可售性、内容竞争和成交均不可验证。",
+          "高速风扇的噪声、毛发卷入、跌落变形和档位虚标会驱动差评，必须实测并提供安全使用说明。",
+          "JISULIFE商标、图片与包装只能在取得授权后使用，混卖3600mAh与5000mAh版本会造成误购。"
+        ],
+        "nextAction": "先取5台5000mAh金属版授权样机，实测10/50/100档风速、噪声、续航、18W充电温升和防卷发；制作纸条风力、妆后降温、户外排队三条15秒素材，各用同等最小预算和中小达人测试。",
+        "verdict": "recommend",
+        "media": [
+          {
+            "type": "image",
+            "title": "JISULIFE Pro1S官方产品图",
+            "url": "https://jisulife.com/collections/handheld-fan/products/jisulife-handheld-fan-pro1s?variant=44183528767710",
+            "thumbnailUrl": "https://jisulife.com/cdn/shop/files/FA53.jpg?v=1690535945",
+            "note": "具体产品页与JPEG缩略图均返回HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "sourceTitle": "JISULIFE"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=JISULIFE+Pro1S",
+            "note": "搜索页不是具体视频页，当前暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "JISULIFE Mercado Libre Mexico官方品牌店",
+            "url": "https://www.mercadolibre.com.mx/tienda/jisulife",
+            "capturedAt": "2026-07-17",
+            "note": "支持墨西哥本地品牌店和便携风扇品类陈列；不支持TikTok销量、价格或增长数字。",
+            "publisher": "Mercado Libre Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "available",
+            "supports": ["demand", "trend"],
+            "geo": "MX",
+            "timeWindow": "2026-07-17当前官方品牌店",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "JISULIFE Pro1S官方产品页",
+            "url": "https://jisulife.com/collections/handheld-fan/products/jisulife-handheld-fan-pro1s?variant=44183528767710",
+            "capturedAt": "2026-07-17",
+            "note": "确认5000mAh金属版、18W快充、3至15小时、锂电和数字控制规格；不支持平台成交。",
+            "publisher": "JISULIFE",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-17当前制造商页面",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "TikTok Shop JISULIFE Pro1S具体商品页",
+            "url": "https://shop.tiktok.com/view/product/1729454395837747619",
+            "capturedAt": "2026-07-17",
+            "note": "HTTP 200但页面标题为Security Check，无法核验墨西哥地区、实时价格、近30天销量、评分或评论。",
+            "publisher": "TikTok Shop",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "US/UNVERIFIED",
+            "timeWindow": "2026-07-17访问检查",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://jisulife.com/collections/handheld-fan/products/jisulife-handheld-fan-pro1s?variant=44183528767710"
+          },
+          {
+            "title": "Google Trends MX便携风扇查询",
+            "url": "https://trends.google.com/trends/explore?date=today%203-m&geo=MX&q=ventilador%20portatil",
+            "capturedAt": "2026-07-17",
+            "note": "当日请求返回HTTP 429，未取得可核查趋势曲线或数值，不计为有效趋势证据。",
+            "publisher": "Google Trends",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "过去3个月查询，2026-07-17访问失败",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.mercadolibre.com.mx/tienda/jisulife"
+          }
+        ]
+      },
+      "whyRecommended": "强风反差、1至100档滚轮和电量屏适合短视频首秒演示；墨西哥官方品牌店与制造商规格可访问，但TikTok成交不可核验，所以以授权样机和小预算达人测试切入。",
+      "analysis": [
+        "内容结构：首秒用纸条或气球展示风力，3秒切换10/50/100档，结尾给电量屏和快充。",
+        "达人画像：美妆定妆、旅行户外、球赛装备、通勤好物和科技测评类中小达人更匹配。",
+        "成交障碍：用户会追问噪声、续航、卷发风险、金属重量和3600/5000mAh版本差异。",
+        "证据边界：墨西哥品牌店证明本地渠道存在，制造商页证明规格；两者都不能替代TikTok Mexico销量。"
+      ],
+      "scores": {
+        "demand": 4,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 5,
+        "riskControl": 3
+      },
+      "platformPlaybook": [
+        "切入点1：同一张纸条在10/50/100档的弯折幅度，画面叠加实时电量和档位。",
+        "切入点2：户外排队或球赛散场的闷热场景，展示口袋取出、锁键和强风。",
+        "切入点3：妆后定妆与发际线降温，专门回答噪声、卷发距离和续航问题。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "授权正品含税到岸成本待询；不得用制造商标价或被拦截的平台快照反推。",
+        "suggestedPrice": "US$59–79（5000mAh金属版、挂绳与保护袋测试假设，非平台实时报价）。",
+        "estimatedProfit": "扣除平台费、达人佣金、投流、履约、税费、锂电合规、保修和退货后，首轮目标贡献毛利率至少25%；未计品牌授权与备件摊销。",
+        "suitableCommission": "达人佣金假设12%–18%；仅在含税贡献毛利仍达标时提高。",
+        "targetRoi": "付费投流ROI假设≥1.8；含达人佣金后的净ROI目标≥1.5。"
+      },
+      "testAdvice": "3条素材各跑同等最小预算48小时，重点看3秒留存、商品点击、加购、成交、含佣金ROI和7日退货。若播放高但点击低，先改首屏场景；若点击高但成交低，补噪声、续航与授权证明，不用直接降价。"
+    },
+    {
+      "channel": "temu-mx",
+      "report": {
+        "date": "2026-07-17",
+        "slug": "usb-c-three-head-electric-scrubber-temu-mx-2026-07-17",
+        "product": {
+          "zh": "USB-C充电式三刷头电动清洁刷套装",
+          "es": "Cepillo eléctrico recargable USB-C con tres cabezales",
+          "keywords": [
+            "电动清洁刷套装",
+            "cepillo eléctrico de limpieza",
+            "rechargeable electric scrubber kit"
+          ]
+        },
+        "category": "家居清洁工具与充电式浴室清洁",
+        "scenarios": [
+          "浴室瓷砖、台盆和缝隙的省力刷洗",
+          "厨房灶台、水槽与玻璃表面的分头清洁",
+          "用墙挂收纳和三刷头矩阵展示一套多用"
+        ],
+        "audience": [
+          "租房与小户型家庭",
+          "需要降低弯腰和手刷强度的家务人群",
+          "偏好主图一眼看懂完整配件的Temu用户"
+        ],
+        "platforms": ["TM"],
+        "metrics": {
+          "price": null,
+          "currency": "USD",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": "https://www.temu.com/mx/cepillo-de-limpieza-inalambrico-giratorio-electrico-con-indicador-de-potencia-7-cabezales-de-cepillo-reemplazables--velocidad-y-mango-retractil-desmontable-para-barco-cocina--y--g-601099885065752.html",
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://www.temu.com/mx/cepillo-de-limpieza-inalambrico-giratorio-electrico-con-indicador-de-potencia-7-cabezales-de-cepillo-reemplazables--velocidad-y-mango-retractil-desmontable-para-barco-cocina--y--g-601099885065752.html",
+            "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218"
+          ],
+          "unavailableReason": "Temu Mexico具体品类页仅返回动态/登录壳，未取得同一商品链接近30天销量、成交单价或上架窗口；Walmart Mexico可访问页仅作为本地品类和规格代理，不能换算Temu月销量，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥零售页证明品类存在，Temu可售与质量仍待样机核验",
+          "evidence": [
+            {
+              "signal": "Walmart Mexico具体商品页当日可访问，展示USB-C、三刷头、墙挂和120分钟宣传配置，说明该低中客单清洁套装在墨西哥有可理解的零售形态；不代表Temu销量。",
+              "title": "Walmart Mexico三刷头USB-C电动清洁刷商品页",
+              "url": "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218",
+              "capturedAt": "2026-07-17",
+              "note": "HTTP 200，标题、配件和图片可访问；页面为跨境第三方卖家，规格需样机复核，不采用价格与评分。",
+              "publisher": "Walmart Mexico Marketplace",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand", "specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-17当前具体商品页",
+              "checkedAt": "2026-07-17T11:19:52+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Temu Mexico同品类具体页当日仅返回动态空壳/登录入口，无法确认当前在售、页面配置或需求强度，因此不把搜索索引当作有效证据。",
+              "title": "Temu Mexico电动清洁刷具体商品页访问检查",
+              "url": "https://www.temu.com/mx/cepillo-de-limpieza-inalambrico-giratorio-electrico-con-indicador-de-potencia-7-cabezales-de-cepillo-reemplazables--velocidad-y-mango-retractil-desmontable-para-barco-cocina--y--g-601099885065752.html",
+              "capturedAt": "2026-07-17",
+              "note": "HTTP 200但正文仅约3KB，未出现完整商品信息或可验证媒体，按login-restricted处理。",
+              "publisher": "Temu",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "login-restricted",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-17访问检查",
+              "checkedAt": "2026-07-17T11:19:52+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218"
+            }
+          ]
+        },
+        "reasons": [
+          "主机、三种刷头、Type-C线和墙挂件可以在主图一次展开，功能不用阅读长文即可理解。",
+          "用硬毛圆刷、海绵头、平面布头和墙挂收纳组成升级套装，比只卖单头主机更能避开纯低价战。",
+          "Temu具体页面无法公开核验，Walmart页又是第三方跨境卖家，因此先作为观察款，必须以样机质量和Temu当日在售页为门槛。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "采购成本待询；要求供应商提供电池化学体系与容量、UN38.3/MSDS、USB-C输入、充电保护、额定转速、防水等级报告、刷头材质和西语说明。不得沿用Temu登录壳或Walmart第三方页面反推成本。"
+        },
+        "electronics": {
+          "battery": "具体零售页确认产品为可充电无线结构，但未公开电池化学体系和容量；仅接受供应商明确锂电型号、额定Wh、保护板和循环数据的批次，页面宣传的120分钟必须实测。",
+          "charging": "USB Type-C充电，页面未公开输入电压、电流和充满时间；样机需验证5V适配、接口防水盖、温升、充满切断、过充保护和湿手禁充提示。",
+          "chip": "按键启停、恒速刷洗、堵转/过流保护、低电量提示和锂电充放电管理需要MCU或电机驱动控制器与电源管理芯片；卖家未公开型号，不能把功能推断写成芯片型号。"
+        },
+        "risks": [
+          "Temu具体商品页登录受限，当前可售、价格、同质化密度与售后评价均未知。",
+          "防水虚标、堵转烧机、转轴进水、刷头脱落和电池衰减会造成高退货，IP等级必须有报告并实测。",
+          "Walmart代理页由跨境第三方卖家发布，描述存在泛化文案，不能直接作为供应商承诺或采购依据。"
+        ],
+        "nextAction": "向3家供应商索取同结构样机与电池/IP资料，实测瓷砖、缝隙、灶台三场景的转速、堵转、噪声、续航和进水；只有Temu Mexico当日可售页、三刷头清单和售后承诺都可核验后再上架。",
+        "verdict": "watch",
+        "media": [
+          {
+            "type": "image",
+            "title": "三刷头USB-C电动清洁刷商品图",
+            "url": "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218",
+            "thumbnailUrl": "https://i5.walmartimages.com/asr/c57e5e09-940f-48eb-a778-a58d17b61f05.d336259b9afdb2a8de03043781a97368.jpeg",
+            "note": "具体商品页与JPEG缩略图均返回HTTP 200；图片来自Walmart Mexico第三方商品页，不代表Temu在售。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "sourceTitle": "Walmart Mexico Marketplace"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=USB-C+electric+spin+scrubber+3+heads",
+            "note": "搜索页不是具体视频页，当前暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Walmart Mexico三刷头USB-C电动清洁刷商品页",
+            "url": "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218",
+            "capturedAt": "2026-07-17",
+            "note": "支持墨西哥本地品类存在、三刷头、USB-C、墙挂和宣传续航配置；第三方卖家规格需实测，不支持Temu成交。",
+            "publisher": "Walmart Mexico Marketplace",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "available",
+            "supports": ["demand", "specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-17当前具体商品页",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Temu Mexico电动清洁刷具体商品页访问检查",
+            "url": "https://www.temu.com/mx/cepillo-de-limpieza-inalambrico-giratorio-electrico-con-indicador-de-potencia-7-cabezales-de-cepillo-reemplazables--velocidad-y-mango-retractil-desmontable-para-barco-cocina--y--g-601099885065752.html",
+            "capturedAt": "2026-07-17",
+            "note": "动态空壳/登录入口，未取得可售性、价格、销量、评分、评论或具体图片。",
+            "publisher": "Temu",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "login-restricted",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-17访问检查",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218"
+          },
+          {
+            "title": "Google Trends MX电动清洁刷查询",
+            "url": "https://trends.google.com/trends/explore?date=today%203-m&geo=MX&q=cepillo%20de%20limpieza%20electrico",
+            "capturedAt": "2026-07-17",
+            "note": "当日请求返回HTTP 429，未取得可核查曲线或数值，不计为有效趋势证据。",
+            "publisher": "Google Trends",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "过去3个月查询，2026-07-17访问失败",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.walmart.com.mx/ip/cepillo-de-limpieza-electrico-recargable-scrub-ber-con-3-cabezales-intercambiables-rotacion-de-360-para-bano-cocina-y-azulejos-carga-usb-tipo-c-autonomia-de-120-min-montaje-en-pared/00514159259218"
+          }
+        ]
+      },
+      "whyRecommended": "三刷头、主机、Type-C线和墙挂件在主图中一眼能懂，升级套装可以避开裸机低价；但Temu页面受限且电池/IP参数未公开，先按观察款处理。",
+      "analysis": [
+        "点击：三刷头平铺、清洁前后对比和Type-C图标能比文字堆砌更快解释价值。",
+        "冲动购买：浴室、厨房、缝隙三场景覆盖高频家务，但不能宣称完全替代人工深度清洁。",
+        "同质化：单头低价款很多；用三刷头、墙挂、替换刷头可补购和西语用途卡形成套装差异。",
+        "物流/电池：内置可充电电池体积小但参数未公开，必须补齐UN38.3/MSDS和正确申报。",
+        "质量/退货：重点是进水、堵转、刷头脱落、续航虚标、噪声和清洁剂腐蚀。",
+        "差异化套装：主机+硬毛圆刷+海绵头+平面布头+墙挂+西语用途卡，不赠送不明清洁剂。"
+      ],
+      "scores": {
+        "demand": 3,
+        "competitionOpportunity": 3,
+        "profit": 4,
+        "platformFit": 4,
+        "contentOrSalesPotential": 4,
+        "riskControl": 2
+      },
+      "platformPlaybook": [
+        "首图只放主机、三刷头、墙挂和Type-C四组信息，第二图再拆浴室/厨房/玻璃用途。",
+        "建立基础三刷头套装和含两枚替换刷头的升级套装，不做参数不清的七头堆料款。",
+        "详情页醒目标出不可边充边用、充电口保持干燥、禁用强腐蚀清洁剂和刷头更换方式。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "含税到岸成本待询；只有电池、IP与刷头清单资料齐全的供应商进入比价。",
+        "suggestedPrice": "US$18–25（三刷头+墙挂升级套装测试假设，非Temu实时报价）。",
+        "estimatedProfit": "扣除Temu费率、补贴、履约、税费、锂电合规、刷头补发和退货后，目标贡献毛利率至少22%；未计防水抽检与售后备件摊销。"
+      },
+      "testAdvice": "先做5台样机破坏性测试和两套主图A/B，再开最小流量；若咨询集中在防水、续航和刷头缺件，未补齐证据前停品，不用低价掩盖质量问题。"
+    },
+    {
+      "channel": "mercado-libre-mx",
+      "report": {
+        "date": "2026-07-17",
+        "slug": "xiaomi-smart-pet-food-feeder-2-meli-mx-2026-07-17",
+        "product": {
+          "zh": "小米智能宠物喂食器2",
+          "es": "Comedero inteligente Xiaomi Smart Pet Food Feeder 2",
+          "keywords": [
+            "智能宠物喂食器",
+            "comedero automático inteligente",
+            "smart automatic pet feeder"
+          ]
+        },
+        "category": "智能宠物用品与自动喂食设备",
+        "scenarios": [
+          "上班、短途出行和作息不固定时按计划出粮",
+          "通过食盆称重和低粮提醒管理干粮余量",
+          "停电时用四节AA电池继续执行已设置的喂食计划"
+        ],
+        "audience": [
+          "养猫及小型犬的城市家庭",
+          "需要固定多餐计划的忙碌宠物主人",
+          "已有Xiaomi Home生态并重视本地售后的用户"
+        ],
+        "platforms": ["MKD"],
+        "metrics": {
+          "price": null,
+          "currency": "USD",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://listado.mercadolibre.com.mx/xiaomi-smart-pet-food-feeder",
+            "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/"
+          ],
+          "unavailableReason": "Mercado Libre Mexico搜索直连最终跳转验证码墙，未取得单一商品链接的近30天销量、成交单价或上架窗口；官方产品页与本地零售页不能换算平台月销量，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥官方产品和本地零售页可核实，平台成交仍待授权数据",
+          "evidence": [
+            {
+              "signal": "Xiaomi Mexico官方页当日可访问，明确5L容量、称重、低粮提醒、自动防堵、四节AA备用电池和墨西哥西语使用场景；支持本地需求与规格，不代表Mercado Libre销量。",
+              "title": "Xiaomi Smart Pet Food Feeder 2墨西哥官方产品页",
+              "url": "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/",
+              "capturedAt": "2026-07-17",
+              "note": "HTTP 200，页面内容与产品图完整；仅用于本地场景和制造商规格。",
+              "publisher": "Xiaomi Mexico",
+              "grade": "D",
+              "sourceType": "manufacturer-spec",
+              "accessState": "available",
+              "supports": ["demand", "specification"],
+              "geo": "MX",
+              "timeWindow": "2026-07-17当前官方产品页",
+              "checkedAt": "2026-07-17T11:19:52+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "MiStoreMX的具体商品页当日可访问并显示该型号与套装内容，但页面标记暂时缺货；只证明本地渠道曾陈列，不证明实时需求或销量。",
+              "title": "MiStoreMX小米智能宠物喂食器2商品页",
+              "url": "https://mistoremx.com/goods.php?id=1764",
+              "capturedAt": "2026-07-17",
+              "note": "HTTP 200，具体产品内容可访问但当前售罄；页面评论内容存在错配迹象，价格、评分与评论全部弃用。",
+              "publisher": "MiStoreMX",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand"],
+              "geo": "MX",
+              "timeWindow": "2026-07-17当前商品页，暂时缺货",
+              "checkedAt": "2026-07-17T11:19:52+08:00",
+              "isEstimated": false
+            }
+          ]
+        },
+        "reasons": [
+          "自动定时出粮、食盆称重、低粮提醒和停电备用供电对应忙碌宠物主的明确本地需求。",
+          "5L容量、自动防堵、304不锈钢碗和Xiaomi Home生态能与无牌定时器款形成差异。",
+          "Mercado Libre直连被验证码墙拦截且本地零售页暂时缺货，因此按稳定需求和授权现货前置处理，不宣称热卖。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "墨西哥授权成本待询；确认XMWSQ02型号、5.9V/1A电源、四节AA备用仓、2.4GHz Wi-Fi、304食盆、干燥剂耗材、西语说明、序列号与保修。食品接触部件和防堵必须做批次抽检。"
+        },
+        "electronics": {
+          "battery": "主电源为5.9V/1A适配器；断电时可装四节AA碱性干电池，官方称已设置的计划可继续约两周。AA电池不可充电，且备用模式下Wi-Fi和远程控制不可用。",
+          "charging": "设备本体无充电功能，日常持续接5.9V直流适配器；四节AA仅用于备用且必须更换，禁止给碱性电池充电。需实测断电切换、线材抗咬与适配器温升。",
+          "chip": "2.4GHz Wi-Fi SoC/MCU负责计划、App通信和固件，电机驱动器执行定量出粮与反转防堵，称重ADC和红外传感器处理碗内重量与低粮提醒；官方未公开具体芯片型号。"
+        },
+        "risks": [
+          "Mercado Libre搜索最终为验证码墙，实时价格、销量、评分、评论和竞争强度均不可验证。",
+          "只支持规定尺寸的干粮；颗粒过大、纯冻干、油脂积累或安装不当可能堵粮并导致宠物漏餐。",
+          "Wi-Fi仅2.4GHz、备用电池模式无法远程控制，若详情页未写清会引起高咨询与退货。",
+          "品牌授权、食品接触材质、适配器安规和售后耗材必须可追溯。"
+        ],
+        "nextAction": "向墨西哥授权渠道询价并确认现货；取3台样机，用三种8至12mm干粮连续运行14天，测试出粮偏差、防堵反转、称重、低粮提醒、断电切换、2.4GHz配网和清洗后复装。",
+        "verdict": "recommend",
+        "media": [
+          {
+            "type": "image",
+            "title": "Xiaomi Smart Pet Food Feeder 2墨西哥官方产品图",
+            "url": "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/",
+            "thumbnailUrl": "https://i02.appmifile.com/879_item_mx/06/11/2024/1e6e8d3cbad6713d5c872ce66190c853.png",
+            "note": "具体产品页与PNG缩略图均返回HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "sourceTitle": "Xiaomi Mexico"
+          },
+          {
+            "type": "video",
+            "title": "YouTube搜索页（已排除）",
+            "url": "https://www.youtube.com/results?search_query=Xiaomi+Smart+Pet+Food+Feeder+2",
+            "note": "搜索页不是具体视频页，当前暂无可验证视频。",
+            "accessState": "invalid",
+            "direct": false,
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "sourceTitle": "YouTube"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Xiaomi Smart Pet Food Feeder 2墨西哥官方产品页",
+            "url": "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/",
+            "capturedAt": "2026-07-17",
+            "note": "支持墨西哥本地喂食场景、5L、称重、红外低粮提醒、防堵、四节AA备用和食品接触结构。",
+            "publisher": "Xiaomi Mexico",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["demand", "specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-17当前官方产品页",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Xiaomi Smart Pet Food Feeder 2墨西哥规格页",
+            "url": "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/specs/",
+            "capturedAt": "2026-07-17",
+            "note": "确认XMWSQ02、5.9V/1A、5.9W、2.4GHz Wi-Fi和包装清单。",
+            "publisher": "Xiaomi Mexico Specs",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "MX",
+            "timeWindow": "2026-07-17当前官方规格页",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "MiStoreMX小米智能宠物喂食器2商品页",
+            "url": "https://mistoremx.com/goods.php?id=1764",
+            "capturedAt": "2026-07-17",
+            "note": "具体页面可访问但标记暂时缺货；评论疑似错配，全部数字不采信，仅作为本地陈列代理。",
+            "publisher": "MiStoreMX",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "available",
+            "supports": ["demand"],
+            "geo": "MX",
+            "timeWindow": "2026-07-17当前商品页，暂时缺货",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Mercado Libre Mexico小米智能喂食器搜索页",
+            "url": "https://listado.mercadolibre.com.mx/xiaomi-smart-pet-food-feeder",
+            "capturedAt": "2026-07-17",
+            "note": "最终跳转至Mercado Libre验证码墙，未取得可访问的单一商品页、价格、销量、评分或评论。",
+            "publisher": "Mercado Libre Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-17访问检查",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/"
+          },
+          {
+            "title": "Google Trends MX自动喂食器查询",
+            "url": "https://trends.google.com/trends/explore?date=today%203-m&geo=MX&q=comedero%20automatico%20para%20gatos",
+            "capturedAt": "2026-07-17",
+            "note": "当日请求返回HTTP 429，未取得可核查曲线或数值，不计为有效趋势证据。",
+            "publisher": "Google Trends",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "过去3个月查询，2026-07-17访问失败",
+            "checkedAt": "2026-07-17T11:19:52+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.mi.com/mx/product/xiaomi-smart-pet-food-feeder-2/"
+          }
+        ]
+      },
+      "whyRecommended": "墨西哥官方页完整覆盖5L、称重、低粮提醒、防堵与备用供电，本地需求和售后路径比无牌款清晰；平台成交受验证码墙限制，先用授权现货和14天连续喂食测试控制风险。",
+      "analysis": [
+        "本地需求：上班、短途出行和固定多餐需要稳定定时出粮，官方墨西哥页给出完整西语使用场景。",
+        "消费者画像：养猫和小型犬、已有Xiaomi Home、愿意为称重、防堵与本地售后付费的城市家庭。",
+        "竞争：无牌定时器、带摄像头喂食器和其他品牌很多；小米以称重、红外低粮、自动反转和生态差异化。",
+        "卖点：5L、1g级称重宣传、12mm干粮兼容、304食盆、双电源与防堵；必须写明备用模式无远程控制。",
+        "推广：投精确西语词并拆分‘comedero automático’、‘Xiaomi feeder’和‘alimentador gato WiFi’，按购买、配网咨询、堵粮与30日退货优化。"
+      ],
+      "scores": {
+        "demand": 4,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 4,
+        "contentOrSalesPotential": 4,
+        "riskControl": 3
+      },
+      "platformPlaybook": [
+        "主图同时展示5L仓、食盆称重、App提醒和‘4 pilas AA de respaldo’，避免把备用电池误解为可充电。",
+        "详情页用上班/短途旅行/停电三场景解释计划出粮，醒目标出只支持2.4GHz、规定尺寸干粮。",
+        "用授权单品链接配可选干燥剂补充装，不把未经授权的电源适配器或AA电池打包。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "墨西哥授权含税成本待询；不得用验证码墙、售罄页或错配评论页面反推。",
+        "suggestedPrice": "US$89–109（授权正品、墨西哥适配器与本地保修测试假设，非平台实时报价）。",
+        "estimatedProfit": "扣除Mercado Libre费率、履约、税费、广告、食品接触抽检、堵粮售后、保修和退货后，目标贡献毛利率至少25%；未计授权和干燥剂备件摊销。"
+      },
+      "testAdvice": "如果授权现货可得，首批不超过10台，先跑14天连续喂食与断电测试，再投两组精确词；以购买转化、配网成功率、堵粮/漏餐、称重偏差和30日退货决定扩量。"
+    }
+  ],
+  "ranking": [
+    {
+      "productSlug": "jisulife-pro1s-handheld-fan-tiktok-mx-2026-07-17",
+      "rank": 1,
+      "score": 88,
+      "reason": "墨西哥官方品牌店与制造商规格可访问，短视频演示力和夏季场景最强；虽无TikTok Mexico成交证据，但证据覆盖完整且未使用受限页面数字。"
+    },
+    {
+      "productSlug": "xiaomi-smart-pet-food-feeder-2-meli-mx-2026-07-17",
+      "rank": 2,
+      "score": 84,
+      "reason": "墨西哥官方产品、规格与本地零售页可核验，需求明确；平台被验证码墙拦截且本地页面缺货，先解决授权现货与连续运行风险。"
+    },
+    {
+      "productSlug": "usb-c-three-head-electric-scrubber-temu-mx-2026-07-17",
+      "rank": 3,
+      "score": 79,
+      "reason": "主图与套装差异化清晰，但Temu页受限、电池和防水参数未公开；只适合完成样机与合规验证后的观察性测试。"
+    }
+  ],
+  "priorityPick": {
+    "productSlug": "jisulife-pro1s-handheld-fan-tiktok-mx-2026-07-17",
+    "reason": "如果今天只测一个，优先JISULIFE Pro1S：短视频首屏最强，墨西哥品牌店与官方规格可核实，且可用5台授权样机和三条素材快速验证真实转化。"
+  },
+  "sourcesCheckedAt": "2026-07-17T11:19:52+08:00"
+}
