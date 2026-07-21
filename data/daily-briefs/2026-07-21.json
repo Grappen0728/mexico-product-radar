@@ -1,0 +1,781 @@
+{
+  "date": "2026-07-21",
+  "slug": "mexico-platform-electronics-brief-2026-07-21",
+  "recommendations": [
+    {
+      "channel": "tiktok-mx",
+      "report": {
+        "date": "2026-07-21",
+        "slug": "circle-joy-rechargeable-grinder-set-tiktok-mx-2026-07-21",
+        "product": {
+          "zh": "CIRCLE JOY USB-C充电式电动盐胡椒研磨器双支套装",
+          "es": "Set de 2 molinillos eléctricos recargables CIRCLE JOY para sal y pimienta",
+          "keywords": [
+            "电动盐胡椒研磨器",
+            "molinillo eléctrico recargable sal pimienta",
+            "rechargeable electric salt pepper grinder set"
+          ]
+        },
+        "category": "厨房小电器与调味工具",
+        "scenarios": [
+          "煎牛排、烧烤和餐桌调味时单手现磨",
+          "用粗细对比和白色LED照明展示可控撒料",
+          "双支充电底座保持台面整洁并减少一次性电池"
+        ],
+        "audience": [
+          "爱做饭、烧烤和拍美食内容的年轻家庭",
+          "关注厨房台面颜值和礼赠感的消费者",
+          "手部力量不足、希望单手调味的用户"
+        ],
+        "platforms": ["TK"],
+        "metrics": {
+          "price": null,
+          "currency": "USD",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": "https://shop.tiktok.com/us/pdp/electric-salt-pepper-grinders-rechargeable-led-lights/1732104339553751817",
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://shop.tiktok.com/us/pdp/electric-salt-pepper-grinders-rechargeable-led-lights/1732104339553751817",
+            "https://www.circlejoyhome.com/product/circle-joy-rechargeable-salt-and-pepper-grinder-set-stainless-steel-electric-pepper-grinders-with-variable-grinding-speed-external-adjustable-coarseness-charging-base-and-white-led-light-silver/"
+          ],
+          "unavailableReason": "TikTok Shop具体商品页当日进入Security Check，且不是墨西哥成交页；没有同一商品链接的墨西哥近30天销量、成交单价和观察窗口，无法推导单链接月销量或美元月销售额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "内容演示与制造商规格可核实，TikTok Mexico成交待验证",
+          "evidence": [
+            {
+              "signal": "西班牙语媒体在2026年2月把电动盐胡椒研磨器作为TikTok内容型厨房小物介绍，支持一手操作、灯光和套装的内容适配判断；不代表墨西哥平台销量。",
+              "title": "El País Escaparate电动盐胡椒研磨器内容观察",
+              "url": "https://elpais.com/escaparate/gastronomia/2026-02-25/molinillo-electrico-de-sal-y-pimienta.html",
+              "capturedAt": "2026-07-21",
+              "note": "页面可检索到具体文章与发布时间；只作为独立内容趋势代理，不使用其Amazon数字。",
+              "publisher": "El País Escaparate",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "ES",
+              "timeWindow": "2026-02-25发布，2026-07-21复核",
+              "checkedAt": "2026-07-21T10:24:06+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Mercado Libre Mexico搜索索引当日仍展示多款充电式电动盐胡椒研磨器，但具体搜索页直连返回403；该信号仅保留审计，不能计入可用需求证据。",
+              "title": "Mercado Libre Mexico充电式电动盐胡椒研磨器搜索",
+              "url": "https://listado.mercadolibre.com.mx/molinillo-el%C3%A9ctrico-de-sal-y-pimienta-recargable",
+              "capturedAt": "2026-07-21",
+              "note": "搜索索引有结果，但最终页面复核为403 Forbidden；未使用价格、评分、折扣或结果数量。",
+              "publisher": "Mercado Libre Mexico",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-21访问检查",
+              "checkedAt": "2026-07-21T10:24:06+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://elpais.com/escaparate/gastronomia/2026-02-25/molinillo-electrico-de-sal-y-pimienta.html"
+            }
+          ]
+        },
+        "reasons": [
+          "按键启动、粗细切换和LED照明可在3秒内呈现可见变化，适合厨房技巧、烧烤和礼赠短视频。",
+          "双支研磨器加充电收纳底座比单支无牌款更完整，可用不锈钢外壳、外部粗细调节和售后质保避开纯低价。",
+          "制造商页和具体演示视频可核验，但TikTok具体页被安全校验拦截，因此只按稳定内容机会测试，不宣称热卖。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "授权采购成本待询；确认每支电池容量、额定Wh、USB-C输入、充电底座触点防反接、食品接触材料、陶瓷磨芯、盐雾耐腐蚀、UN38.3/MSDS与西语说明。"
+        },
+        "electronics": {
+          "battery": "每支内置可充电锂电池；制造商公开页确认USB-C充电，但未公开该SKU电芯容量和额定Wh，必须按样机与电池资料核对，禁止混用一次性电池版。",
+          "charging": "双支放入充电底座后由USB-C输入供电；需实测同时充电、电量指示、充满切断、触点盐雾腐蚀、底座防反接和5V适配器兼容性。",
+          "chip": "按键、双速电机、LED照明和充电状态需要小型MCU或逻辑控制器、直流电机驱动与锂电充电/保护芯片协同；制造商未公开具体芯片型号。"
+        },
+        "risks": [
+          "TikTok Shop页面为Security Check，墨西哥可售性、达人竞争和真实成交无法验证。",
+          "盐粒进入充电触点、磨芯卡死、电机扭矩不足和粗细调节漂移容易产生差评。",
+          "食品接触材料、品牌授权和电池运输资料缺一不可；页面图片和商标不得无授权复用。"
+        ],
+        "nextAction": "先取5套授权样机，用海盐、黑胡椒和混合香料各做200次启停，记录扭矩、卡料、粗细一致性、噪声、LED可见度、充电温升和盐雾后触点；再拍三条15秒素材做小预算达人测试。",
+        "verdict": "watch",
+        "media": [
+          {
+            "type": "image",
+            "title": "CIRCLE JOY充电式双磨椒器官方产品图",
+            "url": "https://www.circlejoyhome.com/product/circle-joy-rechargeable-salt-and-pepper-grinder-set-stainless-steel-electric-pepper-grinders-with-variable-grinding-speed-external-adjustable-coarseness-charging-base-and-white-led-light-silver/",
+            "thumbnailUrl": "https://cdn.circlejoyhome.com/cdn/2087/2025/07/29/main-CIRCLE-JOY-Rechargeable-Salt-and-Pepper-Grinder-Set-Stainless-Steel-Electric-Pepper-Grinders-with-Variable-Grinding-Speed-External-Adjustable-Coarsene-4784641-459.jpg",
+            "note": "具体制造商产品页可读取，JPEG缩略图当日HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "sourceTitle": "CIRCLE JOY"
+          },
+          {
+            "type": "video",
+            "title": "CIRCLE JOY双磨椒器充电底座功能演示",
+            "url": "https://manuals.plus/video/4145c5dd6b3b380d2b88ea69c8c33098ff046659e142f727792e7b2c0f57fe6b",
+            "note": "具体32秒产品演示页，展示充电底座、单手操作、灯光与粗细调节；仅作内容参考。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "sourceTitle": "Manuals+"
+          }
+        ],
+        "sources": [
+          {
+            "title": "CIRCLE JOY充电式盐胡椒研磨器套装官方页",
+            "url": "https://www.circlejoyhome.com/product/circle-joy-rechargeable-salt-and-pepper-grinder-set-stainless-steel-electric-pepper-grinders-with-variable-grinding-speed-external-adjustable-coarseness-charging-base-and-white-led-light-silver/",
+            "capturedAt": "2026-07-21",
+            "note": "支持双速、USB-C可充电、充电底座、LED、不锈钢外壳与陶瓷磨芯规格；未使用官网价格作为平台价格。",
+            "publisher": "CIRCLE JOY",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-21当前制造商页面",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "El País Escaparate电动盐胡椒研磨器内容观察",
+            "url": "https://elpais.com/escaparate/gastronomia/2026-02-25/molinillo-electrico-de-sal-y-pimienta.html",
+            "capturedAt": "2026-07-21",
+            "note": "支持西语内容场景和TikTok传播代理，不代表墨西哥平台销量、GMV或搜索量。",
+            "publisher": "El País Escaparate",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "available",
+            "supports": ["demand", "trend"],
+            "geo": "ES",
+            "timeWindow": "2026-02-25发布，2026-07-21复核",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "TikTok Shop具体双磨椒器商品页访问检查",
+            "url": "https://shop.tiktok.com/us/pdp/electric-salt-pepper-grinders-rechargeable-led-lights/1732104339553751817",
+            "capturedAt": "2026-07-21",
+            "note": "最终页面为Security Check，且URL为美国站；不支持墨西哥价格、销量、评分、评论或趋势。",
+            "publisher": "TikTok Shop",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "US",
+            "timeWindow": "2026-07-21访问检查",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.circlejoyhome.com/product/circle-joy-rechargeable-salt-and-pepper-grinder-set-stainless-steel-electric-pepper-grinders-with-variable-grinding-speed-external-adjustable-coarseness-charging-base-and-white-led-light-silver/"
+          },
+          {
+            "title": "Mercado Libre Mexico充电式电动盐胡椒研磨器搜索",
+            "url": "https://listado.mercadolibre.com.mx/molinillo-el%C3%A9ctrico-de-sal-y-pimienta-recargable",
+            "capturedAt": "2026-07-21",
+            "note": "搜索索引可见但最终直连403，保留审计且不计为有效证据。",
+            "publisher": "Mercado Libre Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-21访问检查",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://elpais.com/escaparate/gastronomia/2026-02-25/molinillo-electrico-de-sal-y-pimienta.html"
+          },
+          {
+            "title": "Google Trends MX电动盐胡椒研磨器查询",
+            "url": "https://trends.google.com/trends/explore?date=today%203-m&geo=MX&q=molinillo%20el%C3%A9ctrico%20sal%20pimienta",
+            "capturedAt": "2026-07-21",
+            "note": "当日连接超时且未取得可核查曲线或数字，不计为趋势证据。",
+            "publisher": "Google Trends",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "过去3个月查询，2026-07-21访问失败",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://elpais.com/escaparate/gastronomia/2026-02-25/molinillo-electrico-de-sal-y-pimienta.html"
+          }
+        ]
+      },
+      "whyRecommended": "单手研磨、LED照明和粗细对比有强烈首屏演示感，双支充电底座还能形成礼赠套装；但TikTok Mexico成交不可核验，先以内容测试而非放量备货。",
+      "analysis": [
+        "内容钩子：用粗盐与胡椒的粗细落料近景，在首秒展示按钮、灯光和声音反馈。",
+        "转化逻辑：把‘不用换8节AAA电池’、双支同时充电和台面收纳作为升级价值，不以最低价竞争。",
+        "达人适配：美食、烧烤、租房厨房和礼物类中小达人均能自然植入，需避免医疗或关节治疗表述。",
+        "竞争与风险：无牌重力感应款多，优先按键双速和可清洁外调结构，降低误触与盐粒腐蚀。",
+        "合规门槛：电芯资料、食品接触材料、品牌授权和西语说明未齐全前不进入直播间。"
+      ],
+      "scores": {
+        "demand": 3,
+        "competitionOpportunity": 3,
+        "profit": 3,
+        "platformFit": 5,
+        "contentOrSalesPotential": 5,
+        "riskControl": 3
+      },
+      "platformPlaybook": [
+        "切入点1：牛排出锅前用白盘对比细磨/粗磨和LED落料，3秒内展示结果。",
+        "切入点2：拆出8节一次性电池与USB-C双充底座做‘厨房换代’对比。",
+        "切入点3：黑胡椒、海盐和孜然三种食材连续200次不卡料实测，结尾给清洁方法。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "授权双支套装、充电底座和食品接触资料齐全后的含税到岸成本待询。",
+        "suggestedPrice": "US$27–35（双支+充电底座测试假设，非TikTok实时价格）。",
+        "estimatedProfit": "扣除平台费、达人佣金、履约、税费、锂电合规、质保、卡料补发和退货后，目标贡献毛利率至少25%；未计品牌授权与盐雾抽检。",
+        "suitableCommission": "达人佣金按12%–18%测试假设，先用素材质量和转化倒推，不承诺固定佣金。",
+        "targetRoi": "冷启动广告ROI目标不低于1.8；样本不足30单时只看点击、加购和故障反馈，不提前放量。"
+      },
+      "testAdvice": "5套样机、3条素材、每条同等小预算；通过条件为充电与研磨无故障、内容3秒留存明显优于账户基线且前30单无卡料/触点腐蚀集中投诉。"
+    },
+    {
+      "channel": "temu-mx",
+      "report": {
+        "date": "2026-07-21",
+        "slug": "ezvalo-usb-c-motion-sensor-cabinet-light-2pack-temu-mx-2026-07-21",
+        "product": {
+          "zh": "EZVALO 2400mAh USB-C充电式感应柜灯2件套",
+          "es": "Paquete de 2 luces EZVALO recargables USB-C con sensor de movimiento",
+          "keywords": [
+            "USB-C感应柜灯两件套",
+            "luz de gabinete recargable con sensor de movimiento",
+            "USB-C rechargeable motion sensor cabinet light 2 pack"
+          ]
+        },
+        "category": "室内免布线感应照明",
+        "scenarios": [
+          "衣柜、厨房吊柜和储物间开门即亮",
+          "楼梯、走廊和床边夜间低亮度防绊倒",
+          "租房不打孔，用磁吸铁片快速安装和取下充电"
+        ],
+        "audience": [
+          "租房家庭、宿舍和无预留电源的收纳空间用户",
+          "夜间照明和厨房台面补光需求人群",
+          "希望用两件套覆盖衣柜与厨房的低中客单消费者"
+        ],
+        "platforms": ["TM"],
+        "metrics": {
+          "price": null,
+          "currency": "USD",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": "https://www.temu.com/mx/-luz-de-armario-led--con-sensor-de-movimiento-iluminacion-regulable-de-tres--con-bateria-recargable-usb-inalambrica--instalacion-para-armario-estanteria-dormitorio-luz-portatil-recargable-g-601099937872718.html",
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://www.temu.com/mx/-luz-de-armario-led--con-sensor-de-movimiento-iluminacion-regulable-de-tres--con-bateria-recargable-usb-inalambrica--instalacion-para-armario-estanteria-dormitorio-luz-portatil-recargable-g-601099937872718.html",
+            "https://www.ezvalo.com/products/ezvalo-under-cabinet-lights-62-led-motion-sensor-lights-indoor-3-color-temps"
+          ],
+          "unavailableReason": "Temu Mexico具体商品页当日为售罄/空壳，未取得同一链接近30天销量、成交单价或上架窗口；制造商页与墨西哥零售页不能代替Temu单链接月销量，暂无可靠美元金额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "墨西哥同类场景与制造商规格存在，Temu具体可售性待替补SKU",
+          "evidence": [
+            {
+              "signal": "Walmart Mexico具体感应柜灯页可访问并完整说明USB-C、500mAh锂电、感应与磁吸场景，但当前售罄；只支持墨西哥品类存在，不代表Temu销量。",
+              "title": "Walmart Mexico USB-C感应柜灯具体商品页",
+              "url": "https://www.walmart.com.mx/ip/barra-de-luz-de-gabinete-con-sensor-de-movimiento-led-usb-c-recargable-2-modos-constante-y-activado-por-movimiento-bateria-de-500-mah-soporte-de-adsorbente-de-facil-montaje-closet/00258341262682",
+              "capturedAt": "2026-07-21",
+              "note": "页面内容可访问但显示Agotado；仅作为本地场景与品类陈列代理。",
+              "publisher": "Walmart Mexico Marketplace",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "available",
+              "supports": ["demand"],
+              "geo": "MX",
+              "timeWindow": "2026-07-21当前具体商品页，售罄",
+              "checkedAt": "2026-07-21T10:24:06+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Temu Mexico具体商品页能识别为充电式三色感应柜灯，但页面当前显示售罄/无可购详情；保留替换审计，不计为有效需求证据。",
+              "title": "Temu Mexico充电式感应柜灯具体商品页",
+              "url": "https://www.temu.com/mx/-luz-de-armario-led--con-sensor-de-movimiento-iluminacion-regulable-de-tres--con-bateria-recargable-usb-inalambrica--instalacion-para-armario-estanteria-dormitorio-luz-portatil-recargable-g-601099937872718.html",
+              "capturedAt": "2026-07-21",
+              "note": "HTTP 200但为售罄/空壳，不使用价格、销量、评分、评论或图片。",
+              "publisher": "Temu",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "replaced",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-21访问检查",
+              "checkedAt": "2026-07-21T10:24:06+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://www.ezvalo.com/products/ezvalo-under-cabinet-lights-62-led-motion-sensor-lights-indoor-3-color-temps"
+            }
+          ]
+        },
+        "reasons": [
+          "两条灯、两根USB-C线、磁吸铁片和三色温图标在主图中一眼能懂，适合Temu低中客单。",
+          "用2件套、2400mAh、三色温、五档亮度和日/夜感应避开500mAh单条低价款。",
+          "Temu具体页已售罄且墨西哥同类零售页也有缺货信号，因此先做替补SKU与样机门槛，不宣称热卖。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "2件套含税到岸成本待询；确认每条2400mAh电池与额定Wh、USB-C 5V输入、PIR与光敏阈值、磁铁固定力、LED色温与频闪、UN38.3/MSDS、阻燃材料和西语安装卡。"
+        },
+        "electronics": {
+          "battery": "每条内置2400mAh可充电锂电池；官方称自动模式每次充电约15至40天、常亮100%约11.5小时，实际依触发频率与亮度而变，需按SKU实测。",
+          "charging": "USB-C充电，官方称约2.5小时充满；需验证5V适配器兼容、双灯同时充电温升、充满切断、低电提示和不可在潮湿环境充电。",
+          "chip": "PIR传感器、环境光检测、三色温、五档调光、20秒延时和模式记忆需要低功耗MCU/控制器、LED恒流/PWM驱动与锂电充电保护芯片；型号未公开。"
+        },
+        "risks": [
+          "Temu目标页已售罄/空壳，必须找到同规格可售替补SKU并重新核查，不能沿用失效链接报价。",
+          "同质化高，虚标容量、感应误触、夜间不亮、磁贴脱落和LED频闪会带来退货。",
+          "仅适合室内干燥位置；不得把普通柜灯宣传为浴室防水灯或安全应急照明。"
+        ],
+        "nextAction": "先筛3家能提供2400mAh电池资料和频闪测试的供应商，各取2套；在暗柜、厨房、楼梯三处连续触发7天，测试感应距离、延时、续航、充电温升、磁吸和胶贴老化，再替换成Temu可售SKU。",
+        "verdict": "watch",
+        "media": [
+          {
+            "type": "image",
+            "title": "EZVALO 2400mAh USB-C感应柜灯官方产品图",
+            "url": "https://www.ezvalo.com/products/ezvalo-under-cabinet-lights-62-led-motion-sensor-lights-indoor-3-color-temps",
+            "thumbnailUrl": "https://www.ezvalo.com/cdn/shop/files/ezvalo-8-under-cabinet-lighting-2400mah-usb-c-rechargeable-motion-sensor-light-3-color-temps-5-level-dimmable-magnetic-wireless-closet-lights-for-kitchen-pantry-9295910.jpg?v=1762583409&width=1200",
+            "note": "具体制造商产品页可访问，JPEG缩略图当日HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "sourceTitle": "EZVALO"
+          },
+          {
+            "type": "video",
+            "title": "EZVALO感应柜灯功能与安装演示",
+            "url": "https://manuals.plus/video/f95891026935e621eb3c9a185613265f9dc96629ee202bbf01ef97ec8eacd412",
+            "note": "具体39秒视频页，展示磁吸、20秒延时、三色温与USB-C；仅作内容和安装参考。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "sourceTitle": "Manuals+"
+          }
+        ],
+        "sources": [
+          {
+            "title": "EZVALO 2400mAh USB-C感应柜灯2件套官方页",
+            "url": "https://www.ezvalo.com/products/ezvalo-under-cabinet-lights-62-led-motion-sensor-lights-indoor-3-color-temps",
+            "capturedAt": "2026-07-21",
+            "note": "支持2400mAh、USB-C、2.5小时充电、三色温、五档调光、日/夜感应、20秒延时和2件套清单。",
+            "publisher": "EZVALO",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-21当前制造商页面",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Walmart Mexico USB-C感应柜灯具体商品页",
+            "url": "https://www.walmart.com.mx/ip/barra-de-luz-de-gabinete-con-sensor-de-movimiento-led-usb-c-recargable-2-modos-constante-y-activado-por-movimiento-bateria-de-500-mah-soporte-de-adsorbente-de-facil-montaje-closet/00258341262682",
+            "capturedAt": "2026-07-21",
+            "note": "页面可访问但售罄；只支持墨西哥同类场景和品类陈列，不使用其规格推断EZVALO版本。",
+            "publisher": "Walmart Mexico Marketplace",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "available",
+            "supports": ["demand"],
+            "geo": "MX",
+            "timeWindow": "2026-07-21当前具体商品页，售罄",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Temu Mexico充电式感应柜灯具体商品页",
+            "url": "https://www.temu.com/mx/-luz-de-armario-led--con-sensor-de-movimiento-iluminacion-regulable-de-tres--con-bateria-recargable-usb-inalambrica--instalacion-para-armario-estanteria-dormitorio-luz-portatil-recargable-g-601099937872718.html",
+            "capturedAt": "2026-07-21",
+            "note": "页面为售罄/空壳，不能证明当前可售性、价格、销量、评分、评论或具体媒体。",
+            "publisher": "Temu",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "replaced",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-21访问检查",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.ezvalo.com/products/ezvalo-under-cabinet-lights-62-led-motion-sensor-lights-indoor-3-color-temps"
+          },
+          {
+            "title": "Mercado Libre Mexico感应柜灯搜索访问检查",
+            "url": "https://listado.mercadolibre.com.mx/barra-de-luz-de-armario-recargable-con-sensor-de-movimiento",
+            "capturedAt": "2026-07-21",
+            "note": "搜索索引可见但最终直连403，未使用任何价格、评分、折扣或结果数量。",
+            "publisher": "Mercado Libre Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-21访问检查",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.walmart.com.mx/ip/barra-de-luz-de-gabinete-con-sensor-de-movimiento-led-usb-c-recargable-2-modos-constante-y-activado-por-movimiento-bateria-de-500-mah-soporte-de-adsorbente-de-facil-montaje-closet/00258341262682"
+          },
+          {
+            "title": "Google Trends MX充电式感应柜灯查询",
+            "url": "https://trends.google.com/trends/explore?date=today%203-m&geo=MX&q=luz%20sensor%20movimiento%20recargable",
+            "capturedAt": "2026-07-21",
+            "note": "当日连接超时且未取得可核查曲线或数字，不计为趋势证据。",
+            "publisher": "Google Trends",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "过去3个月查询，2026-07-21访问失败",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.walmart.com.mx/ip/barra-de-luz-de-gabinete-con-sensor-de-movimiento-led-usb-c-recargable-2-modos-constante-y-activado-por-movimiento-bateria-de-500-mah-soporte-de-adsorbente-de-facil-montaje-closet/00258341262682"
+          }
+        ]
+      },
+      "whyRecommended": "两件套主图、三色温、磁吸与USB-C能快速解释价值，适合用大电池和安装附件避开单条低价战；但Temu目标链接失效，必须先找到同规格可售替补。",
+      "analysis": [
+        "点击：主图只放两条灯、三色温、2400mAh、USB-C和磁吸铁片，复杂模式放第二张。",
+        "冲动购买：衣柜、厨房和楼梯三处暗区是即时痛点，两件套比单条更容易理解覆盖价值。",
+        "同质化：500mAh单条款很多；以2400mAh、2件套、五档亮度、日/夜感应和24个月质保区隔。",
+        "物流/电池：体积轻但每套含两节锂电，需完整申报并控制磁铁、胶贴和USB-C线缺件。",
+        "质量/退货：误触、不亮、续航虚标、色温偏差、频闪、磁吸滑落和胶贴伤墙是主要原因。",
+        "差异化套装：2灯+2根USB-C线+4块铁片+备用胶贴+西语场景卡，不赠送不明适配器。"
+      ],
+      "scores": {
+        "demand": 3,
+        "competitionOpportunity": 2,
+        "profit": 3,
+        "platformFit": 4,
+        "contentOrSalesPotential": 4,
+        "riskControl": 3
+      },
+      "platformPlaybook": [
+        "首图用2件套平铺，叠加3000K/4500K/6500K、2400mAh与磁吸安装五个信息点。",
+        "建立白色/黑色两色和8英寸/10英寸两规格，避免一次铺过多容量与灯珠数。",
+        "详情页明确室内干燥使用、20秒延时、感应触发条件、充电时长和胶贴表面限制。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "具备电池资料、频闪报告和完整2件套清单后的含税到岸成本待询。",
+        "suggestedPrice": "US$16–22（2件套测试假设，非Temu实时价格）。",
+        "estimatedProfit": "扣除Temu费率、补贴、履约、税费、锂电合规、胶贴/线材补发和退货后，目标贡献毛利率至少22%；未计频闪与胶贴老化抽检。"
+      },
+      "testAdvice": "先完成6套样机7天感应与续航测试，再用2套主图A/B开最小流量；若替补Temu SKU无法当日复核或误触/不亮率超过样机门槛，今日不挂售。"
+    },
+    {
+      "channel": "mercado-libre-mx",
+      "report": {
+        "date": "2026-07-21",
+        "slug": "aqara-water-leak-sensor-t1-meli-mx-2026-07-21",
+        "product": {
+          "zh": "Aqara T1 Zigbee智能漏水传感器",
+          "es": "Sensor inteligente de fugas de agua Aqara T1 Zigbee",
+          "keywords": [
+            "智能漏水传感器",
+            "sensor de fugas de agua Aqara T1",
+            "Aqara T1 Zigbee water leak sensor"
+          ]
+        },
+        "category": "智能家居安防与漏水监测",
+        "scenarios": [
+          "洗衣机、洗碗机和热水器旁监测渗漏",
+          "水槽下、卫生间和设备间0.5mm积水提醒",
+          "联动Aqara网关、手机通知和可选智能阀门降低损失"
+        ],
+        "audience": [
+          "已有Aqara Zigbee网关的智能家居用户",
+          "公寓、出租房和小型办公室的防漏水家庭",
+          "希望以多点传感器覆盖厨房、洗衣区和卫生间的消费者"
+        ],
+        "platforms": ["MKD"],
+        "metrics": {
+          "price": null,
+          "currency": "USD",
+          "sold": null,
+          "rating": null,
+          "reviews": null,
+          "discount": null
+        },
+        "monthlyRevenueEstimate": {
+          "status": "unavailable",
+          "sourceProductUrl": null,
+          "period": null,
+          "estimatedMonthlyUnitsMin": null,
+          "estimatedMonthlyUnitsMax": null,
+          "unitPrice": null,
+          "unitPriceCurrency": null,
+          "mxnPerUsd": null,
+          "fxCapturedAt": null,
+          "fxSourceUrl": null,
+          "fxPublisher": null,
+          "method": null,
+          "confidence": null,
+          "sourceUrls": [
+            "https://listado.mercadolibre.com.mx/aqara-sensor",
+            "https://www.aqara.com/en/water-leak-sensor-t1/"
+          ],
+          "unavailableReason": "可访问的是Mercado Libre Mexico品牌搜索页而非带近30天销量的单一商品链接；未取得同一链接的自然月/近30天销量、成交单价和上架窗口，无法计算美元月销售额。"
+        },
+        "trend": {
+          "status": "stable",
+          "label": "Mercado Libre Mexico品牌搜索与Aqara官方规格可核实，单链接月销量未公开",
+          "evidence": [
+            {
+              "signal": "Mercado Libre Mexico的Aqara搜索页当日可访问并展示T1漏水传感器及多个Aqara智能家居SKU，支持墨西哥平台存在与竞争观察；不使用页面价格、评分或折扣。",
+              "title": "Mercado Libre Mexico Aqara品牌搜索页",
+              "url": "https://listado.mercadolibre.com.mx/aqara-sensor",
+              "capturedAt": "2026-07-21",
+              "note": "页面内容可读取且含T1漏水传感器条目；只支持本地平台存在与稳定需求，不代表单链接销量。",
+              "publisher": "Mercado Libre Mexico",
+              "grade": "A",
+              "sourceType": "official-platform",
+              "accessState": "available",
+              "supports": ["demand", "trend"],
+              "geo": "MX",
+              "timeWindow": "2026-07-21当前品牌搜索页",
+              "checkedAt": "2026-07-21T10:24:06+08:00",
+              "isEstimated": false
+            },
+            {
+              "signal": "Walmart Mexico曾陈列Aqara T1并给出墨西哥使用说明，但当日复核超时/不可访问；只保留替换审计，不计为第二家可用需求发布方。",
+              "title": "Walmart Mexico Aqara T1具体商品页访问检查",
+              "url": "https://www.walmart.com.mx/ip/sensor-de-fugas-de-agua-t1-aqara-compatible-con-ifttt-homekit-smartthings-y-smart-home/00697583335214",
+              "capturedAt": "2026-07-21",
+              "note": "最终复核超时，未采信价格、库存、规格或销量。",
+              "publisher": "Walmart Mexico Marketplace",
+              "grade": "C",
+              "sourceType": "independent-trend",
+              "accessState": "blocked",
+              "supports": [],
+              "geo": "MX",
+              "timeWindow": "2026-07-21访问检查",
+              "checkedAt": "2026-07-21T10:24:06+08:00",
+              "isEstimated": false,
+              "replacementUrl": "https://www.aqara.com/en/water-leak-sensor-t1/"
+            }
+          ]
+        },
+        "reasons": [
+          "洗衣机、水槽、热水器和卫生间的漏水是明确本地场景，传感器可直接对应预防损失。",
+          "0.5mm触发、IP67、约两年纽扣电池和Zigbee 3.0能与无牌Wi-Fi传感器区分，适合多点套装。",
+          "Mercado Libre品牌搜索和Aqara官方规格均可核验；仍因缺少单链接月销量而按稳定需求，不声称热卖。"
+        ],
+        "supplyChain": {
+          "purchaseUsdMin": null,
+          "purchaseUsdMax": null,
+          "retailMxnMin": null,
+          "retailMxnMax": null,
+          "logistics": "墨西哥授权成本待询；只收WL-S02D/T1全球版，核对CR2032、防水结构、Zigbee 3.0、序列号、Aqara Home区域兼容、网关清单、西语说明、质保和电池运输申报。"
+        },
+        "electronics": {
+          "battery": "使用1枚3V CR2032锂金属纽扣电池，官方称通常可工作约两年；电池不可充电，需验证低电提醒、待机功耗、批次一致性和儿童防误吞警示。",
+          "charging": "产品没有充电功能，电量耗尽后更换CR2032；禁止给纽扣电池充电，也不能以USB供电。页面必须明确电池已含/未含和更换方向。",
+          "chip": "低功耗Zigbee SoC/MCU负责0.5mm电极状态采样、心跳、低电提醒、入网与OTA，并通过Aqara网关发送App告警和触发自动化；官方未公开具体芯片型号。"
+        },
+        "risks": [
+          "必须搭配兼容Aqara Hub，若主图未醒目标注会产生大量误购和退货。",
+          "不同区域版、旧款非T1和WL-S02D混卖会导致配网与固件兼容投诉。",
+          "纽扣电池有儿童误吞风险；IP67不等于可长期浸水或户外使用，需写清边界。",
+          "平台具体单链接销量、评价与退货率未取得，首批必须小量验证。"
+        ],
+        "nextAction": "向墨西哥授权渠道确认WL-S02D/T1现货与区域兼容，取6只配Aqara Hub做14天测试：0.5mm触发、通知延迟、离线恢复、低电提醒、厨房/洗衣区信号和干燥复位；首批只做1只与3只两种套装。",
+        "verdict": "recommend",
+        "media": [
+          {
+            "type": "image",
+            "title": "Aqara Water Leak Sensor T1官方产品图",
+            "url": "https://www.aqara.com/en/water-leak-sensor-t1/",
+            "thumbnailUrl": "https://www.aqara.com/wp-content/uploads/2023/10/2560-water-leak-sensor-T1_01.jpg",
+            "note": "具体制造商产品页与JPEG缩略图当日HTTP 200。",
+            "accessState": "available",
+            "direct": true,
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "sourceTitle": "Aqara"
+          },
+          {
+            "type": "video",
+            "title": "Mercado Libre Aqara T1具体短视频页（访问受阻）",
+            "url": "https://www.mercadolibre.com.mx/shorts/clips/6SX0Yv/aqara-detector-inteligente-fuga-agua-t1-alerta-auto",
+            "note": "具体产品短视频页当日返回403，当前暂无可验证视频。",
+            "accessState": "blocked",
+            "direct": true,
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "sourceTitle": "Mercado Libre Mexico"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Mercado Libre Mexico Aqara品牌搜索页",
+            "url": "https://listado.mercadolibre.com.mx/aqara-sensor",
+            "capturedAt": "2026-07-21",
+            "note": "可读取T1漏水传感器与多个Aqara SKU；仅用于本地平台存在和竞争观察，不使用任何精确数字。",
+            "publisher": "Mercado Libre Mexico",
+            "grade": "A",
+            "sourceType": "official-platform",
+            "accessState": "available",
+            "supports": ["demand", "trend"],
+            "geo": "MX",
+            "timeWindow": "2026-07-21当前品牌搜索页",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Aqara Water Leak Sensor T1官方产品页",
+            "url": "https://www.aqara.com/en/water-leak-sensor-t1/",
+            "capturedAt": "2026-07-21",
+            "note": "支持WL-S02D/T1产品、0.5mm触发、Zigbee、CR2032、约两年电池、IP67与必须搭配Hub。",
+            "publisher": "Aqara",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-21当前制造商页面",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Aqara Water Leak Sensor T1官方FAQ",
+            "url": "https://www.aqara.com/en/water-leak-sensor-t1/water-leak-sensor-t1-faq",
+            "capturedAt": "2026-07-21",
+            "note": "确认1枚3V CR2032、通常约两年、0.5mm触发、必须搭配Hub和板载Zigbee天线。",
+            "publisher": "Aqara Support",
+            "grade": "D",
+            "sourceType": "manufacturer-spec",
+            "accessState": "available",
+            "supports": ["specification"],
+            "geo": "GLOBAL",
+            "timeWindow": "2026-07-21当前官方FAQ",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false
+          },
+          {
+            "title": "Walmart Mexico Aqara T1具体商品页访问检查",
+            "url": "https://www.walmart.com.mx/ip/sensor-de-fugas-de-agua-t1-aqara-compatible-con-ifttt-homekit-smartthings-y-smart-home/00697583335214",
+            "capturedAt": "2026-07-21",
+            "note": "最终复核超时，保留审计且不计为有效需求或规格证据。",
+            "publisher": "Walmart Mexico Marketplace",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "2026-07-21访问检查",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://www.aqara.com/en/water-leak-sensor-t1/"
+          },
+          {
+            "title": "Google Trends MX漏水传感器查询",
+            "url": "https://trends.google.com/trends/explore?date=today%203-m&geo=MX&q=sensor%20fuga%20agua",
+            "capturedAt": "2026-07-21",
+            "note": "当日连接超时且未取得可核查曲线或数字，不计为趋势证据。",
+            "publisher": "Google Trends",
+            "grade": "C",
+            "sourceType": "independent-trend",
+            "accessState": "blocked",
+            "supports": [],
+            "geo": "MX",
+            "timeWindow": "过去3个月查询，2026-07-21访问失败",
+            "checkedAt": "2026-07-21T10:24:06+08:00",
+            "isEstimated": false,
+            "replacementUrl": "https://listado.mercadolibre.com.mx/aqara-sensor"
+          }
+        ]
+      },
+      "whyRecommended": "漏水监测对应明确本地场景，Aqara T1用0.5mm触发、Zigbee低功耗和两年电池形成差异；平台品牌搜索与官方规格可核验，适合小批量单只/三只套装测试。",
+      "analysis": [
+        "本地需求：厨房、洗衣区、热水器和卫生间的渗漏预警有明确损失避免价值。",
+        "消费者画像：已有Aqara Hub、重视HomeKit/智能家居联动和愿意做多点覆盖的家庭。",
+        "竞争：无牌Wi-Fi传感器更便宜；T1用Zigbee低功耗、IP67、0.5mm触发和品牌生态区隔。",
+        "卖点：无需布线、约两年CR2032、App提醒、可联动网关报警与可选阀门；Hub另购必须首屏写清。",
+        "推广：投‘sensor fuga agua Aqara’、‘detector inundación Zigbee’和‘alarma fuga lavadora’，按购买、配网咨询、离线和30日退货优化。"
+      ],
+      "scores": {
+        "demand": 4,
+        "competitionOpportunity": 4,
+        "profit": 3,
+        "platformFit": 4,
+        "contentOrSalesPotential": 3,
+        "riskControl": 4
+      },
+      "platformPlaybook": [
+        "主图用水槽/洗衣机/热水器三场景，醒目标注‘Requiere Aqara Hub’和CR2032。",
+        "上1只入门装与3只多点装，Hub单独关联，不把不兼容第三方网关写成通用。",
+        "用0.5mm浅水触发、App通知和干燥复位实拍，详情页同时写明非长期浸水与室内使用。"
+      ],
+      "commercialModel": {
+        "purchaseCost": "墨西哥授权WL-S02D/T1含税成本待询；区域版、序列号、CR2032和质保可追溯后再比价。",
+        "suggestedPrice": "US$29–39（单只授权正品测试假设，Hub另售，非平台实时报价）。",
+        "estimatedProfit": "扣除Mercado Libre费率、履约、税费、广告、纽扣电池合规、配网售后、质保和退货后，目标贡献毛利率至少25%；未计Hub捆绑补贴。"
+      },
+      "testAdvice": "首批不超过12只，先以6只完成14天触发与离线测试；广告拆品牌精确词和漏水场景词，以购买转化、Hub误购咨询、通知延迟、离线率和30日退货决定扩量。"
+    }
+  ],
+  "ranking": [
+    {
+      "productSlug": "aqara-water-leak-sensor-t1-meli-mx-2026-07-21",
+      "rank": 1,
+      "score": 86,
+      "reason": "墨西哥平台品牌搜索与Aqara官方规格均可访问，本地场景明确、生态差异清晰，且可用小批量触发/配网测试控制风险。"
+    },
+    {
+      "productSlug": "circle-joy-rechargeable-grinder-set-tiktok-mx-2026-07-21",
+      "rank": 2,
+      "score": 83,
+      "reason": "短视频首屏演示力强，制造商规格和具体视频可核验；但缺少墨西哥本地可用平台需求证据，先观察性测试。"
+    },
+    {
+      "productSlug": "ezvalo-usb-c-motion-sensor-cabinet-light-2pack-temu-mx-2026-07-21",
+      "rank": 3,
+      "score": 78,
+      "reason": "两件套和大电池差异化清晰，但Temu目标页失效、同类本地页售罄且同质化高，必须先找到可售替补SKU。"
+    }
+  ],
+  "priorityPick": {
+    "productSlug": "aqara-water-leak-sensor-t1-meli-mx-2026-07-21",
+    "reason": "如果今天只测一个，优先Aqara T1：墨西哥平台存在和官方规格可核实，场景损失价值明确，1只/3只套装与14天触发测试都能低成本验证。"
+  },
+  "sourcesCheckedAt": "2026-07-21T10:24:06+08:00"
+}

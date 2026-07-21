@@ -1,11 +1,12 @@
-import brief0 from "../../../data/daily-briefs/2026-07-17.json";
-import brief1 from "../../../data/daily-briefs/2026-07-16.json";
-import brief2 from "../../../data/daily-briefs/2026-07-15.json";
-import brief3 from "../../../data/daily-briefs/2026-07-14.json";
-import brief4 from "../../../data/daily-briefs/2026-07-13.json";
+import brief0 from "../../../data/daily-briefs/2026-07-21.json";
+import brief1 from "../../../data/daily-briefs/2026-07-17.json";
+import brief2 from "../../../data/daily-briefs/2026-07-16.json";
+import brief3 from "../../../data/daily-briefs/2026-07-15.json";
+import brief4 from "../../../data/daily-briefs/2026-07-14.json";
+import brief5 from "../../../data/daily-briefs/2026-07-13.json";
 import type { DailyPlatformBrief } from "./types";
 import { validateDailyBrief } from "./validate";
 
-export const STATIC_DAILY_BRIEFS: DailyPlatformBrief[] = [brief0, brief1, brief2, brief3, brief4]
+export const STATIC_DAILY_BRIEFS: DailyPlatformBrief[] = [brief0, brief1, brief2, brief3, brief4, brief5]
   .map(validateDailyBrief)
   .sort((left, right) => right.date.localeCompare(left.date));
